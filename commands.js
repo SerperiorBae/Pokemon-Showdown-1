@@ -1131,13 +1131,35 @@ var commands = exports.commands = {
 
 	declare: function (target, room, user) {
 		if (!target) return this.parse('/help declare');
-		if (!this.can('declare', null, room)) return false;
+		if (!this.can('declare', room)) return false;
 
 		if (!this.canTalk()) return;
 
-		this.add('|raw|<div class="broadcast-blue"><b>' + Tools.escapeHTML(target) + '</b></div>');
+		this.add('|raw|<div class="broadcast-blue">' + '</div>');
 		this.logModCommand(user.name + " declared " + target);
-	},
+},
+
+
+	purpledeclare: function (target, room, user) {
+		if (!target) return this.parse('/help declare');
+		if (!this.can('declare', room)) return false;
+
+		if (!this.canTalk()) return;
+
+		this.add('|raw|<div class="broadcast-red"><b>' + '</div>');
+		this.logModCommand(user.name + " declared " + target);
+},
+
+	
+	bluedeclare: function (target, room, user) {
+		if (!target) return this.parse('/help declare');
+		if (!this.can('declare', room)) return false;
+
+		if (!this.canTalk()) return;
+
+		this.add('|raw|<div class="broadcast-green"><b>' + '</div>');
+		this.logModCommand(user.name + " declared " + target);
+},
 
 	htmldeclare: function (target, room, user) {
 		if (!target) return this.parse('/help htmldeclare');
@@ -1145,7 +1167,7 @@ var commands = exports.commands = {
 
 		if (!this.canTalk()) return;
 
-		this.add('|raw|<div class="broadcast-blue"><b>' + target + '</b></div>');
+		this.add('|raw|<center><div class="broadcast-pink">' + target + '</center></div>');
 		this.logModCommand(user.name + " declared " + target);
 	},
 

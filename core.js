@@ -42,13 +42,7 @@ emoticons: {
         'cHild': 'http://i.imgur.com/irQ3x6G.png',
         'feelspink': 'http://i.imgur.com/RhMeAme.gif',
         'Kreygasm': 'http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-3a624954918104fe-19x27.png'
-        'Doge': 'http://fc03.deviantart.net/fs70/f/2014/096/a/f/af64d6dd72003fe6d719a4d9acf0ea18-d7bin7u.gif'
-        ':)': 'http://i.imgur.com/6Of4QDL.gif'
-        'LOL': 'http://i.imgur.com/gRCyzCH.png'
-        'D:': 'http://i.imgur.com/DHWjlPA.png'
-        'LOOL': 'http://i.imgur.com/opAP3tX.gif'
-        'DeezNuts': 'http://i.imgur.com/uOZkuAU.gif'
-    },
+   },
 
     processEmoticons: function (text) {
         var patterns = [],

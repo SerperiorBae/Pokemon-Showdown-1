@@ -1260,7 +1260,7 @@ border:1px solid #55158A;
 color:#CCB9DC;
 padding:5px 1px 3px 8px;
 font-family:helvetica,arial,sans-serif;
-text-align:center
+text-align:center;
 }
 
 .broadcast-green{
@@ -1269,7 +1269,7 @@ border:1px solid #234F99;
 padding:5px 1px 3px 8px;
 color:#C4DAFF;
 font-family:helvetica,arial,sans-serif;
-text-align:center
+text-align:center;
 }
 
 .broadcast-blue{
@@ -1278,5 +1278,5 @@ border:1px solid #FF7CC8;
 padding:5px 1px 3px 8px;
 color:#FFCBE9;
 font-family:helvetica,arial,sans-serif;
-text-align:center
+text-align:center;
 }

@@ -413,7 +413,7 @@ fs.readFile('./config/ipbans.txt', function (err, data) {
 	}
 	Users.checkRangeBanned = Cidr.checker(rangebans);
 });
-
+global.Core = require('./core.js').core;
 /*********************************************************
  * Start up the REPL server
  *********************************************************/

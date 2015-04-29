@@ -2260,55 +2260,63 @@ var commands = exports.commands = {
        afk: 'away',
        away: function(target, room, user, connection, cmd) {
             // unicode away message idea by Siiilver
-            var t = 'Ã¢â€™Â¶Ã¢â€œÂ¦Ã¢â€œÂÃ¢â€œÂ¨';
+            var t = 'Ⓐⓦⓐⓨ';
             var t2 = 'Away';
             switch (cmd) {
            case 'busy':
-t = 'â’·â“¤â“¢â“¨';
+t = 'Ⓑⓤⓢⓨ';
 t2 = 'Busy';
 break;
 case 'sleeping':
-t = 'â“ˆâ“›â“”â“”â“Ÿâ“˜â“â“–';
+t = 'Ⓢⓛⓔⓔⓟⓘⓝⓖ';
 t2 = 'Sleeping';
 break;
-case 'fapping':
-t = 'â’»â“â“Ÿâ“Ÿâ“˜â“â“–';
-t2 = 'Fapping';
-break;
 case 'sleep':
-t = 'â“ˆâ“›â“”â“”â“Ÿâ“˜â“â“–';
+t = 'Ⓢⓛⓔⓔⓟⓘⓝⓖ';
 t2 = 'Sleeping';
 break;
 case 'gaming':
-t = 'â’¼â“â“œâ“˜â“â“–';
+t = 'Ⓖⓐⓜⓘⓝⓖ';
 t2 = 'Gaming';
 break;
 case 'working':
-t = 'â“Œâ“žâ“¡â“šâ“˜â“â“–';
+t = 'Ⓦⓞⓡⓚⓘⓝⓖ';
 t2 = 'Working';
 break;
 case 'skype':
-t = 'â“ˆâ“šâ“¨â“Ÿâ“”';
+t = 'Ⓢⓚⓨⓟⓔ';
 t2 = 'on Skype';
 break;
 case 'work':
-t = 'â“Œâ“žâ“¡â“šâ“˜â“â“–';
+t = 'Ⓦⓞⓡⓚⓘⓝⓖ';
 t2 = 'Working';
 break;
 case 'eating':
-t = 'â’ºâ“â“£â“˜â“â“–';
+t = 'Ⓔⓐⓣⓘⓝⓖ';
 t2 = 'Eating';
 break;
 case 'anime':
-t = 'â’¶â“â“˜â“œâ“”';
+t = 'Ⓐⓝⓘⓜⓔ';
 t2 = 'Watching Anime';
 break;
+case 'smashing':
+t = 'Ⓢⓜⓐⓢⓗⓘⓝⓖ';
+t2 = 'Smashing';
+break;
 case 'shower':
-t = 'â“ˆâ“—â“žâ“¦â“”â“¡â“˜â“â“–';
+t = 'Ⓢⓗⓞⓦⓔⓡ';
 t2 = 'In the shower';
 break;
+case 'drunk':
+t = 'Ⓓⓡⓤⓝⓚ';
+t2 = 'drunk';
+break;
+case 'forum':
+t = 'Ⓕⓞⓡⓤⓜ';
+t2 = 'On the forum';
+break;
 default:
-t = 'â’¶â“Œâ“â“¨'
+t = 'Ⓐⓦⓐⓨ'
 t2 = 'Away';
 break;
 }

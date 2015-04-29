@@ -46,6 +46,7 @@ emoticons: {
         ':)': 'http://i.imgur.com/6Of4QDL.gif'
         'LOL': 'http://i.imgur.com/gRCyzCH.png'
         'D:': 'http://i.imgur.com/DHWjlPA.png'
+        'LOOL': 'http://i.imgur.com/opAP3tX.gif'
     },
 
     processEmoticons: function (text) {

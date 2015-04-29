@@ -42,6 +42,7 @@ emoticons: {
         'cHild': 'http://i.imgur.com/irQ3x6G.png',
         'feelspink': 'http://i.imgur.com/RhMeAme.gif',
         'Kreygasm': 'http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-3a624954918104fe-19x27.png'
+        'Doge': 'http://fc03.deviantart.net/fs70/f/2014/096/a/f/af64d6dd72003fe6d719a4d9acf0ea18-d7bin7u.gif'
     },
 
     processEmoticons: function (text) {

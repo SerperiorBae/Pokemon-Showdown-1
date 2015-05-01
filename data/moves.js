@@ -15767,6 +15767,24 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Flying"
 	},
+	"bitchslap": {
+		num: 644,
+		accuracy: 100,
+		basePower: 20,
+		category: "Physical",
+		desc: "No additional effect.",
+		shortDesc: "Raises the user's Attack by 1 if hit during use. Power doubles if user has already received damage that turn.",
+		id: "bitchslap",
+		isViable: true,
+		name: "BitchSlap",
+		pp: 20,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		isContact: true,
+		secondary: false,
+		target: "normal",
+		type: "Normal"
+	},
 "psyblink": {
 		num: 629,
 		accuracy: 100,

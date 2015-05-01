@@ -15821,16 +15821,16 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Rock"
 	},
-"Scale Slash": {
+"dragonfury": {
 		num: 632,
 		accuracy: 100,
 		basePower: 40,
-		category: "Physical",
+		category: "Special",
 		desc: "No additional effect.",
 		shortDesc: "Usually goes first.",
-		id: "scaleslash",
+		id: "dragonfury",
 		isViable: true,
-		name: "Scale Slash",
+		name: "Dragon Fury",
 		pp: 20,
 		priority: 1,
 		flags: {contact: 1, protect: 1, mirror: 1},

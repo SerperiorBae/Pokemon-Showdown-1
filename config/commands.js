@@ -1958,7 +1958,7 @@ var commands = exports.commands = {
 		}
 		if (target === 'fucked'){
 			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/hpVTiH7.jpg" />');
+			this.sendReplyBox('<img src="http://i.imgur.com/trZWW6P.png" />');
 		}
 		if (target === 'fedora'){
 			matched = true;
@@ -2047,7 +2047,7 @@ var commands = exports.commands = {
 		}
 		if (target === 'rekt'){
 			matched = true;
-			this.sendReplyBox('<img src="http://media.giphy.com/media/10GQalkPJf5Mm4/giphy.gif" height="250" width="300" />');
+			this.sendReplyBox('<img src="http://i.imgur.com/47JMugo.jpg" />');
 		}
 		if (target === 'death stare'){
 			matched = true;

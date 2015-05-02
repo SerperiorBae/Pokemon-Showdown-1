@@ -162,7 +162,9 @@ exports.customavatars = {
 	'sempiternus': '6GPEX9Vt.jpeg',
 	'srperor': 'serpt.png',
 	'brokenhope': 'PI3Qugb.gif',
-	'ncnightcloud': 'we22ofkl.png'
+	'ncnightcloud': 'we22ofkl.png',
+	'hayleysworld': 'Hayley.png',
+	'moonlitespeon': 'espy.gif'
 };
 
 // Tournament announcements

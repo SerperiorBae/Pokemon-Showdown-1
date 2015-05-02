@@ -164,7 +164,8 @@ exports.customavatars = {
 	'brokenhope': 'PI3Qugb.gif',
 	'ncnightcloud': 'we22ofkl.png',
 	'hayleysworld': 'Hayley.png',
-	'moonlitespeon': 'espy.gif'
+	'moonlitespeon': 'espy.gif',
+	'toritorkoal': 'tisatIT.gif'
 };
 
 // Tournament announcements

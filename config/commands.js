@@ -1952,6 +1952,15 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://cdn.ebaumsworld.com/mediaFiles/picture/602006/80615085.jpg" height="200" width="200" />');
 		}
+		if (target === 'bongos'){
+			matched = true;
+			this.sendReplyBox('<img src="http://26.media.tumblr.com/tumblr_lzyy696EpI1r34jyyo2_250.gif />');
+		}
+		if (target === 'dont blink'){
+			matched = true;
+			this.sendReplyBox('<img src="http://www.scaredstiffreviews.com/wp-content/uploads/2014/11/Dont-Blink2.gif />');
+		}
+
 		if (target === 'umad'){
 			matched = true;
 			this.sendReplyBox('<img src="http://dailysnark.com/wp-content/uploads/2013/11/umad.gif" />');

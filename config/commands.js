@@ -1952,6 +1952,18 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://cdn.ebaumsworld.com/mediaFiles/picture/602006/80615085.jpg" height="200" width="200" />');
 		}
+		if (target === 'mlg'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/STG6Ugz.jpg" />');
+		}
+		if (target === 'fucked'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/hpVTiH7.jpg" />');
+		}
+		if (target === 'fedora'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/FbbdUT9.jpg" />');
+		}
 		if (target === 'bongos'){
 			matched = true;
 			this.sendReplyBox('<img src="http://26.media.tumblr.com/tumblr_lzyy696EpI1r34jyyo2_250.gif />');

@@ -1739,7 +1739,14 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReply("/invite [username], [roomname] - Invites the player [username] to join the room [roomname].");
 		}
-
+		if (target === 'all' || target === 'poll') {
+			matched = true;
+			this.sendReply("/poll [question], [option], [option], etc. - Creates a poll.");
+		}
+		if (target === 'all' || target === 'vote') {
+			matched = true;
+			this.sendReply("/vote [option] - votes for the specified option in the poll.");
+		}
 		// driver commands
 		if (target === 'lock' || target === 'l') {
 			matched = true;

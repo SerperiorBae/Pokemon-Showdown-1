@@ -1966,11 +1966,11 @@ var commands = exports.commands = {
 		}
 		if (target === 'bongos'){
 			matched = true;
-			this.sendReplyBox('<img src="http://26.media.tumblr.com/tumblr_lzyy696EpI1r34jyyo2_250.gif />');
+			this.sendReplyBox('<img src="http://26.media.tumblr.com/tumblr_lzyy696EpI1r34jyyo2_250.gif" />');
 		}
 		if (target === 'dont blink'){
 			matched = true;
-			this.sendReplyBox('<img src="http://www.scaredstiffreviews.com/wp-content/uploads/2014/11/Dont-Blink2.gif />');
+			this.sendReplyBox('<img src="http://www.scaredstiffreviews.com/wp-content/uploads/2014/11/Dont-Blink2.gif" />');
 		}
 
 		if (target === 'umad'){

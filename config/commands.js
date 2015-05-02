@@ -2195,15 +2195,12 @@ var commands = exports.commands = {
 	},
 	eating: 'away',
        anime: 'away',
-       smashing: 'away',
        shower: 'away',
-       forum: 'away',
        gaming: 'away',
        sleep: 'away',
        work: 'away',
        working: 'away',
        sleeping: 'away',
-       drunk: 'away',
        skype: 'away',
        busy: 'away',
        fapping: 'away',
@@ -2245,25 +2242,17 @@ case 'eating':
 t = 'Ⓔⓐⓣⓘⓝⓖ';
 t2 = 'Eating';
 break;
+case 'fapping':
+t = 'Ⓕⓐⓟⓟⓘⓝⓖ';
+t2 = 'Fapping';
+break;
 case 'anime':
 t = 'Ⓐⓝⓘⓜⓔ';
 t2 = 'Watching Anime';
 break;
-case 'smashing':
-t = 'Ⓢⓜⓐⓢⓗⓘⓝⓖ';
-t2 = 'Smashing';
-break;
 case 'shower':
 t = 'Ⓢⓗⓞⓦⓔⓡ';
 t2 = 'In the shower';
-break;
-case 'drunk':
-t = 'Ⓓⓡⓤⓝⓚ';
-t2 = 'drunk';
-break;
-case 'forum':
-t = 'Ⓕⓞⓡⓤⓜ';
-t2 = 'On the forum';
 break;
 default:
 t = 'Ⓐⓦⓐⓨ'

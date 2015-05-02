@@ -17,6 +17,7 @@ exports.BattleTypeChart = {
 			"Poison": 1,
 			"Psychic": 0,
 			"Rock": 1,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 0,
 			"Wind": 0
@@ -41,6 +42,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 3,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 0,
 			"Wind": 0
@@ -65,6 +67,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 0,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 2,
 			"Wind": 0
@@ -90,6 +93,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 0,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 2,
 			"Water": 0,
 			"Wind": 0
@@ -114,6 +118,7 @@ exports.BattleTypeChart = {
 			"Poison": 1,
 			"Psychic": 0,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 1,
 			"Water": 0,
 			"Wind": 0
@@ -137,6 +142,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 1,
 			"Rock": 2,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 0,
 			"Wind": 0
@@ -162,6 +168,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 0,
 			"Rock": 1,
+			"Spirit": 0,
 			"Steel": 2,
 			"Water": 1,
 			"Wind": 0
@@ -186,6 +193,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 0,
 			"Rock": 1,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 0,
 			"Wind": 0
@@ -211,6 +219,7 @@ exports.BattleTypeChart = {
 			"Poison": 2,
 			"Psychic": 1,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 0,
 			"Wind": 0
@@ -236,6 +245,7 @@ exports.BattleTypeChart = {
 			"Poison": 1,
 			"Psychic": 0,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 2,
 			"Wind": 0
@@ -261,6 +271,7 @@ exports.BattleTypeChart = {
 			"Poison": 2,
 			"Psychic": 0,
 			"Rock": 2,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 1,
 			"Wind": 0
@@ -287,6 +298,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 0,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 1,
 			"Water": 2,
 			"Wind": 0
@@ -311,6 +323,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 0,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 0,
 			"Wind": 0
@@ -336,6 +349,7 @@ exports.BattleTypeChart = {
 			"Poison": 2,
 			"Psychic": 1,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 1,
 			"Water": 0,
 			"Wind": 0
@@ -360,6 +374,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 2,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 0,
 			"Wind": 0
@@ -385,6 +400,7 @@ exports.BattleTypeChart = {
 			"Poison": 2,
 			"Psychic": 0,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 1,
 			"Water": 1
 		},
@@ -411,6 +427,7 @@ exports.BattleTypeChart = {
 			"Poison": 3,
 			"Psychic": 2,
 			"Rock": 2,
+			"Spirit": 0,
 			"Steel": 2,
 			"Water": 0,
 			"Wind": 0
@@ -435,6 +452,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 0,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 2,
 			"Water": 2,
 			"Wind": 0
@@ -459,6 +477,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 0,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 2,
 			"Water": 2,
 			"Wind": 0
@@ -483,6 +502,7 @@ exports.BattleTypeChart = {
 			"Poison": 0,
 			"Psychic": 1,
 			"Rock": 0,
+			"Spirit": 0,
 			"Steel": 0,
 			"Water": 0,
 			"Wind": 0

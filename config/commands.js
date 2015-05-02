@@ -1932,7 +1932,7 @@ var commands = exports.commands = {
 	},
 	
 		/*********************************************************
-	 * Parukia commands
+	 * Kakuja commands
 	 *********************************************************/
 
 	memes: 'meme',
@@ -2109,10 +2109,6 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Gi0jjuf.jpg" />');
 		}
-		if (target === 'parukia'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/OjAOrK1.jpg" width="300" height="226" />');
-		}
 		if (target === 'fabulous'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/HsY0KpR.gif" />');
@@ -2239,7 +2235,7 @@ var commands = exports.commands = {
 	},
 		kakujarules: function(target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<font size="4" color="#FF24E5"><b>Kakuja Rules</b></font><br><font size="2" color="pink">1.) Try to limit the caps unless we are singing.<br>2.) The topic of Goddess Briyella is not to be brought up. Anyone who brings this up will receive a mute.<br>3.) Staff members are not to warn, mute, or lock any other staff without an admin\'s permission (unless of course they break a global rule)<br>4.) Admins are the only ones who may ban staff or deliver demotions or promotions.<br>5.) Anyone who mentions nudes will receive an instant lock. If they mention it again, they will be banned, no questions asked.<br>6.) Parukia members are on permanent watch, except for Nick.<br>7.) All warnings, mutes, and locks should be delivered maturely and for warranted reasons, not personal reasons.<br>8.) Kakuja has made some changes to typings, type effectiveness, moves, movesets, abilities, and stats. If you have any questions about the changes, please feel free to click on the Kakuja Pokemon button in the roomintro or message an admin.<br>9.) There is a fine line between constructive criticism and disrespect.<br>10.) Staff, please remember that locks are a final measure for discipline, and to deliver warns and mutes first, lock only if the behaviour continues. ');
+		this.sendReplyBox('<font size="4" color="#FF24E5"><b>Kakuja Rules</b></font><br><font size="2" color="#3DA5FF">1.) Try to limit the caps unless we are singing.<br>2.) The topic of Goddess Briyella is not to be brought up. Anyone who brings this up will receive a mute.<br>3.) Staff members are not to warn, mute, or lock any other staff without an admin\'s permission (unless of course they break a global rule)<br>4.) Admins are the only ones who may ban staff or deliver demotions or promotions.<br>5.) Anyone who mentions nudes will receive an instant lock. If they mention it again, they will be banned, no questions asked.<br>6.) Parukia members are on permanent watch, except for Nick.<br>7.) All warnings, mutes, and locks should be delivered maturely and for warranted reasons, not personal reasons.<br>8.) Kakuja has made some changes to typings, type effectiveness, moves, movesets, abilities, and stats. If you have any questions about the changes, please feel free to click on the Kakuja Pokemon button in the roomintro or message an admin.<br>9.) There is a fine line between constructive criticism and disrespect.<br>10.) Staff, please remember that locks are a final measure for discipline, and to deliver warns and mutes first, lock only if the behaviour continues. ');
 	},
 
         away: function (target, room, user) {

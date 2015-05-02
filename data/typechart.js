@@ -265,7 +265,7 @@ exports.BattleTypeChart = {
 			"Dragon": 0,
 			"Electric": 0,
 			"Fairy": 0,
-			"Fighting": 1,
+			"Fighting": 0,
 			"Fire": 1,
 			"Flying": 0,
 			"Ghost": 0,
@@ -446,5 +446,5 @@ exports.BattleTypeChart = {
 			"Water": 2
 		},
 		HPivs: {"atk":30, "def":30, "spa":30}
-	}
+	},
 };

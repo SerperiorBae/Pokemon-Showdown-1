@@ -13,9 +13,6 @@
 var fs = require("fs");
 var path = require("path");
 
-var sqlite3 = require('sqlite3');
-if (!db) var db = new sqlite3.Database('config/users.db', function() {
-        db.run("CREATE TABLE if not exists users (userid TEXT, name TEXT, bucks INTEGER)");
 });
 
 var core = exports.core = {

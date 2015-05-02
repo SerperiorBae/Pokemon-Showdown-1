@@ -162,7 +162,7 @@ exports.customavatars = {
 	'sempiternus': '6GPEX9Vt.jpeg',
 	'srperor': 'serpt.png',
 	'brokenhope': 'PI3Qugb.gif',
-	'ncnightcloud': 'we22ofkl.png',
+	'ncnightcloud': '77e6210990.png',
 	'hayleysworld': 'Hayley.png',
 	'moonlitespeon': 'espy.gif',
 	'toritorkoal': 'tisatIT.gif'

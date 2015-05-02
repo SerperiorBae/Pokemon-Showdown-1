@@ -120,7 +120,7 @@ hashColor: function(name) {
         });
     },
 
-    processChatData: function (user, room, connection, message) {
+       processChatData: function (user, room, connection, message) {
         var match = false;
         
         for (var i in this.emoticons) {
@@ -128,26 +128,13 @@ hashColor: function(name) {
                 match = true;
             }
         }
-        if (!Core.settings.emoteStatus) {
-		kitty = message = this.processEmoticons(message);		
-		var message = Tools.escapeHTML(kitty);
-		return (message);
-		return;
-	} else if (Core.settings.emoteStatus = true) {
-        	if (!match || message.charAt(0) === '!') return true;
-        	message = Tools.escapeHTML(message);
-        	message = this.processEmoticons(message);
-        	if (user.userid === 'panpawn') {
-        		if (user.hiding) return room.add('|raw|<div class="chat"><button class="astext" name="parseCommand" value="/user '+user.name+'" target="_blank"><strong><font color="#DA9D01"><small></small><span class="username" data-name="' + user.name + '">' + user.name + '</span>:</font></strong></button> <em class="mine">' + message + '</em></div>');
-			room.add('|raw|<div class="chat"><button class="astext" name="parseCommand" value="/user '+user.name+'" target="_blank"><strong><font color="#DA9D01"><small>' + user.group + '</small><span class="username" data-name="' + user.group + user.name + '">' + user.name + '</span>:</font></strong></button> <em class="mine">' + message + '</em></div>');
-			return false;
-        	} else {
-        		if (user.hiding) return room.add('|raw|<div class="chat"><button class="astext" name="parseCommand" value="/user '+user.name+'" target="_blank"><strong><font color="' + hashColor(user.userid)+'"><small></small><span class="username" data-name="' + user.name + '">' + user.name + '</span>:</font></strong></button> <em class="mine">' + message + '</em></div>');
-        		room.add('|raw|<div class="chat"><button class="astext" name="parseCommand" value="/user '+user.name+'" target="_blank"><strong><font color="' + hashColor(user.userid)+'"><small>' + user.group + '</small><span class="username" data-name="' + user.group + user.name + '">' + user.name + '</span>:</font></strong></button> <em class="mine">' + message + '</em></div>');
-        		return false;
-        	}
-	}
-},        
+        if (!match || message.charAt(0) === '!') return true;
+        message = Tools.escapeHTML(message);
+        message = this.processEmoticons(message);
+        if (user.hiding) return room.add('|raw|<div class="chat"><strong><font color="' + Core.hashColor(user.userid)+'"><small></small><span class="username" data-name="' + user.name + '">' + user.name + '</span>:</font></strong> <em class="mine">' + message + '</em></div>');
+        room.add('|raw|<div class="chat"><strong><font color="' + Core.hashColor(user.userid)+'"><small>' + user.group + '</small><span class="username" data-name="' + user.group + user.name + '">' + user.name + '</span>:</font></strong> <em class="mine">' + message + '</em></div>');
+        return false;
+    },
 
 	
 };

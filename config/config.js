@@ -158,13 +158,11 @@ exports.herokuhack = false;
 // displayed in the client.
 exports.customavatars = {
 	//'userid': 'customavatar.png'
-	'mewsshoes': 'PI3Qugb.gif',
 	'sempiternus': '6GPEX9Vt.jpeg',
 	'srperor': 'serpt.png',
-	'brokenhope': 'PI3Qugb.gif',
-	'ncnightcloud': '77e6210990.png',
+	'bisharpette': 'PI3Qugb.gif',
+	'sablette': '77e6210990.png',
 	'hayleysworld': 'Hayley.png',
-	'moonlitespeon': 'espy.gif',
 	'toritorkoal': 'tisatIT.gif'
 };
 

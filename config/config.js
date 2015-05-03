@@ -165,6 +165,7 @@ exports.customavatars = {
 	'philmiester': '93jm23N.png',
 	'shodaimamoru': '7wjb6cB.png',
 	'hayleysworld': 'Hayley.png',
+	'fawnie': 'duQYVTf.png',
 	'victette': 'Qy9Rkw.gif'
 };
 

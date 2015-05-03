@@ -19,7 +19,6 @@ exports.BattleTypeChart = {
 			"Rock": 1,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 0,
 			"Water": 0,
 			"Wind": 0
 		},
@@ -45,7 +44,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 3,
 			"Water": 0,
 			"Wind": 0
 		},
@@ -71,7 +69,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 3,
 			"Water": 2,
 			"Wind": 0
 		},
@@ -98,37 +95,10 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 2,
-			"Stupid": 3,
 			"Water": 0,
 			"Wind": 0
 		},
 		HPivs: {"spa":30}
-	},
-		"Stupid": {
-		damageTaken: {
-			"Bug": 1,
-			"Dark": 1,
-			"Dragon": 1,
-			"Electric": 1,
-			"Fairy": 1,
-			"Fighting": 1,
-			"Fire": 1,
-			"Flying": 1,
-			"Ghost": 1,
-			"Grass": 1,
-			"Ground": 1,
-			"Ice": 1,
-			"Normal": 1,
-			"Poison": 1,
-			"Psychic": 1,
-			"Rock": 1,
-			"Spirit": 1,
-			"Steel": 1,
-			"Stupid": 3,
-			"Water": 1,
-			"Wind": 1
-		},
-		HPivs: {"atk":30}
 	},
 	"Fairy": {
 		damageTaken: {
@@ -150,7 +120,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 1,
-			"Stupid": 3,
 			"Water": 0,
 			"Wind": 0
 		}
@@ -175,7 +144,6 @@ exports.BattleTypeChart = {
 			"Rock": 2,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 3,
 			"Water": 0,
 			"Wind": 0
 		},
@@ -202,7 +170,6 @@ exports.BattleTypeChart = {
 			"Rock": 1,
 			"Spirit": 0,
 			"Steel": 2,
-			"Stupid": 3,
 			"Water": 1,
 			"Wind": 0
 		},
@@ -228,7 +195,6 @@ exports.BattleTypeChart = {
 			"Rock": 1,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 3,
 			"Water": 0,
 			"Wind": 0
 		},
@@ -255,7 +221,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 1,
 			"Water": 0,
 			"Wind": 0
 		},
@@ -282,7 +247,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 3,
 			"Water": 2,
 			"Wind": 0
 		},
@@ -309,7 +273,6 @@ exports.BattleTypeChart = {
 			"Rock": 2,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 3,
 			"Water": 1,
 			"Wind": 0
 		},
@@ -337,7 +300,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 1,
-			"Stupid": 2,
 			"Water": 2,
 			"Wind": 0
 		},
@@ -363,7 +325,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 1,
 			"Water": 0,
 			"Wind": 0
 		}
@@ -390,7 +351,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 1,
-			"Stupid": 3,
 			"Water": 0,
 			"Wind": 0
 		},
@@ -416,7 +376,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 3,
 			"Water": 0,
 			"Wind": 0
 		},
@@ -443,9 +402,7 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 1,
-			"Stupid": 3,
-			"Water": 1,
-			"Wind": 1
+			"Water": 1
 		},
 		HPivs: {"def":30, "spd":30, "spe":30}
 	},
@@ -472,7 +429,6 @@ exports.BattleTypeChart = {
 			"Rock": 2,
 			"Spirit": 0,
 			"Steel": 2,
-			"Stupid": 3,
 			"Water": 0,
 			"Wind": 0
 		},
@@ -498,7 +454,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 2,
-			"Stupid": 3,
 			"Water": 2,
 			"Wind": 0
 		},
@@ -524,7 +479,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 2,
-			"Stupid": 3,
 			"Water": 2,
 			"Wind": 0
 		},
@@ -550,7 +504,6 @@ exports.BattleTypeChart = {
 			"Rock": 0,
 			"Spirit": 0,
 			"Steel": 0,
-			"Stupid": 3,
 			"Water": 0,
 			"Wind": 0
 		},

@@ -7,7 +7,7 @@
  
  function splint(target) {
  	var cmdArr = target.split(",");
- 	for (var i = 0; i < cmdArr.length; i++) cmdArr[i] = cmdArr[i].troll();
+ 	for (var i = 0; i < cmdArr.length; i++) cmdArr[i] = cmdArr[i].trim();
  		return cmdArr;
  }
  

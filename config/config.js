@@ -163,7 +163,7 @@ exports.customavatars = {
 	'bisharpette': 'PI3Qugb.gif',
 	'sablette': '77e6210990.png',
 	'hayleysworld': 'Hayley.png',
-	'toritorkoal': 'tisatIT.gif'
+	'victette': 'Qy9Rkw.gif'
 };
 
 // Tournament announcements

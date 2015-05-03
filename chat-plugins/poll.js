@@ -5,6 +5,12 @@
  //This is the line that controls what tiers are in tierpoll !_!
  var tiers = 'other, ru, tier shift, [Gen 5] OU, [Gen 5] Smogon Doubles, random doubles, random triples, custom, reg1v1, lc, nu, cap, cc, oumono, doubles, balanced hackmons, hackmons, ubers, random battle, ou, cc1v1, uu, anything goes, super staff bros, inverse';
  
+ function splint(target) {
+ 	var cmdArr = target.split(",");
+ 	for (var i = 0; i < cmdArr.length; i++) cmdArr[i] = cmdArr[i].troll();
+ 		return cmdArr;
+ }
+ 
  exports.commands = {
 	poll: function (target, room, user) {
 		if (!user.can('broadcast',null,room)) return this.sendReply('You do not have enough authority to use this command.');

@@ -448,7 +448,7 @@ Validator = (function () {
 			if (lsetData.sources && lsetData.sources.length === 1 && !lsetData.sourcesBefore) {
 				// we're restricted to a single source
 				var source = lsetData.sources[0];
-				if (source.charAt(1) === 'S') {
+				if (source.substr(1, 1) === 'S') {
 					// it's an event
 					var eventData = null;
 					var splitSource = source.substr(2).split(' ');
@@ -586,7 +586,7 @@ Validator = (function () {
 		var sourcesBefore = 0;
 		var noPastGen = !!format.requirePentagon;
 		// since Gen 3, Pokemon cannot be traded to past generations
-		var noFutureGen = tools.gen >= 2 ? true : !!(format.banlistTable && format.banlistTable['tradeback']);
+		var noFutureGen = tools.gen >= 3 ? true : !!(format.banlistTable && format.banlistTable['tradeback']);
 
 		do {
 			alreadyChecked[template.speciesid] = true;
@@ -691,8 +691,8 @@ Validator = (function () {
 								// Egg move tradeback for gens 1 and 2.
 								if (!noFutureGen) sourcesBefore = Math.max(sourcesBefore, parseInt(learned.charAt(0), 10));
 							} else if (learned.charAt(1) === 'S') {
-								// Event Pokémon:
-								//	Available as long as the past gen can get the Pokémon and then trade it back.
+								// Event PokÃ©mon:
+								//	Available as long as the past gen can get the PokÃ©mon and then trade it back.
 								sources.push(learned + ' ' + template.id);
 								if (!noFutureGen) sourcesBefore = Math.max(sourcesBefore, parseInt(learned.charAt(0), 10));
 							} else {
@@ -731,7 +731,6 @@ Validator = (function () {
 			} else if (template.prevo) {
 				template = tools.getTemplate(template.prevo);
 				if (template.gen > Math.max(2, tools.gen)) template = null;
-				if (template && !template.abilities['H']) isHidden = false;
 			} else if (template.baseSpecies !== template.species && template.baseSpecies !== 'Kyurem' && template.baseSpecies !== 'Pikachu') {
 				template = tools.getTemplate(template.baseSpecies);
 			} else {
@@ -768,7 +767,7 @@ Validator = (function () {
 				if (!sources) sources = [];
 				for (var i = 0, len = lsetData.sources.length; i < len; i++) {
 					learned = lsetData.sources[i];
-					if (parseInt(learned.charAt(0), 10) <= sourcesBefore) {
+					if (parseInt(learned.substr(0, 1), 10) <= sourcesBefore) {
 						sources.push(learned);
 					}
 				}
@@ -778,7 +777,7 @@ Validator = (function () {
 				if (!lsetData.sources) lsetData.sources = [];
 				for (var i = 0, len = sources.length; i < len; i++) {
 					learned = sources[i];
-					if (parseInt(learned.charAt(0), 10) <= lsetData.sourcesBefore) {
+					if (parseInt(learned.substr(0, 1), 10) <= lsetData.sourcesBefore) {
 						lsetData.sources.push(learned);
 					}
 				}

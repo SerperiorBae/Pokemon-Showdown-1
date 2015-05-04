@@ -1963,6 +1963,10 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/trZWW6P.png" />');
 		}
+		if (target === 'uwot'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/cumZfCh.png" />');
+		}
 		if (target === 'fedora'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/FbbdUT9.jpg" />');

@@ -1114,7 +1114,7 @@ var commands = exports.commands = {
 				case 2:
 					weaknesses.push("<b>" + type + "</b>");
 					break;
-				case 4:
+				case 6:
 					weaknesses.push("<i>" + type + "</i>");
 					break;
 				case -1:
@@ -1123,7 +1123,7 @@ var commands = exports.commands = {
 				case -2:
 					resistances.push("<b>" + type + "</b>");
 					break;
-				case -4:
+				case -6:
 					resistances.push("<i>" + type + "</i>");
 					break;
 				}

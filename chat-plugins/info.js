@@ -395,7 +395,7 @@ var commands = exports.commands = {
 			}
 
 			if (target.indexOf(' type') > -1) {
-				target = target.charAt(0).toUpperCase() + target.substring(2, target.indexOf(' type'));
+				target = target.charAt(0).toUpperCase() + target.substring(1, target.indexOf(' type'));
 				if (target in Tools.data.TypeChart) {
 					if (!searches['types']) searches['types'] = {};
 					if (Object.count(searches['types'], true) === 3 && !isNotSearch) return this.sendReplyBox("Specify a maximum of three types.");

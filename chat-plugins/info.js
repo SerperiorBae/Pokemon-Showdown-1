@@ -1124,7 +1124,7 @@ var commands = exports.commands = {
 					resistances.push("<b>" + type + "</b>");
 					break;
 				case -3:
-					weaknesses.push("<i>" + type + "</i>");
+					resistances.push("<i>" + type + "</i>");
 					break;
 				}
 			} else {

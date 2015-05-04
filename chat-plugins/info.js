@@ -398,7 +398,7 @@ var commands = exports.commands = {
 				target = target.charAt(0).toUpperCase() + target.substring(1, target.indexOf(' type'));
 				if (target in Tools.data.TypeChart) {
 					if (!searches['types']) searches['types'] = {};
-					if (Object.count(searches['types'], true) === 3 && !isNotSearch) return this.sendReplyBox("Specify a maximum of three types.");
+					if (Object.count(searches['types'], true) === 2 && !isNotSearch) return this.sendReplyBox("Specify a maximum of two types.");
 					if ((searches['types'][target] && isNotSearch) || (searches['types'][target] === false && !isNotSearch)) return this.sendReplyBox("A search cannot both exclude and include a type.");
 					searches['types'][target] = !isNotSearch;
 					continue;
@@ -633,7 +633,7 @@ var commands = exports.commands = {
 		"Valid colors are: green, red, blue, white, brown, yellow, purple, pink, gray and black.",
 		"Valid tiers are: Uber/OU/BL/UU/BL2/RU/BL3/NU/PU/NFE/LC/CAP.",
 		"Types must be followed by ' type', e.g., 'dragon type'.",
-		"Inequality ranges use the characters '>' and '<' though they behave as '≥' and '≤', e.g., 'speed > 100' searches for all Pokemon equal to and greater than 100 speed.",
+		"Inequality ranges use the characters '>' and '<' though they behave as 'â‰¥' and 'â‰¤', e.g., 'speed > 100' searches for all Pokemon equal to and greater than 100 speed.",
 		"Parameters can be excluded through the use of '!', e.g., '!water type' excludes all water types.",
 		"The parameter 'mega' can be added to search for Mega Evolutions only, and the parameters 'FE' or 'NFE' can be added to search fully or not-fully evolved Pokemon only.",
 		"The order of the parameters does not matter."],
@@ -982,7 +982,7 @@ var commands = exports.commands = {
 		"Search categories are: type, category, flag, status inflicted, type boosted, and numeric range for base power, pp, and accuracy.",
 		"Types must be followed by ' type', e.g., 'dragon type'.",
 		"Stat boosts must be preceded with 'boosts ', e.g., 'boosts attack' searches for moves that boost the attack stat.",
-		"Inequality ranges use the characters '>' and '<' though they behave as '≥' and '≤', e.g., 'bp > 100' searches for all moves equal to and greater than 100 base power.",
+		"Inequality ranges use the characters '>' and '<' though they behave as 'â‰¥' and 'â‰¤', e.g., 'bp > 100' searches for all moves equal to and greater than 100 base power.",
 		"Parameters can be excluded through the use of '!', e.g., !water type' excludes all water type moves.",
 		"If a Pokemon is included as a parameter, moves will be searched from it's movepool.",
 		"The order of the parameters does not matter."],
@@ -1201,8 +1201,8 @@ var commands = exports.commands = {
 
 		this.sendReplyBox("" + atkName + " is " + factor + "x effective against " + defName + ".");
 	},
-	effectivenesshelp: ["/effectiveness [attack], [defender] - Provides the effectiveness of a move or type on another type or a Pokémon.",
-		"!effectiveness [attack], [defender] - Shows everyone the effectiveness of a move or type on another type or a Pokémon."],
+	effectivenesshelp: ["/effectiveness [attack], [defender] - Provides the effectiveness of a move or type on another type or a PokÃ©mon.",
+		"!effectiveness [attack], [defender] - Shows everyone the effectiveness of a move or type on another type or a PokÃ©mon."],
 
 	cover: 'coverage',
 	coverage: function (target, room, user) {
@@ -1437,8 +1437,8 @@ var commands = exports.commands = {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox(
 			"New to competitive pokemon?<br />" +
-			"- <a href=\"https://www.smogon.com/sim/ps_guide\">Beginner's Guide to Pokémon Showdown</a><br />" +
-			"- <a href=\"https://www.smogon.com/dp/articles/intro_comp_pokemon\">An introduction to competitive Pokémon</a><br />" +
+			"- <a href=\"https://www.smogon.com/sim/ps_guide\">Beginner's Guide to PokÃ©mon Showdown</a><br />" +
+			"- <a href=\"https://www.smogon.com/dp/articles/intro_comp_pokemon\">An introduction to competitive PokÃ©mon</a><br />" +
 			"- <a href=\"https://www.smogon.com/bw/articles/bw_tiers\">What do 'OU', 'UU', etc mean?</a><br />" +
 			"- <a href=\"https://www.smogon.com/xyhub/tiers\">What are the rules for each format? What is 'Sleep Clause'?</a>"
 		);
@@ -1541,19 +1541,19 @@ var commands = exports.commands = {
 		}
 		if (target === 'all' || target === '1v1') {
 			matched = true;
-			if (target !== 'all') buffer += "Bring three Pokémon to Team Preview and choose one to battle.<br />";
+			if (target !== 'all') buffer += "Bring three PokÃ©mon to Team Preview and choose one to battle.<br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3496773/\">1v1</a><br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3536109/\">1v1 Viability Ranking</a><br />";
 		}
 		if (target === 'all' || target === 'monotype') {
 			matched = true;
-			if (target !== 'all') buffer += "All Pokémon on a team must share a type.<br />";
+			if (target !== 'all') buffer += "All PokÃ©mon on a team must share a type.<br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3493087/\">Monotype</a><br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3517737/\">Monotype Viability Ranking</a><br />";
 		}
 		if (target === 'all' || target === 'tiershift' || target === 'ts') {
 			matched = true;
-			if (target !== 'all') buffer += "Pokémon below OU/BL get all their stats boosted. UU/BL2 get +5, RU/BL3 get +10, and NU or lower get +15.<br />";
+			if (target !== 'all') buffer += "PokÃ©mon below OU/BL get all their stats boosted. UU/BL2 get +5, RU/BL3 get +10, and NU or lower get +15.<br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3532973/\">Tier Shift</a><br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3536719/\">Tier Shift Viability Ranking</a><br />";
 		}
@@ -1569,13 +1569,13 @@ var commands = exports.commands = {
 		}
 		if (target === 'all' || target === 'almostanyability' || target === 'aaa') {
 			matched = true;
-			if (target !== 'all') buffer += "Pokémon can use any ability, barring the few that are banned.<br />";
+			if (target !== 'all') buffer += "PokÃ©mon can use any ability, barring the few that are banned.<br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3528058/\">Almost Any Ability</a><br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3517258/\">Almost Any Ability Viability Ranking</a><br />";
 		}
 		if (target === 'all' || target === 'stabmons') {
 			matched = true;
-			if (target !== 'all') buffer += "Pokémon can use any move of their typing, in addition to the moves they can normally learn.<br />";
+			if (target !== 'all') buffer += "PokÃ©mon can use any move of their typing, in addition to the moves they can normally learn.<br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3493081/\">STABmons</a><br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3512215/\">STABmons Viability Ranking</a><br />";
 		}
@@ -1593,7 +1593,7 @@ var commands = exports.commands = {
 		}
 		if (target === 'all' || target === 'hiddentype' || target === 'ht') {
 			matched = true;
-			if (target !== 'all') buffer += "Pokémon have an added type determined by their IVs. Same as the Hidden Power type.<br />";
+			if (target !== 'all') buffer += "PokÃ©mon have an added type determined by their IVs. Same as the Hidden Power type.<br />";
 			buffer += "- <a href=\"https://www.smogon.com/forums/threads/3516349/\">Hidden Type</a><br />";
 		}
 		if (target === 'all' || target === 'middlecup' || target === 'mc') {
@@ -1689,7 +1689,7 @@ var commands = exports.commands = {
 			"- We wait a few minutes before restarting so people can finish up their battles<br />" +
 			"- The restart itself will take around 0.6 seconds<br />" +
 			"- Your ladder ranking and teams will not change<br />" +
-			"- We are restarting to update Pokémon Showdown to a newer version"
+			"- We are restarting to update PokÃ©mon Showdown to a newer version"
 		);
 	},
 

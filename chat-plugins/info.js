@@ -1086,6 +1086,9 @@ var commands = exports.commands = {
 
 		if (pokemon.exists) {
 			target = pokemon.species;
+		} else if (type1.exists && type2.exists && type3.exists && type1 !== type2 && type2 !== type3) {
+			pokemon = {types: [type1.id, type2.id, type3.id]};
+			target = type1.id + "/" + type2.id + "/" + type3.id;
 		} else if (type1.exists && type2.exists && type1 !== type2) {
 			pokemon = {types: [type1.id, type2.id]};
 			target = type1.id + "/" + type2.id;

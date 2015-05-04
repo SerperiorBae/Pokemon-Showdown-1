@@ -1115,7 +1115,7 @@ var commands = exports.commands = {
 					weaknesses.push("<b>" + type + "</b>");
 					break;
 				case 3:
-					weaknesses.push("<i>" + type + "</i>");
+					weaknesses.push("<b><i>" + type + "</i></b>");
 					break;
 				case -1:
 					resistances.push(type);
@@ -1124,7 +1124,7 @@ var commands = exports.commands = {
 					resistances.push("<b>" + type + "</b>");
 					break;
 				case -3:
-					resistances.push("<i>" + type + "</i>");
+					resistances.push("<b><i>" + type + "</i></b>");
 					break;
 				}
 			} else {

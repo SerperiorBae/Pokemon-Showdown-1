@@ -2475,7 +2475,7 @@ exports.BattleMovedex = {
 		flags: {protect: 1, mirror: 1},
 		secondary: false,
 		target: "allAdjacentFoes",
-		type: "Fairy"
+		type: "Spirit"
 	},
 	"defendorder": {
 		num: 455,
@@ -3973,7 +3973,7 @@ exports.BattleMovedex = {
 		},
 		secondary: false,
 		target: "normal",
-		type: "Dark"
+		type: "Spirit"
 	},
 	"falseswipe": {
 		num: 206,
@@ -6306,7 +6306,7 @@ exports.BattleMovedex = {
 		flags: {protect: 1, mirror: 1},
 		secondary: false,
 		target: "normal",
-		type: "Ghost"
+		type: "Spirit"
 	},
 	"hiddenpower": {
 		num: 237,
@@ -7142,7 +7142,7 @@ exports.BattleMovedex = {
 			}
 		},
 		target: "allAdjacentFoes",
-		type: "Ice"
+		type: "Wind"
 	},
 	"imprison": {
 		num: 286,
@@ -7786,7 +7786,7 @@ exports.BattleMovedex = {
 		recoil: [1, 2],
 		secondary: false,
 		target: "normal",
-		type: "Fairy"
+		type: "Spirit"
 	},
 	"lightscreen": {
 		num: 113,
@@ -9893,7 +9893,7 @@ exports.BattleMovedex = {
 		},
 		secondary: false,
 		target: "normal",
-		type: "Ghost"
+		type: "Spirit"
 	},
 	"pinmissile": {
 		num: 42,
@@ -10623,7 +10623,7 @@ exports.BattleMovedex = {
 		isContact: true,
 		secondary: false,
 		target: "normal",
-		type: "Dark"
+		type: "Spirit"
 	},
 	"pursuit": {
 		num: 228,
@@ -11860,7 +11860,7 @@ exports.BattleMovedex = {
 		},
 		secondary: false,
 		target: "all",
-		type: "Rock"
+		type: "Wind"
 	},
 	"scald": {
 		num: 503,
@@ -13338,7 +13338,7 @@ exports.BattleMovedex = {
 		},
 		secondary: false,
 		target: "normal",
-		type: "Ghost"
+		type: "Spirit"
 	},
 	"splash": {
 		num: 150,
@@ -14924,7 +14924,7 @@ exports.BattleMovedex = {
 		},
 		secondary: false,
 		target: "normal",
-		type: "Ghost"
+		type: "Spirit"
 	},
 	"trickroom": {
 		num: 433,

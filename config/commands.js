@@ -1975,6 +1975,10 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://www.scaredstiffreviews.com/wp-content/uploads/2014/11/Dont-Blink2.gif" />');
 		}
+		if (target === 'ps mafia'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/GrLo4FV.png" />');
+		}
 		if (target === 'pretty'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/qoFSQ6A.gif" />');

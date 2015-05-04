@@ -2016,7 +2016,7 @@ exports.BattleFormatsData = {
 		tier: "OU"
 	},
 	entei: {
-		randomBattleMoves: ["extremespeed","flareblitz","bulldoze","stoneedge","sacredfire"],
+		randomBattleMoves: ["extremespeed","flareblitz","bulldoze","stoneedge","sacredfire","flamedart"],
 		randomDoubleBattleMoves: ["extremespeed","flareblitz","ironhead","bulldoze","stoneedge","sacredfire","protect"],
 		eventPokemon: [
 			{"generation":3,"level":70,"moves":["firespin","stomp","flamethrower","swagger"]},
@@ -2026,8 +2026,8 @@ exports.BattleFormatsData = {
 		tier: "UU"
 	},
 	suicune: {
-		randomBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","rest","sleeptalk","calmmind"],
-		randomDoubleBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","snarl","tailwind","protect","calmmind"],
+		randomBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","rest","sleeptalk","calmmind","aurorabeam","airslash","extrasensory","aquaring","surf"],
+		randomDoubleBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","snarl","tailwind","protect","calmmind","aurorabeam","airslash","extrasensory","aquaring","surf"],
 		eventPokemon: [
 			{"generation":3,"level":70,"moves":["gust","aurorabeam","mist","mirrorcoat"]},
 			{"generation":4,"level":30,"shiny":true,"nature":"Relaxed","moves":["sheercold","airslash","extremespeed","aquaring"],"pokeball":"cherishball"}
@@ -4603,8 +4603,8 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	bisharp: {
-		randomBattleMoves: ["swordsdance","substitute","suckerpunch","ironhead","brickbreak","knockoff"],
-		randomDoubleBattleMoves: ["swordsdance","substitute","suckerpunch","ironhead","brickbreak","knockoff","protect"],
+		randomBattleMoves: ["swordsdance","substitute","suckerpunch","ironhead","brickbreak","knockoff","bulletpunch","lowkick","poweruppunch","psychocut"],
+		randomDoubleBattleMoves: ["swordsdance","substitute","suckerpunch","ironhead","brickbreak","knockoff","protect","bulletpunch","lowkick","poweruppunch","psychocut"],
 		tier: "OU"
 	},
 	bouffalant: {

@@ -2026,8 +2026,8 @@ exports.BattleFormatsData = {
 		tier: "UU"
 	},
 	suicune: {
-		randomBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","rest","sleeptalk","calmmind","aurorabeam","airslash","extrasensory","aquaring","surf"],
-		randomDoubleBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","snarl","tailwind","protect","calmmind","aurorabeam","airslash","extrasensory","aquaring","surf"],
+		randomBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","rest","nastyplot","sleeptalk","calmmind","aurorabeam","airslash","extrasensory","aquaring","surf"],
+		randomDoubleBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","snarl","nastyplot","tailwind","protect","calmmind","aurorabeam","airslash","extrasensory","aquaring","surf"],
 		eventPokemon: [
 			{"generation":3,"level":70,"moves":["gust","aurorabeam","mist","mirrorcoat"]},
 			{"generation":4,"level":30,"shiny":true,"nature":"Relaxed","moves":["sheercold","airslash","extremespeed","aquaring"],"pokeball":"cherishball"}
@@ -2457,8 +2457,8 @@ exports.BattleFormatsData = {
 		tier: "OU"
 	},
 	sableyemega: {
-		randomBattleMoves: ["recover","willowisp","darkpulse","calmmind","shadowball"],
-		randomDoubleBattleMoves: ["fakeout","knockoff","darkpulse","shadowball","willowisp","protect"],
+		randomBattleMoves: ["recover","nastyplot","dazzlinggleam","willowisp","darkpulse","calmmind","shadowball"],
+		randomDoubleBattleMoves: ["fakeout","knockoff","nastyplot","dazzlinggleam","darkpulse","shadowball","willowisp","protect"],
 		requiredItem: "Sablenite"
 	},
 	mawile: {
@@ -4603,7 +4603,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	bisharp: {
-		randomBattleMoves: ["swordsdance","substitute","suckerpunch","ironhead","brickbreak","knockoff","bulletpunch","lowkick","poweruppunch","psychocut"],
+		randomBattleMoves: ["swordsdance","substitute","suckerpunch","metalshot","ironhead","nightbullet","brickbreak","knockoff","bulletpunch","lowkick","poweruppunch","psychocut"],
 		randomDoubleBattleMoves: ["swordsdance","substitute","suckerpunch","ironhead","brickbreak","knockoff","protect","bulletpunch","lowkick","poweruppunch","psychocut"],
 		tier: "OU"
 	},

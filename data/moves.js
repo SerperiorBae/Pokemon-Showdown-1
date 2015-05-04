@@ -105,6 +105,97 @@ exports.BattleMovedex = {
 		target: "any",
 		type: "Flying"
 	},
+	"typhoon": {
+		num: 649,
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		desc: "If the target lost HP, the user takes recoil damage equal to 10% the HP lost by the target, rounded half up, but not less than 1 HP. Has a 10% chance to raise the user's Attack, Defense, and Speed by 2 stages.",
+		shortDesc: "Has 10% recoil. May raise user's Atk, Def, and Spd by 2.",
+		id: "typhoon",
+		isViable: true,
+		name: "Typhoon",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		isContact: true,
+		recoil: [10, 100],
+		secondary: {
+			chance: 10,
+			self: {
+				boosts: {
+					atk: 2,
+					def: 2,
+					spe: 2
+				}
+			}
+		},
+		target: "normal",
+		type: "Wind"
+	},
+	"mistralwinds": {
+		num: 650,
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		desc: "Freezes the target.",
+		shortDesc: "Freezes the target.",
+		id: "mistralwinds",
+		isViable: true,
+		name: "Mistral Winds",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		status: 'frz',
+		affectedByImmunities: true,
+		secondary: false,
+		target: "normal",
+		type: "Wind"
+	},
+	"cyclone": {
+		num: 651,
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		desc: "Prevents the target from switching for four or five turns; seven turns if the user is holding Grip Claw. Causes damage to the target equal to 1/8 of its maximum HP (1/6 if the user is holding Binding Band), rounded down, at the end of each turn during effect. The target can still switch out if it is holding Shed Shell or uses Baton Pass, Parting Shot, U-turn, or Volt Switch. The effect ends if either the user or the target leaves the field, or if the target uses Rapid Spin or Substitute. This effect is not stackable or reset by using this or another partial-trapping move.",
+		shortDesc: "Traps and damages the target for 4-5 turns.",
+		id: "cyclone",
+		isViable: true,
+		name: "Cyclone",
+		pp: 20,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		isContact: true,
+		volatileStatus: 'partiallytrapped',
+		secondary: false,
+		target: "normal",
+		type: "Wind"
+	},
+	"windchime": {
+		num: 652,
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Every Pokemon in the user's party is cured of its major status condition. Active Pokemon with the Ability Soundproof are not cured.",
+		shortDesc: "Cures the user's party of all status conditions.",
+		id: "windchime",
+		isViable: true,
+		name: "Wind Chime",
+		pp: 5,
+		priority: 2,
+		flags: {snatch: 1, sound: 1, distance: 1, authentic: 1},
+		isSnatchable: true,
+		isSoundBased: true, // though it isn't affected by Soundproof
+		onHit: function (pokemon, source) {
+			var side = pokemon.side;
+			for (var i = 0; i < side.pokemon.length; i++) {
+				side.pokemon[i].status = '';
+			}
+			this.add('-cureteam', source, '[from] move: HealBell');
+		},
+		target: "allyTeam",
+		type: "Wind"
+	},
 	"acupressure": {
 		num: 367,
 		accuracy: true,

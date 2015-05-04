@@ -1083,12 +1083,13 @@ var commands = exports.commands = {
 		var pokemon = Tools.getTemplate(target);
 		var type1 = Tools.getType(targets[0]);
 		var type2 = Tools.getType(targets[1]);
+		var type3 = Tools.getType(targets[2]);
 
 		if (pokemon.exists) {
 			target = pokemon.species;
-		} else if (type1.exists && type2.exists && type1 !== type2) {
-			pokemon = {types: [type1.id, type2.id]};
-			target = type1.id + "/" + type2.id;
+		} else if (type1.exists && type2.exists && type3.exists && type1 !== type2) {
+			pokemon = {types: [type1.id, type2.id, type3.id]};
+			target = type1.id + "/" + type2.id + "/" + type3.id
 		} else if (type1.exists) {
 			pokemon = {types: [type1.id]};
 			target = type1.id;
@@ -1110,11 +1111,17 @@ var commands = exports.commands = {
 				case 2:
 					weaknesses.push("<b>" + type + "</b>");
 					break;
+				case 4:
+					weaknesses.push("<i>" + type + "</i>");
+					break;
 				case -1:
 					resistances.push(type);
 					break;
 				case -2:
 					resistances.push("<b>" + type + "</b>");
+					break;
+				case -4:
+					resistances.push("<i>" + type + "</i>");
 					break;
 				}
 			} else {

@@ -1959,6 +1959,10 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/STG6Ugz.jpg" />');
 		}
+		if (target === 'christian gray'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/LVzM9us.png" />');
+		}
 		if (target === 'fucked'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/trZWW6P.png" />');

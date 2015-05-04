@@ -1083,6 +1083,7 @@ var commands = exports.commands = {
 		var pokemon = Tools.getTemplate(target);
 		var type1 = Tools.getType(targets[0]);
 		var type2 = Tools.getType(targets[1]);
+		var type3 = Tools.getType(targets[2]);
 
 		if (pokemon.exists) {
 			target = pokemon.species;
@@ -1113,11 +1114,17 @@ var commands = exports.commands = {
 				case 2:
 					weaknesses.push("<b>" + type + "</b>");
 					break;
+				case 3:
+					weaknesses.push("<i>" + type + "</i>");
+					break;
 				case -1:
 					resistances.push(type);
 					break;
 				case -2:
 					resistances.push("<b>" + type + "</b>");
+					break;
+				case -3:
+					weaknesses.push("<i>" + type + "</i>");
 					break;
 				}
 			} else {

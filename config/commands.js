@@ -1955,10 +1955,6 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Y5bbFq1.jpg" />');
 		}
-		if (target === 'fuck yeah'){
-			matched = true;
-			this.sendReplyBox('<img src="http://cdn.ebaumsworld.com/mediaFiles/picture/602006/80615085.jpg" height="200" width="200" />');
-		}
 		if (target === 'mlg'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/STG6Ugz.jpg" />');
@@ -1979,18 +1975,21 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://www.scaredstiffreviews.com/wp-content/uploads/2014/11/Dont-Blink2.gif" />');
 		}
-
+		if (target === 'pretty'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/qoFSQ6A.gif" />');
+		}
+		if (target === 'what even'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/pkm4Bj3.png" />');
+		}
+		if (target === 'girl you fine'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/YD6gPo9.png" />');
+		}
 		if (target === 'umad'){
 			matched = true;
 			this.sendReplyBox('<img src="http://dailysnark.com/wp-content/uploads/2013/11/umad.gif" />');
-		}
-		if (target === 'burnheal'){
-			matched = true;
-			this.sendReplyBox('<img src="http://yoshi348.thedailypos.org/imagefest/yellow/yoshi3/poke157.png" />');
-		}
-		if (target === 'gary train'){
-			matched = true;
-			this.sendReplyBox('<img src="http://25.media.tumblr.com/79f09b46546f72a8be7643b73760aae7/tumblr_mkziy58ed71s79jjoo1_250.gif" />');
 		}
 		if (target === 'if you know what i mean'){
 			matched = true;
@@ -2008,17 +2007,9 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://diginomica.com/wp-content/uploads/2013/11/+big-fail2.jpg" height="180" width="320" />');
 		}
-		if (target === 'professor oak'){
-			matched = true;
-			this.sendReplyBox('<img src="http://fc05.deviantart.net/fs71/f/2012/092/a/b/not_sure_if___meme_8_by_therealfry1-d4urwmg.jpg" />');
-		}
 		if (target === 'hawkward'){
 			matched = true;
 			this.sendReplyBox('<img src="https://i.imgflip.com/e6cip.jpg" height="350" width="330" />');
-		}
-		if (target === 'i dont always'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/H0BPFem.jpg" height="314" width="320" />');
 		}
 		if (target === 'cool story bro'){
 			matched = true;
@@ -2032,10 +2023,6 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://www.wired.com/images_blogs/gamelife/2014/01/youdontsay.jpg" height="209" width="250" />');
 		}
-		if (target === 'cockblocked'){
-			matched = true;
-			this.sendReplyBox('<img src="http://www.quickmeme.com/img/27/27cf7456b43b14cc55bc557d678445f0048beca248d48779c902fbc1715d2753.jpg" height="300" width="300" />');
-		}
 		if (target === 'ninjask\'d'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/ST7DNnh.png" />');
@@ -2048,41 +2035,13 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://static.fjcdn.com/pictures/U_698d9e_2568950.jpg" height="216" width="199" />');
 		}
-		if (target === 'he has a point'){
-			matched = true;
-			this.sendReplyBox('<img src="http://m.memegen.com/56jc1t.jpg" height="192" width="256" />');
-		}
 		if (target === 'rekt'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/47JMugo.jpg" />');
 		}
-		if (target === 'death stare'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.kinja-img.com/gawker-media/image/upload/s--IL80Wq6b--/spnlcrxx0fwzwtszk2fm.gif" height="169" width="318" />');
-		}
-		if (target === 'what is love'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i3.kym-cdn.com/photos/images/newsfeed/000/460/314/28d.gif" height="192" width="250" />');
-		}
 		if (target === 'badass'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Ai78NEt.png" />');
-		}
-		if (target === 'onixpected'){
-			matched = true;
-			this.sendReplyBox('<img src="https://s3.amazonaws.com/colorslive/png/1016349-V7YrNOJxjNbeeSYR.png" height="200" width="300" />');
-		}
-		if (target === 'excuses'){
-			matched = true;
-			this.sendReplyBox('<img src="http://cdn.memegenerator.net/instances/400x/37768972.jpg" height="200" width="200" />');
-		}
-		if (target === 'spheal with it'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/fqijYH7.jpg" width="229" height="219" />');
-		}
-		if (target === '7.8'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/Gi0jjuf.jpg" />');
 		}
 		if (target === 'fabulous'){
 			matched = true;
@@ -2144,37 +2103,13 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/owuyFAB.png" />');
 		}
-		if (target === 'it\'s a trap'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i0.kym-cdn.com/photos/images/newsfeed/000/692/118/2db.jpg" height="169" width="250" />');
-		}
 		if (target === 'in a row'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/W5K7Ey1.png" />');
 		}
-		if (target === 'oppai'){
-                        matched = true;
-                        this.sendReplyBox('<img src="http://i.imgur.com/saW5YpF.gif" />');
-                }
-                if (target === 'ara ara'){
-                        matched = true;
-                        this.sendReplyBox('<img src="http://i.imgur.com/K5Q01kW.png" />');
-                }
-                if (target === 'reggie'){
-                        matched = true;
-                        this.sendReplyBox('<img src="http://i.imgur.com/GAmQpRW.png" />');
-                }
-                if (target === 'yandere'){
-                        matched = true;
-                        this.sendReplyBox('<img src="http://i.imgur.com/jVLJATk.jpg" width="375" height="300" />');
-                }
                 if (target === 'i made this for you'){
                         matched = true;
                         this.sendReplyBox('<img src="http://i.imgur.com/EoITea4.gifg" />');
-                }
-                if (target === 'waluigi time'){
-                        matched = true;
-                        this.sendReplyBox('<img src="http://i.imgur.com/Ijzs6bw.png" width="300" height="300" />');
                 }
                 if (target === ''){
 			}

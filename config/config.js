@@ -162,6 +162,7 @@ exports.customavatars = {
 	'srperor': 'serpt.png',
 	'bisharpette': 'PI3Qugb.gif',
 	'sablette': '77e6210990.png',
+	'zukiyo': 'zukiyo.png',
 	'philmiester': '93jm23N.png',
 	'shodaimamoru': '7wjb6cB.png',
 	'buhdeath': 'groudon-primal.png',

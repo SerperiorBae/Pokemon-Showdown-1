@@ -401,6 +401,37 @@ body {
     font-style: italic;
 }
 
+/* Broadcast Customs */
+
+.broadcast-red {
+    background:#9D26FF;
+    border:1px solid #55158A;
+    color:#CCB9DC;
+    padding:5px 1px 3px 8px;
+    font-family:helvetica,arial,sans-serif;
+    text-align:center;
+}
+
+.broadcast-green {
+    background:#3B83FF;
+    border:1px solid #234F99;
+    padding:5px 1px 3px 8px;
+    color:#C4DAFF;
+    font-family:helvetica,arial,sans-serif;
+    text-align:center;
+}
+
+.broadcast-blue {
+    background:#FF24A4;
+    border:1px solid #FF7CC8;
+    padding:5px 1px 3px 8px;
+    color:#FFCBE9;
+    font-family:helvetica,arial,sans-serif;
+    text-align:center;
+}
+
+
+
 /*LADDER*/
 
 .ladder th, .ladder th:hover {
@@ -1251,32 +1282,4 @@ small.type {
     width: 152px;
     margin-top: 2px;
     color: black ;
-}
-
-/* Broadcast Customs */
-.broadcast-red{
-background:#9D26FF;
-border:1px solid #55158A;
-color:#CCB9DC;
-padding:5px 1px 3px 8px;
-font-family:helvetica,arial,sans-serif;
-text-align:center;
-}
-
-.broadcast-green{
-background:#3B83FF;
-border:1px solid #234F99;
-padding:5px 1px 3px 8px;
-color:#C4DAFF;
-font-family:helvetica,arial,sans-serif;
-text-align:center;
-}
-
-.broadcast-blue{
-background:#FF24A4;
-border:1px solid #FF7CC8;
-padding:5px 1px 3px 8px;
-color:#FFCBE9;
-font-family:helvetica,arial,sans-serif;
-text-align:center;
 }

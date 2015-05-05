@@ -162,7 +162,7 @@ exports.customavatars = {
 	'srperor': 'serpt.png',
 	'bisharpette': 'PI3Qugb.gif',
 	'nekis13': 'hO453yM.jpg',
-	'solorbeam': '2187461890.gif',
+	'solorbeam': 'solorbeam.gif',
 	'sablette': '77e6210990.png',
 	'angryty': 'wie23mdX.png',
 	'zukiyo': 'zukiyo.png',

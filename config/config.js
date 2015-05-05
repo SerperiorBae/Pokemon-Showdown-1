@@ -163,6 +163,7 @@ exports.customavatars = {
 	'bisharpette': 'PI3Qugb.gif',
 	'sablette': '77e6210990.png',
 	'zukiyo': 'zukiyo.png',
+	'markohh': '29jDo2x.gif',
 	'philmiester': '93jm23N.png',
 	'growlly': 'growlly.png',
 	'shodaimamoru': '7wjb6cB.png',

@@ -1135,7 +1135,7 @@ var commands = exports.commands = {
 
 		if (!this.canTalk()) return;
 
-		this.add('|raw|<div class="broadcast-blue">' + '</div>');
+		this.add('|raw|<div class="broadcast-blue">' + target + '</div>');
 		this.logModCommand(user.name + " declared " + target);
 },
 
@@ -1146,7 +1146,7 @@ var commands = exports.commands = {
 
 		if (!this.canTalk()) return;
 
-		this.add('|raw|<div class="broadcast-red"><b>' + '</div>');
+		this.add('|raw|<div class="broadcast-red"><b>' + target + '</div>');
 		this.logModCommand(user.name + " declared " + target);
 },
 
@@ -1157,7 +1157,7 @@ var commands = exports.commands = {
 
 		if (!this.canTalk()) return;
 
-		this.add('|raw|<div class="broadcast-green"><b>' + '</div>');
+		this.add('|raw|<div class="broadcast-green"><b>' + target + '</div>');
 		this.logModCommand(user.name + " declared " + target);
 },
 

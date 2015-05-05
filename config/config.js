@@ -161,6 +161,8 @@ exports.customavatars = {
 	'sempiternus': '6GPEX9Vt.jpeg',
 	'srperor': 'serpt.png',
 	'bisharpette': 'PI3Qugb.gif',
+	'nekis13': '20dk2Ldm.jpg',
+	'solorbeam': 'tw32lxD.gif',
 	'sablette': '77e6210990.png',
 	'zukiyo': 'zukiyo.png',
 	'markohh': '29jDo2x.gif',

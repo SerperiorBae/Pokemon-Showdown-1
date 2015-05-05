@@ -159,7 +159,7 @@ exports.herokuhack = false;
 exports.customavatars = {
 	//'userid': 'customavatar.png'
 	'sempiternus': '6GPEX9Vt.jpeg',
-	'srperor': 'output_mehA6E.gif',
+	'srperor': 'Hbs19P5.gif',
 	'bisharpette': 'PI3Qugb.gif',
 	'nekis13': 'hO453yM.jpg',
 	'solorbeam': 'solorbeam.gif',

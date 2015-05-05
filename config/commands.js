@@ -548,7 +548,7 @@ var commands = exports.commands = {
 			switch (search) {
 				case 'types':
 					for (var mon in dex) {
-						if (Object.count(searches[search], true) === 2) {
+						if (Object.count(searches[search], true) === 3) {
 							if (!(searches[search][dex[mon].types[0]]) || !(searches[search][dex[mon].types[1]])) delete dex[mon];
 						} else {
 							if (searches[search][dex[mon].types[0]] === false || searches[search][dex[mon].types[1]] === false || (Object.count(searches[search], true) > 0 &&
@@ -653,7 +653,7 @@ var commands = exports.commands = {
 				resultsStr = results.slice(0, 10).join(", ") + ", and " + string(results.length - output) + " more. Redo the search with 'all' as a search parameter to show all results.";
 			}
 		} else {
-			resultsStr = "No PokÃƒÂ©mon found.";
+			resultsStr = "No Pokémon found.";
 		}
 		return this.sendReplyBox(resultsStr);
 	},

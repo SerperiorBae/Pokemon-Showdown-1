@@ -1,39 +1,29 @@
 /*
-
 Ratings and how they work:
-
 -2: Extremely detrimental
 	  The sort of ability that relegates Pokemon with Uber-level BSTs into NU.
 	ex. Slow Start, Truant
-
 -1: Detrimental
 	  An ability that does more harm than good.
 	ex. Defeatist, Normalize
-
  0: Useless
 	  An ability with no net effect during a singles battle.
 	ex. Healer, Illuminate
-
  1: Ineffective
 	  An ability that has a minimal effect. Should not be chosen over any other ability.
 	ex. Damp, Shell Armor
-
  2: Situationally useful
 	  An ability that can be useful in certain situations.
 	ex. Blaze, Insomnia
-
  3: Useful
 	  An ability that is generally useful.
 	ex. Infiltrator, Sturdy
-
  4: Very useful
 	  One of the most popular abilities. The difference between 3 and 4 can be ambiguous.
 	ex. Protean, Regenerator
-
  5: Essential
 	  The sort of ability that defines metagames.
 	ex. Desolate Land, Shadow Tag
-
 */
 
 exports.BattleAbilities = {
@@ -88,9 +78,6 @@ exports.BattleAbilities = {
 		shortDesc: "While this Pokemon is active, the effects of weather conditions are disabled.",
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Air Lock');
-		},
-		onAnyModifyPokemon: function (pokemon) {
-			pokemon.ignore['WeatherTarget'] = true;
 		},
 		onAnyTryWeather: false,
 		id: "airlock",
@@ -326,9 +313,6 @@ exports.BattleAbilities = {
 		onStart: function (pokemon) {
 			this.add('-ability', pokemon, 'Cloud Nine');
 		},
-		onAnyModifyPokemon: function (pokemon) {
-			pokemon.ignore['WeatherTarget'] = true;
-		},
 		onAnyTryWeather: false,
 		id: "cloudnine",
 		name: "Cloud Nine",
@@ -517,6 +501,9 @@ exports.BattleAbilities = {
 		onStart: function (source) {
 			this.setWeather('deltastream');
 		},
+		onAnySetWeather: function (target, source, weather) {
+			if (this.getWeather().id === 'deltastream' && !(weather.id in {desolateland:1, primordialsea:1, deltastream:1})) return false;
+		},
 		onEnd: function (pokemon) {
 			if (this.weatherData.source !== pokemon) return;
 			for (var i = 0; i < this.sides.length; i++) {
@@ -541,6 +528,9 @@ exports.BattleAbilities = {
 		shortDesc: "On switch-in, extremely harsh sunlight begins until this Ability is not active in battle.",
 		onStart: function (source) {
 			this.setWeather('desolateland');
+		},
+		onAnySetWeather: function (target, source, weather) {
+			if (this.getWeather().id === 'desolateland' && !(weather.id in {desolateland:1, primordialsea:1, deltastream:1})) return false;
 		},
 		onEnd: function (pokemon) {
 			if (this.weatherData.source !== pokemon) return;
@@ -682,7 +672,7 @@ exports.BattleAbilities = {
 	"filter": {
 		shortDesc: "This Pokemon receives 3/4 damage from supereffective attacks.",
 		onSourceModifyDamage: function (damage, source, target, move) {
-			if (target.runEffectiveness(move) > 0) {
+			if (move.typeMod > 0) {
 				this.debug('Filter neutralize');
 				return this.chainModify(0.75);
 			}
@@ -770,15 +760,15 @@ exports.BattleAbilities = {
 			delete this.effectData.forme;
 		},
 		onUpdate: function (pokemon) {
-			if (!pokemon.isActive || pokemon.speciesid !== 'cherrim') return;
+			if (!pokemon.isActive || pokemon.baseTemplate.speciesid !== 'cherrim') return;
 			if (this.isWeather(['sunnyday', 'desolateland'])) {
-				if (this.effectData.forme !== 'Sunshine') {
-					this.effectData.forme = 'Sunshine';
+				if (pokemon.template.speciesid !== 'cherrimsunshine') {
+					pokemon.formeChange('Cherrim-Sunshine');
 					this.add('-formechange', pokemon, 'Cherrim-Sunshine', '[msg]');
 				}
 			} else {
-				if (this.effectData.forme) {
-					delete this.effectData.forme;
+				if (pokemon.template.speciesid === 'cherrimsunshine') {
+					pokemon.formeChange('Cherrim');
 					this.add('-formechange', pokemon, 'Cherrim', '[msg]');
 				}
 			}
@@ -1994,6 +1984,9 @@ exports.BattleAbilities = {
 		onStart: function (source) {
 			this.setWeather('primordialsea');
 		},
+		onAnySetWeather: function (target, source, weather) {
+			if (this.getWeather().id === 'primordialsea' && !(weather.id in {desolateland:1, primordialsea:1, deltastream:1})) return false;
+		},
 		onEnd: function (pokemon) {
 			if (this.weatherData.source !== pokemon) return;
 			for (var i = 0; i < this.sides.length; i++) {
@@ -2148,9 +2141,7 @@ exports.BattleAbilities = {
 	"rockhead": {
 		desc: "This Pokemon does not take recoil damage besides Struggle, Life Orb, and crash damage.",
 		shortDesc: "This Pokemon does not take recoil damage besides Struggle/Life Orb/crash damage.",
-		onModifyMove: function (move) {
-			delete move.recoil;
-		},
+		// Implemented in scripts.js
 		id: "rockhead",
 		name: "Rock Head",
 		rating: 3,
@@ -2253,8 +2244,7 @@ exports.BattleAbilities = {
 			}
 		},
 		onAllyTryHitSide: function (target, source, move) {
-			if (target.side !== source.side) return;
-
+			if (target === this.effectData.target || target.side !== source.side) return;
 			if (move.type === 'Grass') {
 				this.boost({atk:1}, this.effectData.target);
 			}
@@ -2268,8 +2258,10 @@ exports.BattleAbilities = {
 		shortDesc: "This Pokemon can hit Ghost types with Normal- and Fighting-type moves.",
 		onModifyMovePriority: -5,
 		onModifyMove: function (move) {
-			if (move.type in {'Fighting':1, 'Normal':1}) {
-				move.affectedByImmunities = false;
+			if (!move.ignoreImmunity) move.ignoreImmunity = {};
+			if (move.ignoreImmunity !== true) {
+				move.ignoreImmunity['Fighting'] = true;
+				move.ignoreImmunity['Normal'] = true;
 			}
 		},
 		id: "scrappy",
@@ -2334,7 +2326,7 @@ exports.BattleAbilities = {
 		onModifyMove: function (move, pokemon) {
 			if (move.secondaries) {
 				delete move.secondaries;
-				move.negateSecondary = true;
+				// Actual negation of `AfterMoveSecondary` effects implemented in scripts.js
 				pokemon.addVolatile('sheerforce');
 			}
 		},
@@ -2486,7 +2478,7 @@ exports.BattleAbilities = {
 	"solidrock": {
 		shortDesc: "This Pokemon receives 3/4 damage from supereffective attacks.",
 		onSourceModifyDamage: function (damage, source, target, move) {
-			if (target.runEffectiveness(move) > 0) {
+			if (move.typeMod > 0) {
 				this.debug('Solid Rock neutralize');
 				return this.chainModify(0.75);
 			}
@@ -2598,7 +2590,10 @@ exports.BattleAbilities = {
 	"stickyhold": {
 		shortDesc: "This Pokemon cannot lose its held item due to another Pokemon's attack.",
 		onTakeItem: function (item, pokemon, source) {
-			if (source && source !== pokemon) return false;
+			if (source && source !== pokemon) {
+				this.add('-activate', pokemon, 'ability: Sticky Hold');
+				return false;
+			}
 		},
 		id: "stickyhold",
 		name: "Sticky Hold",
@@ -2646,12 +2641,14 @@ exports.BattleAbilities = {
 	"sturdy": {
 		desc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. OHKO moves fail when used against this Pokemon.",
 		shortDesc: "If this Pokemon is at full HP, it survives one hit with at least 1 HP. Immune to OHKO.",
+		onTryHit: function (pokemon, target, move) {
+			if (move.ohko) {
+				this.add('-immune', pokemon, '[msg]');
+				return null;
+			}
+		},
 		onDamagePriority: -100,
 		onDamage: function (damage, target, source, effect) {
-			if (effect && effect.ohko) {
-				this.add('-activate', target, 'Sturdy');
-				return 0;
-			}
 			if (target.hp === target.maxhp && damage >= target.hp && effect && effect.effectType === 'Move') {
 				this.add('-activate', target, 'Sturdy');
 				return target.hp - 1;
@@ -2860,7 +2857,7 @@ exports.BattleAbilities = {
 	"tintedlens": {
 		shortDesc: "This Pokemon's attacks that are not very effective on a target deal double damage.",
 		onModifyDamage: function (damage, source, target, move) {
-			if (target.runEffectiveness(move) < 0) {
+			if (move.typeMod < 0) {
 				this.debug('Tinted Lens boost');
 				return this.chainModify(2);
 			}
@@ -3153,7 +3150,7 @@ exports.BattleAbilities = {
 		onTryHit: function (target, source, move) {
 			if (target === source || move.category === 'Status' || move.type === '???' || move.id === 'struggle' || move.isFutureMove) return;
 			this.debug('Wonder Guard immunity: ' + move.id);
-			if (target.runEffectiveness(move) <= 0) {
+			if ((target.negateImmunity[move.type] === 'IgnoreEffectiveness' && !this.getImmunity(move.type, target)) || target.runEffectiveness(move) <= 0) {
 				this.add('-activate', target, 'ability: Wonder Guard');
 				return null;
 			}

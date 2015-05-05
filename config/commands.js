@@ -1941,7 +1941,6 @@ var commands = exports.commands = {
 		/*********************************************************
 	 * Kakuja commands
 	 *********************************************************/
-
 	memes: 'meme',
 	meme: function(target, room, user) {
 		if (!this.canBroadcast()) return;
@@ -1954,6 +1953,18 @@ var commands = exports.commands = {
 		if (target === 'salt'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Y5bbFq1.jpg" />');
+		}
+		if (target === 'arsenal'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/BsdMZRr.png" />');
+		}
+		if (target === 'smashing'){
+			matched = true;
+			this.sendReplyBox('<img src="http://www.quickmeme.com/img/e2/e22f342d9628ce4bda4a7ca60a1ebda510e0c0608b173650ab254d6507d16326.jpg" />');
+		}
+		if (target === 'patrickstump'){
+			matched = true;
+			this.sendReplyBox('<img src="http://onmilwaukee.com//images/articles/pa/patrickstump/patrickstump_fullsize_story1.jpg" />');
 		}
 		if (target === 'mlg'){
 			matched = true;

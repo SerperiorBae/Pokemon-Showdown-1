@@ -167,6 +167,7 @@ exports.customavatars = {
 	'angryty': 'wie23mdX.png',
 	'zukiyo': 'zukiyo.png',
 	'ransei': '4pQgZsM.png',
+	'annabelleritsun': '1lfneRS.png',
 	'markohh': '29jDo2x.gif',
 	'philmiester': '93jm23N.png',
 	'growlly': 'growlly.png',

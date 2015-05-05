@@ -678,23 +678,23 @@ exports.Formats = [
 	{
 		name: "Kakuja Ubers",
 		section: "Kakuja Tiers",
-		mod: 'kakuja',
+		mod: 'kakujatiers',
 
-		ruleset: ['Pokemon', 'Standard Ubers', 'Swagger Clause', 'Team Preview', 'Mega Rayquaza Ban Mod',],
+		ruleset: ['Pokemon', 'Standard Ubers', 'Swagger Clause', 'Team Preview', 'Mega Rayquaza Ban Mod'],
 		banlist: ['Blue Orb', 'Red Orb']
 	},
 	{
 		name: "Kakuja OU",
 		section: "Kakuja Tiers",
-		mod: 'kakuja',
+		mod: 'kakujatiers',
 
-		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Kakuja Baton Pass Clause'],
+		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		banlist: ['Uber', 'Soul Dew', 'Blazikenite', 'Gengarite', 'Kangaskhanite', 'Mewtwonite X',  'Mewtwonite Y', 'Salamencite', 'Darkrai + Dark Void', 'Blaziken + Baton Pass']
 	},
 	{
 		name: "Kakuja MU",
 		section: "Kakuja Tiers",
-		mod: 'kakuja',
+		mod: 'kakujatiers',
 
 		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		banlist: ['OU', 'Charizardite X', 'Galladite', 'Latiosite', 'Lucarionite', 'Mawilite', 'Metagrossite', 'Sablenite', 'Slowbronite']
@@ -702,34 +702,34 @@ exports.Formats = [
 	{
 		name: "Kakuja UU",
 		section: "Kakuja Tiers",
-		mod: 'kakuja',
+		mod: 'kakujatiers',
 
-		ruleset: ['Kakuja MU'],
-		banlist: ['MU','Drizzle', 'Drought', 'Shadow Tag', 'Alakazite', 'Altarianite', 'Charizardite Y', 'Diancite', 'Garchompite', 'Gardevoirite', 'Gyaradosite', 'Heracronite', 'Latiasite', 'Lopunnite', 'Medichamite', 'Pinsirite', 'Scizorite', 'Tyranitarite', 'Venusaurite']
+		ruleset: ['OU'],
+		banlist: ['UU', 'BL', 'Drizzle', 'Drought', 'Shadow Tag', 'Alakazite', 'Altarianite', 'Charizardite Y', 'Diancite', 'Garchompite', 'Gardevoirite', 'Gyaradosite', 'Heracronite', 'Latiasite', 'Lopunnite', 'Medichamite', 'Pinsirite', 'Scizorite', 'Tyranitarite', 'Venusaurite']
 	},
 	{
 		name: "Kakuja RU",
 		section: "Kakuja Tiers",
-		mod: 'kakuja',
+		mod: 'kakujatiers',
 
-		ruleset: ['Kakuja UU'],
+		ruleset: ['UU'],
 		banlist: ['UU', 'Absolite', 'Aerodactylite', 'Aggronite', 'Ampharosite', 'Beedrillite', 'Blastoisinite', 'Houndoominite', 'Manectite', 'Pidgeotite', 'Sceptilite', 'Sharpedonite', 'Swampertite']
 	},
 	{
 		name: "Kakuja BU",
 		section: "Kakuja Tiers",
-		mod: 'kakuja',
+		mod: 'kakujatiers',
 
-		ruleset: ['Kakuja RU'],
+		ruleset: ['RU'],
 		banlist: ['RU', 'Abomasite', 'Banettite', 'Glalitite', 'Steelixite']
 	},	
 	{
 		name: "Kakuja NU",
 		section: "Kakuja Tiers",
-		mod: 'kakuja',
+		mod: 'kakujatiers',
 
-		ruleset: ['Kakuja BU'],
-		banlist: ['BU', 'Audinite', 'Cameruptite']
+		ruleset: ['RU'],
+		banlist: ['UU', 'BL3', 'Audinite', 'Cameruptite']
 	},	
 	
 	// BW2 Singles

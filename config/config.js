@@ -164,6 +164,7 @@ exports.customavatars = {
 	'sablette': '77e6210990.png',
 	'zukiyo': 'zukiyo.png',
 	'philmiester': '93jm23N.png',
+	'growlly': 'growlly.png',
 	'shodaimamoru': '7wjb6cB.png',
 	'buhdeath': 'groudon-primal.png',
 	'hayleysworld': 'Hayley.png',

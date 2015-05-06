@@ -167,6 +167,8 @@ exports.customavatars = {
 	'zenji': 'xenB6yH.png',
 	'holiano': 'sl3M2ms.gif',
 	'skyrio': 'h8dRP1T.png',
+	'basedlordsoldier': 'JkN7tDh.png',
+	'moulefrites': 'Stromae-80x80.jpg',
 	'sablette': '77e6210990.png',
 	'angryty': 'wie23mdX.png',
 	'zukiyo': 'zukiyo.png',
@@ -178,6 +180,7 @@ exports.customavatars = {
 	'shodaimamoru': '7wjb6cB.png',
 	'buhdeath': 'groudon-primal.png',
 	'hayleysworld': 'Hayley.png',
+	'vileman': 'ezgif-3170600019.gif',
 	'fawnie': 'duQYVTf.png'
 };
 

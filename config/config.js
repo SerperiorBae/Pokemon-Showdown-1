@@ -163,6 +163,7 @@ exports.customavatars = {
 	'bisharpette': 'PI3Qugb.gif',
 	'nekis13': 'hO453yM.jpg',
 	'solorbeam': 'solorbeam.gif',
+	'blazingdark': 'crmxKWO.png',
 	'intellmitsue': 'RjByk3a.png',
 	'zenji': 'xenB6yH.png',
 	'holiano': 'sl3M2ms.gif',

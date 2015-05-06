@@ -2447,7 +2447,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	sableye: {
-		randomBattleMoves: ["recover","willowisp","batonpass","confuseray","destinybond","clearsmog","bulletpunch",taunt","toxic","knockoff","foulplay"],
+		randomBattleMoves: ["recover","willowisp","batonpass","confuseray","destinybond","clearsmog","bulletpunch","taunt","toxic","knockoff","foulplay"],
 		randomDoubleBattleMoves: ["recover","willowisp","taunt","fakeout","knockoff","foulplay","helpinghand","snarl","protect"],
 		eventPokemon: [
 			{"generation":3,"level":10,"gender":"M","abilities":["keeneye"],"moves":["leer","scratch","foresight","nightshade"]},

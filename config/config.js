@@ -171,6 +171,8 @@ exports.customavatars = {
 	'basedlordsoldier': 'JkN7tDh.png',
 	'moulefrites': 'Stromae-80x80.jpg',
 	'sablette': '77e6210990.png',
+	'toto013': 'Toto_image_player_432_324.jpg',
+	'wonderknight': 'Legend_of_Zelda_Sprites_by_TimeSorceror copy.png',
 	'angryty': 'wie23mdX.png',
 	'situm': 'bIawfyv.png',
 	'zukiyo': 'zukiyo.png',

@@ -689,7 +689,7 @@ exports.Formats = [
 		mod: 'kakujatiers',
 
 		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		banlist: ['Uber', 'Soul Dew', 'Blazikenite', 'Gengarite', 'Kangaskhanite', 'Mewtwonite X',  'Mewtwonite Y', 'Salamencite', 'Darkrai + Dark Void', 'Blaziken + Baton Pass']
+		banlist: ['Uber', 'Soul Dew', 'Blazikenite', 'Gengarite', 'Kangaskhanite', 'Mewtwonite X',  'Mewtwonite Y', 'Salamencite', 'Darkrai + Dark Void', 'Blaziken + Baton Pass', 'Darkrai + Hypnosis', 'Blaziken + Speed Boost', 'Sylveon + Geomancy']
 	},
 	{
 		name: "Kakuja MU",

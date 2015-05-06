@@ -522,7 +522,7 @@ var commands = exports.commands = {
 				target = target.charAt(0).toUpperCase() + target.slice(1, target.indexOf(' type'));
 				if (target in Tools.data.TypeChart) {
 					if (!searches['types']) searches['types'] = {};
-					if (Object.count(searches['types'], true) === 3 && !isNotSearch) return this.sendReplyBox("Specify a maximum of three types.");
+					if (Object.count(searches['types'], true) === 4 && !isNotSearch) return this.sendReplyBox("Specify a maximum of four types.");
 					if ((searches['types'][target] && isNotSearch) || (searches['types'][target] === false && !isNotSearch)) return this.sendReplyBox("A search cannot both exclude and include a type.");
 					searches['types'][target] = !isNotSearch;
 					continue;

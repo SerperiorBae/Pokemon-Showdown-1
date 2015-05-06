@@ -164,6 +164,7 @@ exports.customavatars = {
 	'nekis13': 'hO453yM.jpg',
 	'solorbeam': 'solorbeam.gif',
 	'intellmitsue': 'RjByk3a.png',
+	'zenji': 'xenB6yH.png',
 	'sablette': '77e6210990.png',
 	'angryty': 'wie23mdX.png',
 	'zukiyo': 'zukiyo.png',

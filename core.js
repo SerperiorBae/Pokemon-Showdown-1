@@ -41,7 +41,14 @@ emoticons: {
         'badaSS': 'http://i.imgur.com/6Evl1pL.jpg',
         'cHild': 'http://i.imgur.com/irQ3x6G.png',
         'feelspink': 'http://i.imgur.com/RhMeAme.gif',
-        'Kreygasm': 'http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-3a624954918104fe-19x27.png'
+        'Kreygasm': 'http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-3a624954918104fe-19x27.png',
+        'Doge': 'http://a.deviantart.net/avatars/d/o/dogeoffical.gif',
+        'KappaSpin': 'https://fungustime.pw/tastyplug/emotes/gifs/34.gif',
+        'ZZzz': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-015.gif',
+        'Stare': 'http://i.imgur.com/kixjIOR.gif',
+        'LooL': 'http://puu.sh/hDSDm/9e75df80e5.gif',
+        'Crie': 'http://i.imgur.com/DHWjlPA.png',
+        'juhBlaze': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-001.gif'
    },
 
     processEmoticons: function (text) {

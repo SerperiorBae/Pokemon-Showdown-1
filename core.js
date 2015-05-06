@@ -46,9 +46,10 @@ emoticons: {
         'KappaSpin': 'https://fungustime.pw/tastyplug/emotes/gifs/34.gif',
         'ZZzz': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-015.gif',
         'Stare': 'http://i.imgur.com/kixjIOR.gif',
-        'LooL': 'http://puu.sh/hDSDm/9e75df80e5.gif',
+        'LooL': 'http://i.imgur.com/p4HgXIp.gif',
         'Crie': 'http://i.imgur.com/DHWjlPA.png',
-        'juhBlaze': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-001.gif'
+        'juhBlaze': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-001.gif',
+        'baLLs': 'http://i.imgur.com/uOZkuAU.gif'
    },
 
     processEmoticons: function (text) {

@@ -1398,6 +1398,7 @@ exports.BattleFormatsData = {
 			{"generation":3,"level":70,"moves":["agility","mindreader","icebeam","reflect"]},
 			{"generation":3,"level":50,"moves":["icebeam","healbell","extrasensory","haze"]}
 		],
+		unreleasedHidden: true,
 		tier: "PU"
 	},
 	zapdos: {
@@ -1407,7 +1408,8 @@ exports.BattleFormatsData = {
 			{"generation":3,"level":70,"moves":["agility","detect","drillpeck","charge"]},
 			{"generation":3,"level":50,"moves":["thunderbolt","extrasensory","batonpass","metalsound"]}
 		],
-		tier: "Uber"
+		unreleasedHidden: true,
+		tier: "OU"
 	},
 	moltres: {
 		randomBattleMoves: ["fireblast","hiddenpowergrass","roost","substitute","toxic","willowisp","hurricane"],
@@ -1416,6 +1418,7 @@ exports.BattleFormatsData = {
 			{"generation":3,"level":70,"moves":["agility","endure","flamethrower","safeguard"]},
 			{"generation":3,"level":50,"moves":["extrasensory","morningsun","willowisp","flamethrower"]}
 		],
+		unreleasedHidden: true,
 		tier: "BL2"
 	},
 	dratini: {
@@ -2140,13 +2143,11 @@ exports.BattleFormatsData = {
 			{"generation":3,"level":70,"moves":["blazekick","slash","mirrormove","skyuppercut"]},
 			{"generation":5,"level":50,"isHidden":false,"moves":["flareblitz","highjumpkick","thunderpunch","stoneedge"],"pokeball":"cherishball"}
 		],
-		tier: "OU"
+		tier: "Uber"
 	},
 	blazikenmega: {
 		randomBattleMoves: ["flareblitz","highjumpkick","protect","swordsdance","substitute","batonpass","stoneedge","knockoff"],
 		requiredItem: "Blazikenite"
-		],
-		tier: "Uber"
 	},
 	mudkip: {
 		randomBattleMoves: ["hydropump","earthpower","hiddenpowerelectric","icebeam","sludgewave"],
@@ -2724,8 +2725,6 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["dragondance","return","hypervoice","healbell","earthquake","roost","dracometeor","fireblast"],
 		randomDoubleBattleMoves: ["dragondance","return","doubleedge","dragonclaw","earthquake","protect","fireblast"],
 		requiredItem: "Altarianite"
-		],
-		tier: "Uber"
 	},
 	zangoose: {
 		randomBattleMoves: ["swordsdance","closecombat","knockoff","quickattack","facade"],
@@ -3060,10 +3059,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["meteormash","earthquake","agility","zenheadbutt","hammerarm","icepunch"],
 		randomDoubleBattleMoves: ["meteormash","earthquake","protect","zenheadbutt","thunderpunch","icepunch"],
 		requiredItem: "Metagrossite"
-		],
-		tier: "Uber"
 	},
-	
 	regirock: {
 		randomBattleMoves: ["stealthrock","thunderwave","stoneedge","drainpunch","curse","rest","rockslide","toxic"],
 		randomDoubleBattleMoves: ["stealthrock","thunderwave","stoneedge","drainpunch","curse","rockslide","protect"],
@@ -3823,8 +3819,6 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["swordsdance","xscissor","stoneedge","recover","earthquake","ironhead"],
 		randomDoubleBattleMoves: ["swordsdance","xscissor","stoneedge","recover","earthquake","ironhead","protect"],
 		requiredItem: "Insect Plate"
-		],
-		tier: "OU"
 	},
 	arceusdark: {
 		randomBattleMoves: ["calmmind","judgment","recover","fireblast","thunderbolt"],
@@ -3886,8 +3880,6 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["calmmind","sludgebomb","fireblast","recover","willowisp","defog","thunderwave"],
 		randomDoubleBattleMoves: ["calmmind","judgment","sludgebomb","heatwave","recover","willowisp","protect","earthpower"],
 		requiredItem: "Toxic Plate"
-		],
-		tier: "OU"
 	},
 	arceuspsychic: {
 		randomBattleMoves: ["judgment","calmmind","focusblast","recover","defog","thunderbolt","willowisp"],
@@ -4922,7 +4914,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["sleeppowder","quiverdance","hurricane","bugbuzz","substitute"],
 		randomDoubleBattleMoves: ["sleeppowder","quiverdance","hurricane","bugbuzz","roost","protect"],
 		eventPokemon: [
-			// Poké Ball pattern
+			// PokÃ© Ball pattern
 			{"generation":6,"level":12,"gender":"M","isHidden":false,"moves":["stunspore","gust","lightscreen","strugglebug"],"pokeball":"cherishball"},
 			// Fancy pattern
 			{"generation":6,"level":12,"isHidden":false,"moves":["gust","lightscreen","strugglebug","holdhands"],"pokeball":"cherishball"}

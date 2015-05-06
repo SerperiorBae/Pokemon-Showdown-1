@@ -1974,6 +1974,14 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Xfy2q87.png" />');
 		}
+		if (target === 'without jews'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/4KqihVF.png" />');
+		}
+		if (target === 'nipples'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/p1pKlws.png" />');
+		}
 		if (target === 'spider'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/UEQGyCi.jpg" />');

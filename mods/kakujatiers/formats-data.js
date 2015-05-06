@@ -1409,7 +1409,7 @@ exports.BattleFormatsData = {
 			{"generation":3,"level":50,"moves":["thunderbolt","extrasensory","batonpass","metalsound"]}
 		],
 		unreleasedHidden: true,
-		tier: "OU"
+		tier: "Uber"
 	},
 	moltres: {
 		randomBattleMoves: ["fireblast","hiddenpowergrass","roost","substitute","toxic","willowisp","hurricane"],
@@ -2725,6 +2725,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["dragondance","return","hypervoice","healbell","earthquake","roost","dracometeor","fireblast"],
 		randomDoubleBattleMoves: ["dragondance","return","doubleedge","dragonclaw","earthquake","protect","fireblast"],
 		requiredItem: "Altarianite"
+		tier: "Uber"
 	},
 	zangoose: {
 		randomBattleMoves: ["swordsdance","closecombat","knockoff","quickattack","facade"],
@@ -3059,6 +3060,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["meteormash","earthquake","agility","zenheadbutt","hammerarm","icepunch"],
 		randomDoubleBattleMoves: ["meteormash","earthquake","protect","zenheadbutt","thunderpunch","icepunch"],
 		requiredItem: "Metagrossite"
+		tier: "Uber"
 	},
 	regirock: {
 		randomBattleMoves: ["stealthrock","thunderwave","stoneedge","drainpunch","curse","rest","rockslide","toxic"],
@@ -4900,7 +4902,7 @@ exports.BattleFormatsData = {
 	talonflame: {
 		randomBattleMoves: ["bravebird","flareblitz","roost","swordsdance","uturn","willowisp","tailwind"],
 		randomDoubleBattleMoves: ["bravebird","flareblitz","roost","swordsdance","uturn","willowisp","tailwind","taunt","protect"],
-		tier: "OU"
+		tier: "Uber"
 	},
 	scatterbug: {
 		randomBattleMoves: ["tackle","stringshot","stunspore","bugbite","poisonpowder"],

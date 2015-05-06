@@ -1990,6 +1990,10 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/LVzM9us.png" />');
 		}
+		if (target === 'dj not nice'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/fjl9XW7.png" />');
+		}
 		if (target === 'fucked'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/trZWW6P.png" />');

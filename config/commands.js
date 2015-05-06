@@ -2177,6 +2177,7 @@ var commands = exports.commands = {
        gaming: 'away',
        sleep: 'away',
        work: 'away',
+       smashing: 'away',
        working: 'away',
        sleeping: 'away',
        skype: 'away',
@@ -2199,6 +2200,10 @@ break;
 case 'sleep':
 t = 'Ⓢⓛⓔⓔⓟⓘⓝⓖ';
 t2 = 'Sleeping';
+break;
+case 'smashing':
+t = 'Ⓢⓜⓐⓢⓗⓘⓝⓖ';
+t2 = 'Smashing';
 break;
 case 'gaming':
 t = 'Ⓖⓐⓜⓘⓝⓖ';

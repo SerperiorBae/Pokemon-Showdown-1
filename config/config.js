@@ -172,6 +172,7 @@ exports.customavatars = {
 	'moulefrites': 'Stromae-80x80.jpg',
 	'sablette': '77e6210990.png',
 	'angryty': 'wie23mdX.png',
+	'situm': 'bIawfyv.png',
 	'zukiyo': 'zukiyo.png',
 	'ransei': '4pQgZsM.png',
 	'annabelleritsun': '1lfneRS.png',

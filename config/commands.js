@@ -1966,11 +1966,7 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/H9JJP25.jpg" />');
 		}
-		if (target === 'well that escalated quickly'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/27OWcbj.jpg" />');
-		}
-		if (target === 'well that escalated quickly'){
+		if (target === 'that escalated quickly'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/27OWcbj.jpg" />');
 		}

@@ -220,7 +220,7 @@ exports.BattleFormatsData = {
 		tier: "Illegal"
 	},
 	pikachu: {
-		randomBattleMoves: ["thunderbolt","volttackle","voltswitch","grassknot","hiddenpowerice","brickbreak","extremespeed","encore","substitute","knockoff"],
+		randomBattleMoves: ["thunderbolt","volttackle","stormrush","voltswitch","grassknot","hiddenpowerice","brickbreak","extremespeed","encore","substitute","knockoff"],
 		randomDoubleBattleMoves: ["fakeout","thunderbolt","volttackle","voltswitch","grassknot","hiddenpowerice","brickbreak","extremespeed","encore","substitute","knockoff","protect","discharge"],
 		eventPokemon: [
 			{"generation":3,"level":50,"moves":["thunderbolt","agility","thunder","lightscreen"]},
@@ -304,7 +304,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	raichu: {
-		randomBattleMoves: ["nastyplot","encore","thunderbolt","grassknot","hiddenpowerice","focusblast","voltswitch"],
+		randomBattleMoves: ["nastyplot","encore","stormrush","thunderbolt","grassknot","hiddenpowerice","focusblast","voltswitch"],
 		randomDoubleBattleMoves: ["fakeout","encore","thunderbolt","grassknot","hiddenpowerice","focusblast","substitute","extremespeed","knockoff","protect"],
 		tier: "PU"
 	},

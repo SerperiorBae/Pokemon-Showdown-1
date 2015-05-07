@@ -1970,6 +1970,10 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/27OWcbj.jpg" />');
 		}
+		if (target === 'lady gogo'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/YT444tK.png" />');
+		}
 		if (target === 'boyfriend of the year'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Xfy2q87.png" />');

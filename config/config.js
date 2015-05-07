@@ -169,6 +169,7 @@ exports.customavatars = {
 	'zenji': 'xenB6yH.png',
 	'holiano': 'sl3M2ms.gif',
 	'skyrio': 'h8dRP1T.png',
+	'seveneight': 'sableye-mega.gif',
 	'basedlordsoldier': 'JkN7tDh.png',
 	'cll': 'JFTowoR.png',
 	'mindnight': '79332.jpg.m.gif',

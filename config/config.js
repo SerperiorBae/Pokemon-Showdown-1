@@ -182,7 +182,7 @@ exports.customavatars = {
 	'zukiyo': 'zukiyo.png',
 	'ransei': '4pQgZsM.png',
 	'annabelleritsun': 'yjwUHFu.png',
-	'markohh': '29jDo2x.gif',
+	'markohh': 'tumblr_lxxicwMXk41qe1muco1_500.jpg',
 	'philmiester': '93jm23N.png',
 	'growlly': 'growlly.png',
 	'shodaimamoru': '7wjb6cB.png',

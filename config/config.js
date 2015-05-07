@@ -174,7 +174,7 @@ exports.customavatars = {
 	'cll': 'JFTowoR.png',
 	'mindnight': '79332.jpg.m.gif',
 	'zzrime': '1430942873-avatar-for-kakuja.gif',
-	'moulefrites': 'Stromae-80x80.jpg',
+	'moulefrites': 'swampert-mega.png',
 	'sablette': '77e6210990.png',
 	'toto013': 'Toto_image_player_432_324.jpg',
 	'wonderknight': 'Legend_of_Zelda_Sprites_by_TimeSorceror copy.png',

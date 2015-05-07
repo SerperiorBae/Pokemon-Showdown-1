@@ -2003,6 +2003,10 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/fjl9XW7.png" />');
 		}
+		if (target === 'deez nuts'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/nYD6ctb.gif" />');
+		}
 		if (target === 'fucked'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/trZWW6P.png" />');

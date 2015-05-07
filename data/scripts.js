@@ -3083,5 +3083,65 @@ exports.BattleScripts = {
 			baseFormes[template.baseSpecies] = 1;
 		}
 		return pokemon;
+	},
+randomSeasonalStaffTeam: function (side) {
+		var team = [];
+		var variant = this.random(2);
+		// Hardcoded sets of the available Pokémon.
+		var sets = {
+			// Admins.
+			'~charlotte': {
+				species: 'Suicune', ability: 'Serence Grace', item: 'Leftovers', gender: 'F',
+				moves: ['blueflare', ['icebeam', 'scald', 'grassknot'][this.random(3)], 'raindance'],
+				baseSignatureMove: 'stickyweb', signatureMove: "Fap",
+				evs: {hp:252, def:252, spa:4}, nature: 'Bold'
+			},
+			'~aurora': {
+				species: 'Mewtwo', ability: 'Intimidate', item: 'LifeOrb', gender: 'F',
+				moves: ['precipiceblades', ['psystrike', 'calmmind', 'fireblast'][this.random(3)], 'focusblast', 'icebeam'],
+				baseSignatureMove: 'nightdaze', signatureMove: "CODING ERROR",
+				evs: {hp:4, atk:252, spe:252}, nature: 'Adamant'
+			},
+			
+		// Leaders
+		'&kevin': {
+				species: 'Serperior', ability: 'Wonder Guard', item: 'lifeorb', gender: 'M',
+				moves: ['glare', 'substitute', 'leafstorm', 'leechseed'],
+				baseSignatureMove: 'geomancy', signatureMove: "Lol Broken",
+				evs: {atk:252, spe:252, hp:4}, nature: 'Jolly'
+			},
+			
+	};
+			
+		// Generate the team randomly.
+		var pool = Object.keys(sets).randomize();
+		var ranks = {'~':'admins', '&':'leaders', '@':'mods', '%':'drivers', '+':'voices'};
+		var levels = {'~':99, '&':97, '@':96, '%':96, '+':95};
+		for (var i = 0; i < 6; i++) {
+			var rank = pool[i].charAt(0);
+			var set = sets[pool[i]];
+			set.level = levels[rank];
+			set.name = pool[i];
+			if (!set.ivs) {
+				set.ivs = {hp:31, atk:31, def:31, spa:31, spd:31, spe:31};
+			} else {
+				for (var iv in {hp:31, atk:31, def:31, spa:31, spd:31, spe:31}) {
+					set.ivs[iv] = set.ivs[iv] ? set.ivs[iv] : 31;
+				}
+			}
+			// Assuming the hardcoded set evs are all legal.
+			if (!set.evs) set.evs = {hp:84, atk:84, def:84, spa:84, spd:84, spe:84};
+			set.moves = set.moves.sample(3).concat(set.baseSignatureMove);
+			team.push(set);
+		}
+
+		// Check for Illusion.
+		if (team[5].name === '&Slayer95') {
+			var temp = team[4];
+			team[4] = team[5];
+			team[5] = temp;
+		}
+
+		return team;
 	}
 };

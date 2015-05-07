@@ -577,9 +577,6 @@ var commands = exports.commands = {
 				if (!auth) continue;
 				innerBuffer.push(auth + curRoom.id);
 			}
-			if (innerBuffer.length) {
-				buffer.push('Private room auth: ' + innerBuffer.join(', '));
-			}
 		}
 		if (!buffer.length) {
 			buffer.push("No global or room auth.");

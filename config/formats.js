@@ -1096,7 +1096,7 @@ exports.Formats = [
 		// Here we add some flavour or design immunities.
 		onImmunity: function (type, pokemon) {
 			// Serperior, Char, Travis and Aurora are naturally immune to Attract.
-			if ((type === 'attract' || type === 'taunt') && toId(pokemon.name) === 'serperior') {
+			if ((type === 'attract' || type === 'taunt') && toId(pokemon.name) === 'kevin') {
 				this.add('-immune', pokemon, '[from] Irrelevant');
 				return false;
 			}
@@ -1105,7 +1105,7 @@ exports.Formats = [
 				return false;
 			}
 
-   if ((type === 'attract' || type === 'taunt') && toId(pokemon.name) === 'aurora') {
+   			if ((type === 'attract' || type === 'taunt') && toId(pokemon.name) === 'aurora') {
 				this.add('-immune', pokemon, '[from] Irrelevant');
 				return false;
 			}

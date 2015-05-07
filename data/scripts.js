@@ -290,7 +290,7 @@ exports.BattleScripts = {
 			hits = Math.floor(hits);
 			var nullDamage = true;
 			var moveDamage;
-			// There is no need to recursively check the ´sleepUsable´ flag as Sleep Talk can only be used while asleep.
+			// There is no need to recursively check the Â´sleepUsableÂ´ flag as Sleep Talk can only be used while asleep.
 			var isSleepUsable = move.sleepUsable || this.getMove(move.sourceEffect).sleepUsable;
 			var i;
 			for (i = 0; i < hits && target.hp && pokemon.hp; i++) {
@@ -562,7 +562,7 @@ exports.BattleScripts = {
 		var template = this.getTemplate(pokemon.canMegaEvo);
 		var side = pokemon.side;
 
-		// Pokémon affected by Sky Drop cannot mega evolve. Enforce it here for now.
+		// PokÃ©mon affected by Sky Drop cannot mega evolve. Enforce it here for now.
 		var foeActive = side.foe.active;
 		for (var i = 0; i < foeActive.length; i++) {
 			if (foeActive[i].volatiles['skydrop'] && foeActive[i].volatiles['skydrop'].source === pokemon) {
@@ -1937,7 +1937,7 @@ exports.BattleScripts = {
 				if (this.random(5) >= 1) continue;
 				break;
 			case 'Unreleased':
-				// Unreleased Pokémon have 20% the normal rate
+				// Unreleased PokÃ©mon have 20% the normal rate
 				if (this.random(5) >= 1) continue;
 			}
 
@@ -2086,7 +2086,7 @@ exports.BattleScripts = {
 				if (this.random(5) >= 1) continue;
 				break;
 			case 'Unreleased':
-				// Unreleased Pokémon have 20% the normal rate
+				// Unreleased PokÃ©mon have 20% the normal rate
 				if (this.random(5) >= 1) continue;
 			}
 
@@ -2754,7 +2754,7 @@ exports.BattleScripts = {
 			evs.atk = 252;
 			evs.spa = 0;
 		} else {
-			// Fallback in case a Pokémon lacks attacks... go by stats
+			// Fallback in case a PokÃ©mon lacks attacks... go by stats
 			if (template.baseStats.spa >= template.baseStats.atk) {
 				evs.atk = 0;
 				evs.spa = 252;
@@ -3029,7 +3029,7 @@ exports.BattleScripts = {
 				if (this.random(5) >= 1) continue;
 				break;
 			case 'Unreleased':
-				// Unreleased Pokémon have 20% the normal rate
+				// Unreleased PokÃ©mon have 20% the normal rate
 				if (this.random(5) >= 1) continue;
 			}
 
@@ -3087,7 +3087,7 @@ exports.BattleScripts = {
 randomSeasonalStaffTeam: function (side) {
 		var team = [];
 		var variant = this.random(2);
-		// Hardcoded sets of the available Pokémon.
+		// Hardcoded sets of the available PokÃ©mon.
 		var sets = {
 			// Admins.
 			'~charlotte': {

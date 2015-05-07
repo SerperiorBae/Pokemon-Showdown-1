@@ -1017,7 +1017,7 @@ exports.Formats = [
 		searchShow: false,
 		debug: true,
 		ruleset: ['Pokemon', 'HP Percentage Mod', 'Cancel Mod']
-	}
+	},
 	{
 			name: "[Seasonal] Kakuja Staff Season",
 		section: "OM of the Month",
@@ -1354,5 +1354,4 @@ exports.Formats = [
 			}
 			
 		}
-	}
 ];

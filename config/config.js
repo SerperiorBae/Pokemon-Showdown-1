@@ -180,6 +180,7 @@ exports.customavatars = {
 	'wonderknight': 'Legend_of_Zelda_Sprites_by_TimeSorceror copy.png',
 	'angryty': 'wie23mdX.png',
 	'situm': 'bIawfyv.png',
+	'birdtrainersitum': 'dBLXOCt.png',
 	'zukiyo': 'zukiyo.png',
 	'ransei': '4pQgZsM.png',
 	'annabelleritsun': 'yjwUHFu.png',

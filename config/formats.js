@@ -1172,9 +1172,6 @@ exports.Formats = [
 						{type: 'Grass', suppressed: false,  isAdded: false}
 					];
 				}
-				pokemon.addVolatile('focusenergy');
-				this.boost({evasion: +1}, pokemon, pokemon, 'Sneaky Snake');
-			}
 			
 			// Edgy switch-in sentences go here.
 			// Sentences vary in style and how they are presented, so each Pokémon has its own way of sending them.

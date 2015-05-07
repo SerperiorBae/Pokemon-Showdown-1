@@ -1,5 +1,5 @@
 exports.BattleMovedex = {
-	// Cura
+	// Drink Coffee
 	recover: {
 		num: -1,
 		accuracy: 100,
@@ -12,10 +12,10 @@ exports.BattleMovedex = {
 		flags: {heal: 1},
 		onTry: function (attacker) {
 			this.attrLastMove('[still]');
-			this.add('-anim', attacker, 'Wish', attacker);
+			this.add('-anim', attacker, 'Milk Drink', attacker);
 		},
 		onHitSide: function (side, source) {
-			this.add('-message', source.name + "'s Cura heals its team!");
+			this.add('-message', source.name + "drinks coffee to heal its team!");
 			var targets = [];
 			for (var p in side.active) {
 				targets.push(side.active[p]);
@@ -29,7 +29,7 @@ exports.BattleMovedex = {
 		target: "allySide",
 		type: "Normal"
 	},
-	// Curaga
+	// Devour
 	softboiled: {
 		num: -2,
 		accuracy: 100,
@@ -42,10 +42,10 @@ exports.BattleMovedex = {
 		flags: {heal: 1},
 		onTry: function (attacker) {
 			this.attrLastMove('[still]');
-			this.add('-anim', attacker, 'Geomancy', attacker);
+			this.add('-anim', attacker, 'Crunch', attacker);
 		},
 		onHitSide: function (side, source) {
-			this.add('-message', source.name + "'s Curaga greatly heals its team!");
+			this.add('-message', source.name + "regains energy from eating human flesh and heals its team!");
 			var targets = [];
 			for (var p in side.active) {
 				targets.push(side.active[p]);
@@ -59,7 +59,7 @@ exports.BattleMovedex = {
 		target: "allySide",
 		type: "Normal"
 	},
-	// Wild Growth
+	// Dragon Booster
 	reflect: {
 		num: -3,
 		accuracy: 100,
@@ -70,12 +70,12 @@ exports.BattleMovedex = {
 		pp: 16,
 		priority: 0,
 		flags: {snatch: 1},
-		sideCondition: 'wildgrowth',
+		sideCondition: 'dragonbooster',
 		secondary: false,
 		target: "allySide",
 		type: "Grass"
 	},
-	// Power Shield
+	// Gurido
 	acupressure: {
 		num: -4,
 		accuracy: 100,
@@ -86,7 +86,7 @@ exports.BattleMovedex = {
 		pp: 16,
 		priority: 0,
 		flags: {snatch: 1},
-		volatileStatus: 'powershield',
+		volatileStatus: 'gurido',
 		onTry: function (attacker, defender) {
 			this.attrLastMove('[still]');
 			this.add('-anim', defender, 'Synthesis', defender);
@@ -95,7 +95,7 @@ exports.BattleMovedex = {
 		target: "adjacentAllyOrSelf",
 		type: "Fairy"
 	},
-	// Rejuvenation
+	// Healing Machine
 	holdhands: {
 		num: -5,
 		accuracy: 100,
@@ -106,7 +106,7 @@ exports.BattleMovedex = {
 		pp: 16,
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, distance: 1, heal: 1},
-		volatileStatus: 'rejuvenation',
+		volatileStatus: 'healingmachine',
 		onTry: function (attacker, defender) {
 			this.attrLastMove('[still]');
 			this.add('-anim', defender, 'Bulk Up', defender);
@@ -115,7 +115,7 @@ exports.BattleMovedex = {
 		target: "adjacentAlly",
 		type: "Grass"
 	},
-	// Fairy Ward
+	// Shield
 	luckychant: {
 		num: -6,
 		accuracy: true,
@@ -126,7 +126,7 @@ exports.BattleMovedex = {
 		pp: 25,
 		priority: 0,
 		flags: {snatch: 1},
-		sideCondition: 'fairyward',
+		sideCondition: 'shield',
 		onTry: function (attacker) {
 			this.attrLastMove('[still]');
 			this.add('-anim', attacker, 'Misty Terrain', attacker);
@@ -135,7 +135,7 @@ exports.BattleMovedex = {
 		target: "allySide",
 		type: "Normal"
 	},
-	// Taunt
+	// KUSO
 	followme: {
 		num: -7,
 		accuracy: true,
@@ -146,7 +146,7 @@ exports.BattleMovedex = {
 		pp: 20,
 		priority: 3,
 		flags: {},
-		volatileStatus: 'taunting',
+		volatileStatus: 'kuso',
 		onTry: function (attacker) {
 			this.attrLastMove('[still]');
 			this.add('-anim', attacker, 'Follow Me', attacker);
@@ -155,7 +155,7 @@ exports.BattleMovedex = {
 		target: "self",
 		type: "Normal"
 	},
-	// Sacrifice
+	// Wings of Freedom
 	meditate: {
 		num: -7,
 		accuracy: true,
@@ -166,7 +166,7 @@ exports.BattleMovedex = {
 		pp: 20,
 		priority: 3,
 		flags: {},
-		volatileStatus: 'sacrifice',
+		volatileStatus: 'wingsoffreedom',
 		onTry: function (attacker) {
 			this.attrLastMove('[still]');
 			this.add('-anim', attacker, 'Bulk Up', attacker);
@@ -175,7 +175,7 @@ exports.BattleMovedex = {
 		target: "self",
 		type: "Normal"
 	},
-	// Cooperation
+	// Bad Idea
 	helpinghand: {
 		num: -8,
 		accuracy: true,
@@ -199,13 +199,13 @@ exports.BattleMovedex = {
 			var newPosition = target.position;
 			if (!source.side.active[newPosition]) return false;
 			if (source.side.active[newPosition].fainted) return false;
-			this.swapPosition(source, newPosition, '[from] move: Cooperation');
+			this.swapPosition(source, newPosition, '[from] move: Bad Idea');
 		},
 		secondary: false,
 		target: "adjacentAlly",
 		type: "Psychic"
 	},
-	// Slow Down
+	// Dying Breath
 	spite: {
 		num: -9,
 		accuracy: 100,
@@ -218,7 +218,7 @@ exports.BattleMovedex = {
 		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
 		onHit: function (target, source) {
 			if (target.deductPP(target.lastMove, 8)) {
-				this.add("-activate", target, 'move: Slow Down', target.lastMove, 8);
+				this.add("-activate", target, 'move: Dying Breath', target.lastMove, 8);
 				source.addVolatile('disable');
 				return;
 			}
@@ -228,7 +228,7 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Ghost"
 	},
-	// Healing Touch
+	// Perfect Form
 	aromaticmist: {
 		num: -10,
 		accuracy: true,
@@ -250,7 +250,7 @@ exports.BattleMovedex = {
 		target: "adjacentAlly",
 		type: "Grass"
 	},
-	// Penance
+	// Lum Berry
 	healbell: {
 		num: -11,
 		accuracy: true,
@@ -267,13 +267,13 @@ exports.BattleMovedex = {
 		},
 		onHit: function (target, source) {
 			this.heal(Math.ceil(target.maxhp * 0.125));
-			target.addVolatile('penance');
+			target.addVolatile('lumberry');
 		},
 		secondary: false,
 		target: "allyTeam",
 		type: "Grass"
 	},
-	// Stop
+	// First Move
 	fakeout: {
 		num: -12,
 		accuracy: 100,
@@ -365,7 +365,7 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Fighting"
 	},
-	// Flamestrike
+	// Gremory Crest
 	flamethrower: {
 		num: -16,
 		accuracy: 100,
@@ -388,7 +388,7 @@ exports.BattleMovedex = {
 		target: "any",
 		type: "Fire"
 	},
-	// Conflagration
+	// Kagune
 	fireblast: {
 		num: -17,
 		accuracy: 100,
@@ -407,11 +407,11 @@ exports.BattleMovedex = {
 		target: "any",
 		type: "Fire"
 	},
-	// Moonfire
+	// Kakuja
 	thunderbolt: {
 		num: -18,
 		accuracy: 100,
-		basePower: 20,
+		basePower: 130,
 		category: "Special",
 		id: "thunderbolt",
 		name: "Thunderbolt",
@@ -422,17 +422,17 @@ exports.BattleMovedex = {
 			this.attrLastMove('[still]');
 			this.add('-anim', attacker, 'Moonblast', defender);
 		},
-		secondary: {chance: 100, volatileStatus: 'moonfire'},
+		secondary: {chance: 100, volatileStatus: 'kakuja'},
 		target: "any",
 		type: "Grass"
 	},
-	// Starfire
+	// Grappling Hook
 	thunder: {
 		num: -19,
 		accuracy: 100,
 		basePower: 30,
 		basePowerCallback: function (pokemon, target) {
-			if (target.volatiles['moonfire']) return 40;
+			if (target.volatiles['grapplinghook']) return 40;
 			return 30;
 		},
 		category: "Special",
@@ -448,7 +448,7 @@ exports.BattleMovedex = {
 		target: "any",
 		type: "Grass"
 	},
-	// Corruption
+	// Death Note
 	toxic: {
 		num: -20,
 		accuracy: 100,
@@ -459,7 +459,7 @@ exports.BattleMovedex = {
 		pp: 16,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		volatileStatus: 'corruption',
+		volatileStatus: 'deathnote',
 		onTry: function (attacker, defender) {
 			this.attrLastMove('[still]');
 			this.add('-anim', attacker, 'Spore', defender);
@@ -467,7 +467,7 @@ exports.BattleMovedex = {
 		target: "any",
 		type: "Dark"
 	},
-	// Soul Leech
+	// Flesh Eat
 	leechseed: {
 		num: -21,
 		accuracy: 100,
@@ -482,10 +482,10 @@ exports.BattleMovedex = {
 		effect: {
 			duration: 4,
 			onStart: function (target) {
-				this.add('-start', target, 'move: Soul Leech');
+				this.add('-start', target, 'move: Flesh Eat');
 			},
 			onEnd: function (target) {
-				this.add('-end', target, 'move: Soul Leech');
+				this.add('-end', target, 'move: Flesh Eat');
 			},
 			onResidualOrder: 8,
 			onResidual: function (pokemon) {
@@ -503,7 +503,7 @@ exports.BattleMovedex = {
 		target: "any",
 		type: "Dark"
 	},
-	// Ice Lance
+	// Quinque
 	icebeam: {
 		num: -22,
 		accuracy: 100,
@@ -526,7 +526,7 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Ice"
 	},
-	// Frostbite
+	// Absolute Death
 	freezeshock: {
 		num: -23,
 		accuracy: 100,
@@ -545,7 +545,7 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Ice"
 	},
-	// Hurricane
+	// Annihilation
 	aircutter: {
 		num: -24,
 		accuracy: 100,

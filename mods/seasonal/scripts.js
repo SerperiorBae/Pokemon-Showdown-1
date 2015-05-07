@@ -5,47 +5,47 @@ exports.BattleScripts = {
 		var supportStats = {hp:75, atk:50, def:90, spa:50, spd:90, spe:100};
 		var dpsStats = {hp:65, atk:130, def:85, spa:130, spd:85, spe:150};
 		// Modify tanks
-		this.modData('Pokedex', 'registeel').baseStats = tankStats;
-		this.modData('Pokedex', 'golurk').baseStats = tankStats;
-		this.modData('Pokedex', 'golett').baseStats = tankStats;
-		this.modData('Pokedex', 'palkia').baseStats = tankStats;
-		this.modData('Pokedex', 'slugma').baseStats = tankStats;
+		this.modData('Pokedex', 'manectric').baseStats = tankStats;
+		this.modData('Pokedex', 'chesnaught').baseStats = tankStats;
+		this.modData('Pokedex', 'hydreigon').baseStats = tankStats;
+		this.modData('Pokedex', 'lopunny').baseStats = tankStats;
 		this.modData('Pokedex', 'snorlax').baseStats = tankStats;
-		this.modData('Pokedex', 'xerneas').baseStats = tankStats;
-		this.modData('Pokedex', 'muk').baseStats = tankStats;
-		this.modData('Pokedex', 'gothitelle').baseStats = tankStats;
+		this.modData('Pokedex', 'suicune').baseStats = tankStats;
+		this.modData('Pokedex', 'giratina').baseStats = tankStats;
+		this.modData('Pokedex', 'landorus').baseStats = tankStats;
+		this.modData('Pokedex', 'noctowl').baseStats = tankStats;
 		// Modify healers
-		this.modData('Pokedex', 'jynx').baseStats = healerStats;
-		this.modData('Pokedex', 'gardevoir').baseStats = healerStats;
-		this.modData('Pokedex', 'alakazam').baseStats = healerStats;
-		this.modData('Pokedex', 'celebi').baseStats = healerStats;
-		this.modData('Pokedex', 'bisharp').baseStats = healerStats;
-		this.modData('Pokedex', 'machoke').baseStats = healerStats;
-		this.modData('Pokedex', 'treecko').baseStats = healerStats;
+		this.modData('Pokedex', 'aegislash').baseStats = healerStats;
+		this.modData('Pokedex', 'lucario').baseStats = healerStats;
+		this.modData('Pokedex', 'glaceon').baseStats = healerStats;
+		this.modData('Pokedex', 'shaymin').baseStats = healerStats;
+		this.modData('Pokedex', 'mewtwo').baseStats = healerStats;
+		this.modData('Pokedex', 'mightyena').baseStats = healerStats;
+		this.modData('Pokedex', 'aerodactyl').baseStats = healerStats;
 		// Modify supporters
-		this.modData('Pokedex', 'regirock').baseStats = supportStats;
-		this.modData('Pokedex', 'scrafty').baseStats = supportStats;
-		this.modData('Pokedex', 'mrmime').baseStats = supportStats;
-		this.modData('Pokedex', 'elgyem').baseStats = supportStats;
-		this.modData('Pokedex', 'heliolisk').baseStats = supportStats;
-		this.modData('Pokedex', 'regigigas').baseStats = supportStats;
-		this.modData('Pokedex', 'genesect').baseStats = supportStats;
-		this.modData('Pokedex', 'delphox').baseStats = supportStats;
+		this.modData('Pokedex', 'cinccino').baseStats = supportStats;
+		this.modData('Pokedex', 'espurr').baseStats = supportStats;
+		this.modData('Pokedex', 'chandelure').baseStats = supportStats;
+		this.modData('Pokedex', 'gallade').baseStats = supportStats;
+		this.modData('Pokedex', 'jynx').baseStats = supportStats;
+		this.modData('Pokedex', 'furret').baseStats = supportStats;
+		this.modData('Pokedex', 'spinda').baseStats = supportStats;
+		this.modData('Pokedex', 'reuniclus').baseStats = supportStats;
 		// Modify DPSs
+		this.modData('Pokedex', 'bisharp').baseStats = dpsStats;
+		this.modData('Pokedex', 'absol').baseStats = dpsStats;
+		this.modData('Pokedex', 'luxray').baseStats = dpsStats;
+		this.modData('Pokedex', 'zoroark').baseStats = dpsStats;
+		this.modData('Pokedex', 'latios').baseStats = dpsStats;
+		this.modData('Pokedex', 'greninja').baseStats = dpsStats;
+		this.modData('Pokedex', 'blaziken').baseStats = dpsStats;
+		this.modData('Pokedex', 'weavile').baseStats = dpsStats;
+		this.modData('Pokedex', 'cobalion').baseStats = dpsStats;
+		this.modData('Pokedex', 'froslass').baseStats = dpsStats;
+		this.modData('Pokedex', 'beartic').baseStats = dpsStats;
+		this.modData('Pokedex', 'ninetales').baseStats = dpsStats;
+		this.modData('Pokedex', 'arceus').baseStats = dpsStats;
 		this.modData('Pokedex', 'groudon').baseStats = dpsStats;
-		this.modData('Pokedex', 'ursaring').baseStats = dpsStats;
-		this.modData('Pokedex', 'magmar').baseStats = dpsStats;
-		this.modData('Pokedex', 'sawk').baseStats = dpsStats;
-		this.modData('Pokedex', 'hitmonlee').baseStats = dpsStats;
-		this.modData('Pokedex', 'throh').baseStats = dpsStats;
-		this.modData('Pokedex', 'monferno').baseStats = dpsStats;
-		this.modData('Pokedex', 'dialga').baseStats = dpsStats;
-		this.modData('Pokedex', 'clawitzer').baseStats = dpsStats;
-		this.modData('Pokedex', 'yveltal').baseStats = dpsStats;
-		this.modData('Pokedex', 'dusknoir').baseStats = dpsStats;
-		this.modData('Pokedex', 'cofagrigus').baseStats = dpsStats;
-		this.modData('Pokedex', 'toxicroak').baseStats = dpsStats;
-		this.modData('Pokedex', 'raticate').baseStats = dpsStats;
 	},
 	randomSeasonalMay2015Team: function (side) {
 		var team = [];
@@ -62,56 +62,56 @@ exports.BattleScripts = {
 		}
 
 		if (side === 'heroes') {
-			healers = ['Amy', 'Princess Leia', 'Scruffy', 'Yoda'].randomize();
-			tanks = ['Bender', 'Gurren Lagann', 'Lagann', 'Rei Ayanami', 'Slurms McKenzie'].randomize();
-			supports = ['C3PO', 'Hermes', 'Professor Farnsworth', 'Kif', 'Jar Jar Binks', 'R2D2'].randomize();
-			dps = ['Asuka Langley', 'Chewy', 'Fry', 'Han Solo', 'Leela', 'Luke Skywalker', 'Nibbler', 'Shinji Ikari', 'Zoidberg'].randomize();
+			healers = ['Soul Evans', 'Amon', 'Hatsune Miku', 'Armin'].randomize();
+			tanks = ['Moro', 'Eren', 'Ryuk', 'Akeno', 'Totoro'].randomize();
+			supports = ['Suzuya', 'L', 'Yuno', 'Issei', 'Misa', 'Sasha Blouse'].randomize();
+			dps = ['Kaneki', 'Touka', 'Ayato', 'Rias', 'Light Yagami', 'Levi', 'Mikasa', 'San', 'Ashitaka'].randomize();
 		} else {
-			healers = ['Anti-Spiral', 'Gendo Ikari', 'Kaworu Nagisa'].randomize();
-			tanks = ['Jabba the Hut', 'Lilith', 'Lrrr', 'Mommy'].randomize();
-			supports = ['Bobba Fett', 'Zapp Brannigan'].randomize();
-			dps = ['An angel', 'Darth Vader', 'Emperor Palpatine', 'Fender', 'Storm Trooper'].randomize();
+			healers = ['Frieza', 'Raynare', 'Wrath'].randomize();
+			tanks = ['Rize', 'Giratina', 'Giovanni', 'Eto'].randomize();
+			supports = ['Mado', 'Cell'].randomize();
+			dps = ['Lady Eboshi', 'Jason', 'Annie', 'Kira', 'Titan'].randomize();
 		}
 		var pool = [healers[0], tanks[0], dps[0], supports[0], dps[1], supports[1]];
 		var sets = {
-			'Amy': {species: 'Jynx', role: 'healer', evs: {spa:200, def:252, spd:56}},
-			'Princess Leia': {species: 'Gardevoir', gender: 'F', role: 'healer', evs: {spa:200, def:200, spd:56, spe:52}},
-			'Scruffy': {species: 'Alakazam', gender: 'M', role: 'healer', evs: {spa:4, def:248, spd:248, spe: 8}},
-			'Yoda': {species: 'Celebi', gender: 'M', role: 'healer', evs: {spa:184, def:56, spd:252, spe:16}},
-			'Bender': {species: 'Registeel', gender: 'M', role: 'tank', evs: {hp:252, def:248, spd:4, spe:4}},
-			'Gurren Lagann': {species: 'Golurk', gender: 'N', role: 'tank', evs: {spa:4, def:232, spd:4, spe:20}},
-			'Lagann': {species: 'Golett', gender: 'N', role: 'tank', evs: {hp:236, def:128, spd:128, spe:16}},
-			'Rei Ayanami': {species: 'Palkia', gender: 'F', role: 'tank', evs: {hp:200, def:154, spd:130, spe:24}},
-			'Slurms McKenzie': {species: 'Slugma', gender: 'M', role: 'tank', evs: {hp:100, def:204, spd:204}},
-			'C3PO': {species: 'Regirock', gender: 'N', role: 'support', evs: {hp:252, def:248, spd:4, spe:4}},
-			'Hermes': {species: 'Scrafty', gender: 'M', role: 'support', evs: {hp:252, def:152, spd:4, spe:100}},
-			'Professor Farnsworth': {species: 'Mr. Mime', gender: 'M', role: 'support', evs: {hp:4, def:252, spd:252}},
-			'Kif': {species: 'Elgyem', gender: 'N', role: 'support', evs: {hp:252, def:248, spd:4, spe:4}},
-			'Jar Jar Binks': {species: 'Heliolisk', gender: 'N', role: 'support', evs: {hp:4, def:152, spd:252, spe:100}},
-			'R2D2': {species: 'Regigigas', gender: 'N', role: 'support', evs: {hp:252, def:208, spd:4, spe:44}},
-			'Asuka Langley': {species: 'Groudon', gender: 'F', role: 'dps', evs: {spa:104, atk:252, spe:152}},
-			'Chewy': {species: 'Ursaring', gender: 'N', role: 'dps', evs: {spa:252, atk:252, spe:4}},
-			'Fry': {species: 'Magmar', gender: 'M', role: 'dps', evs: {spa:252, atk:236, spe:20}},
-			'Han Solo': {species: 'Sawk', gender: 'M', role: 'dps', evs: {spa:180, atk:224, spe:104}},
-			'Leela': {species: 'Hitmonlee', gender: 'F', role: 'dps', evs: {spa:128, atk:132, spe:248}},
-			'Luke Skywalker': {species: 'Throh', gender: 'M', role: 'dps', evs: {spa:252, atk:176, spe:80}},
-			'Nibbler': {species: 'Monferno', gender: 'N', role: 'dps', evs: {spa:248, atk:252, spe:8}},
-			'Shinji Ikari': {species: 'Dialga', gender: 'F', role: 'dps', evs: {spa:4, atk:252, spe:252}},
-			'Zoidberg': {species: 'Clawitzer', gender: 'M', role: 'dps', shiny: true, evs: {spa:184, atk:184, spe:140}},
-			'Anti-Spiral': {species: 'Bisharp', gender: 'N', role: 'healer', evs: {spa:56, def:200, spd:200, spe:52}},
-			'Gendo Ikari': {species: 'Machoke', gender: 'M', role: 'healer', evs: {spa:252, def:128, spd:120, spe:8}},
-			'Kaworu Nagisa': {species: 'Treecko', gender: 'N', role: 'healer', evs: {spa:4, def:236, spd:252, spe:16}},
-			'Jabba the Hut': {species: 'Snorlax', gender: 'N', role: 'tank', evs: {hp:252, def:248, spd:4, spe:4}},
-			'Lilith': {species: 'Xerneas', gender: 'F', role: 'tank', evs: {hp:236, def:4, spd:252, spe:16}},
-			'Lrrr': {species: 'Muk', gender: 'M', role: 'tank', evs: {hp:232, def:128, spd:128, spe:20}},
-			'Mommy': {species: 'Gothitelle', gender: 'F', role: 'tank', evs: {hp:100, def:200, spd:184, spe:24}},
-			'Bobba Fett': {species: 'Genesect', gender: 'M', role: 'support', evs: {hp:252, def:100, spd:56, spe:96}},
-			'Zapp Brannigan': {species: 'Delphox', gender: 'M', role: 'support', evs: {hp:252, def:56, spd:176, spe:20}},
-			'An angel': {species: 'Yveltal', gender: 'N', role: 'dps', evs: {spa:252, atk:8, spe:248}},
-			'Darth Vader': {species: 'Dusknoir', gender: 'M', role: 'dps', evs: {spa:252, atk:156, spe:100}},
-			'Emperor Palpatine': {species: 'Cofagrigus', gender: 'M', role: 'dps', evs: {spa:252, atk:208, spe:48}},
-			'Fender': {species: 'Toxicroak', gender: 'M', role: 'dps', evs: {spa:252, atk:252, spe:4}},
-			'Storm Trooper': {species: 'Raticate', gender: 'M', role: 'dps', evs: {spa:248, atk:252, spe:8}}
+			'Soul Evans': {species: 'Aegislash', gender: 'M', role: 'healer', evs: {spa:200, def:252, spd:56}},
+			'Amon': {species: 'Lucario', gender: 'M', role: 'healer', evs: {spa:200, def:200, spd:56, spe:52}},
+			'Hatsune Miku': {species: 'Glaceon', gender: 'F', role: 'healer', evs: {spa:4, def:248, spd:248, spe: 8}},
+			'Armin': {species: 'Shaymin', gender: 'M', role: 'healer', evs: {spa:184, def:56, spd:252, spe:16}},
+			'Moro': {species: 'Manectric', gender: 'F', role: 'tank', evs: {hp:252, def:248, spd:4, spe:4}},
+			'Eren': {species: 'Chesnaught', gender: 'M', role: 'tank', evs: {spa:4, def:232, spd:4, spe:20}},
+			'Ryuk': {species: 'Hydreigon', gender: 'M', role: 'tank', evs: {hp:236, def:128, spd:128, spe:16}},
+			'Akeno': {species: 'Lopunny', gender: 'F', role: 'tank', evs: {hp:200, def:154, spd:130, spe:24}},
+			'Totoro': {species: 'Snorlax', gender: 'M', role: 'tank', evs: {hp:100, def:204, spd:204}},
+			'Suzuya': {species: 'Cinccino', gender: 'M', role: 'support', evs: {hp:252, def:248, spd:4, spe:4}},
+			'L': {species: 'Espurr', gender: 'M', role: 'support', evs: {hp:252, def:152, spd:4, spe:100}},
+			'Yuno': {species: 'Chandelure', gender: 'F', role: 'support', evs: {hp:4, def:252, spd:252}},
+			'Issei': {species: 'Gallade', gender: 'M', role: 'support', evs: {hp:252, def:248, spd:4, spe:4}},
+			'Misa': {species: 'Jynx', gender: 'F', role: 'support', evs: {hp:4, def:152, spd:252, spe:100}},
+			'Sasha Blouse': {species: 'Furret', gender: 'F', role: 'support', evs: {hp:252, def:208, spd:4, spe:44}},
+			'Kaneki': {species: 'Bisharp', gender: 'M', role: 'dps', evs: {spa:104, atk:252, spe:152}},
+			'Touka': {species: 'Absol', gender: 'F', role: 'dps', evs: {spa:252, atk:252, spe:4}},
+			'Ayato': {species: 'Luxray', gender: 'M', role: 'dps', evs: {spa:252, atk:236, spe:20}},
+			'Rias': {species: 'Zoroark', gender: 'F', role: 'dps', evs: {spa:180, atk:224, spe:104}},
+			'Light Yagami': {species: 'Latios', gender: 'M', role: 'dps', evs: {spa:128, atk:132, spe:248}},
+			'Levi': {species: 'Greninja', gender: 'M', role: 'dps', evs: {spa:252, atk:176, spe:80}},
+			'Mikasa': {species: 'Blaziken', gender: 'F', role: 'dps', evs: {spa:248, atk:252, spe:8}},
+			'San': {species: 'Weavile', gender: 'F', role: 'dps', evs: {spa:4, atk:252, spe:252}},
+			'Ashitaka': {species: 'Cobalion', gender: 'M', role: 'dps', shiny: true, evs: {spa:184, atk:184, spe:140}},
+			'Frieza': {species: 'Mewtwo', gender: 'N', role: 'healer', evs: {spa:56, def:200, spd:200, spe:52}},
+			'Raynare': {species: 'Mightyena', gender: 'F', role: 'healer', evs: {spa:252, def:128, spd:120, spe:8}},
+			'Wrath': {species: 'Aerodactyl', gender: 'M', role: 'healer', evs: {spa:4, def:236, spd:252, spe:16}},
+			'Rize': {species: 'Suicune', gender: 'F', role: 'tank', evs: {hp:252, def:248, spd:4, spe:4}},
+			'Giratina': {species: 'Giratina', gender: 'N', role: 'tank', evs: {hp:236, def:4, spd:252, spe:16}},
+			'Giovanni': {species: 'Landorus', gender: 'M', role: 'tank', evs: {hp:232, def:128, spd:128, spe:20}},
+			'Eto': {species: 'Noctowl', gender: 'F', role: 'tank', evs: {hp:100, def:200, spd:184, spe:24}},
+			'Mado': {species: 'Spinda', gender: 'M', role: 'support', evs: {hp:252, def:100, spd:56, spe:96}},
+			'Cell': {species: 'Reuniclus', gender: 'M', role: 'support', evs: {hp:252, def:56, spd:176, spe:20}},
+			'Lady Eboshi': {species: 'Froslass', gender: 'F', role: 'dps', evs: {spa:252, atk:8, spe:248}},
+			'Jason': {species: 'Beartic', gender: 'M', role: 'dps', evs: {spa:252, atk:156, spe:100}},
+			'Annie': {species: 'Ninetales', gender: 'F', role: 'dps', evs: {spa:252, atk:208, spe:48}},
+			'Kira': {species: 'Arceus', gender: 'M', role: 'dps', evs: {spa:252, atk:252, spe:4}},
+			'Titan': {species: 'Groudon', gender: 'N', role: 'dps', evs: {spa:248, atk:252, spe:8}}
 		};
 		var movesets = {
 			'healer': [

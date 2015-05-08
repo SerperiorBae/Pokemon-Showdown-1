@@ -478,7 +478,7 @@ exports.BattleMovedex = {
 		pp: 16,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		volatileStatus: 'Flesh Eat',
+		volatileStatus: 'leechseed',
 		effect: {
 			duration: 4,
 			onStart: function (target) {

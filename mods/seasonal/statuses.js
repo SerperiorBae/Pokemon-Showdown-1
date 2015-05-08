@@ -56,33 +56,33 @@ exports.BattleStatuses = {
 			}
 		}
 	},
-	WingsofFreedom: {
+	wingsoffreedom: {
 		duration: 4,
 		onStart: function (target) {
-			this.add('-start', target, 'Wings of Freedom');
+			this.add('-start', target, 'wingsoffreedom');
 			this.add('-message', target.name + ' Has redirected Incoming Damage To Themselves.');
 		},
 		onEnd: function (target) {
-			this.add('-end', target, 'Wings Of Freedom');
+			this.add('-end', target, 'wingsoffreedom');
 		},
 		onAnyDamage: function (damage, target, source, effect) {
 			for (var i = 0; i < target.side.active.length; i++) {
-				if (target !== target.side.active[i] && target.side.active[i].volatiles['Wings of freedom']) {
+				if (target !== target.side.active[i] && target.side.active[i].volatiles['wingsoffreedom']) {
 					this.add('-message', target.side.active[i].name + "'s Sacrifice took " + target.name + "'s damage!");
-					this.directDamage(damage, target.side.active[i], source, {id: 'Wings Of Freedom'});
+					this.directDamage(damage, target.side.active[i], source, {id: 'wingsoffreedom'});
 					return 0;
 				}
 			}
 			return;
 		}
 	},
-	DeathNote: {
+	deathnote: {
 		duration: 4,
 		onStart: function (target) {
-			this.add('-start', target, 'Death Note');
+			this.add('-start', target, 'deathnote');
 		},
 		onEnd: function (target) {
-			this.add('-end', target, 'Death Note');
+			this.add('-end', target, 'deathnote');
 		},
 		onResidual: function (pokemon) {
 			this.damage(pokemon.maxhp * 0.1);

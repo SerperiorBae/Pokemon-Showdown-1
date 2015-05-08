@@ -41,7 +41,7 @@ exports.BattleStatuses = {
 			this.damage(pokemon.maxhp * 0.0615);
 		}
 	},
-	taunting: {
+	kuso: {
 		duration: 4,
 		onStart: function (target) {
 			this.add('-start', target, 'Kuso');
@@ -56,7 +56,7 @@ exports.BattleStatuses = {
 			}
 		}
 	},
-	Wings of Freedom: {
+	WingsofFreedom: {
 		duration: 4,
 		onStart: function (target) {
 			this.add('-start', target, 'Wings of Freedom');
@@ -76,7 +76,7 @@ exports.BattleStatuses = {
 			return;
 		}
 	},
-	Death Note: {
+	DeathNote: {
 		duration: 4,
 		onStart: function (target) {
 			this.add('-start', target, 'Death Note');
@@ -89,7 +89,7 @@ exports.BattleStatuses = {
 			this.add('-message', pokemon.name + ' Decayed a bit more!');
 		}
 	},
-	wildgrowth: {
+	dragonbooster: {
 		duration: 5,
 		onStart: function (side) {
 			this.add('-sidestart', side, 'Wild Growth');
@@ -108,7 +108,7 @@ exports.BattleStatuses = {
 			this.add('-sideend', side, 'Dragon Booster');
 		}
 	},
-	Gurido: {
+	gurido: {
 		onStart: function (pokemon) {
 			this.add('-start', pokemon, 'Gurido');
 			this.add('-message', pokemon.name + ' has been shielded!');
@@ -123,10 +123,10 @@ exports.BattleStatuses = {
 			this.add('-end', pokemon, 'Gurido');
 		}
 	},
-	rejuvenation: {
+	healingmachine: {
 		duration: 3,
 		onStart: function (pokemon) {
-			this.add('-start', pokemon, 'Healing Machine');
+			this.add('-start', pokemon, 'healingmachine');
 			this.add('-message', pokemon.name + ' is Healing!');
 		},
 		onResidualOrder: 5,
@@ -139,7 +139,7 @@ exports.BattleStatuses = {
 			this.add('-end', pokemon, 'Healing Machine');
 		}
 	},
-	fairyward: {
+	shield: {
 		duration: 3,
 		onSetStatus: function (status, target, source, effect) {
 			if (source && target !== source && effect && (!effect.infiltrates || target.side === source.side)) {
@@ -164,7 +164,7 @@ exports.BattleStatuses = {
 			return Math.ceil(damage * 0.95);
 		}
 	},
-	Lum Berry: {
+	lumberry: {
 		onStart: function (pokemon) {
 			this.add('-start', pokemon, 'Lum Berry');
 		},

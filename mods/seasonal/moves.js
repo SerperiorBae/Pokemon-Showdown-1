@@ -15,7 +15,7 @@ exports.BattleMovedex = {
 			this.add('-anim', attacker, 'Milk Drink', attacker);
 		},
 		onHitSide: function (side, source) {
-			this.add('-message', source.name + "drinks coffee to heal its team!");
+			this.add('-message', source.name + " distributes hot cups of coffee to heal its team!");
 			var targets = [];
 			for (var p in side.active) {
 				targets.push(side.active[p]);
@@ -106,7 +106,7 @@ exports.BattleMovedex = {
 		pp: 16,
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, distance: 1, heal: 1},
-		volatileStatus: 'healingmachine',
+		volatileStatus: 'healing machine',
 		onTry: function (attacker, defender) {
 			this.attrLastMove('[still]');
 			this.add('-anim', defender, 'Bulk Up', defender);
@@ -166,7 +166,7 @@ exports.BattleMovedex = {
 		pp: 20,
 		priority: 3,
 		flags: {},
-		volatileStatus: 'wingsoffreedom',
+		volatileStatus: 'wings of freedom',
 		onTry: function (attacker) {
 			this.attrLastMove('[still]');
 			this.add('-anim', attacker, 'Bulk Up', attacker);
@@ -267,7 +267,7 @@ exports.BattleMovedex = {
 		},
 		onHit: function (target, source) {
 			this.heal(Math.ceil(target.maxhp * 0.125));
-			target.addVolatile('lumberry');
+			target.addVolatile('lum berry');
 		},
 		secondary: false,
 		target: "allyTeam",
@@ -310,7 +310,7 @@ exports.BattleMovedex = {
 		pp: 10,
 		priority: 4,
 		flags: {},
-		volatileStatus: 'laststand',
+		volatileStatus: 'last stand',
 		onTryHit: function (pokemon) {
 			return this.willAct();
 		},
@@ -478,7 +478,7 @@ exports.BattleMovedex = {
 		pp: 16,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		volatileStatus: 'leechseed',
+		volatileStatus: 'Flesh Eat',
 		effect: {
 			duration: 4,
 			onStart: function (target) {
@@ -489,7 +489,7 @@ exports.BattleMovedex = {
 			},
 			onResidualOrder: 8,
 			onResidual: function (pokemon) {
-				var target = this.effectData.source.side.active[pokemon.volatiles['leechseed'].sourcePosition];
+				var target = this.effectData.source.side.active[pokemon.volatiles['Flesh Eat'].sourcePosition];
 				if (!target || target.fainted || target.hp <= 0) {
 					this.debug('Nothing to leech into');
 					return;
@@ -509,7 +509,7 @@ exports.BattleMovedex = {
 		accuracy: 100,
 		basePower: 30,
 		basePowerCallback: function (pokemon, target) {
-			if (target.volatiles['chilled']) return 40;
+			if (target.volatiles['Encased in Ice']) return 40;
 			return 30;
 		},
 		category: "Special",

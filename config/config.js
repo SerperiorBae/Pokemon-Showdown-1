@@ -177,6 +177,7 @@ exports.customavatars = {
 	'kenichaw': 'gfduj7a.png',
 	'basedlordsoldier': 'JkN7tDh.png',
 	'cll': 'JFTowoR.png',
+	'masterfloat': 'masterfloat.png',
 	'mindnight': '79332.jpg.m.gif',
 	'zzrime': '1430942873-avatar-for-kakuja.gif',
 	'moulefrites': 'swampert-mega.png',

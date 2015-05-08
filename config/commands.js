@@ -878,14 +878,7 @@ var commands = exports.commands = {
 
 	groups: function (target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox(
-			"+ <b>Voice</b> - They can use ! commands like !groups, and talk during moderated chat<br />" +
-			"% <b>Driver</b> - The above, and they can mute. Global % can also lock users and check for alts<br />" +
-			"@ <b>Moderator</b> - The above, and they can ban users<br />" +
-			"&amp; <b>Leader</b> - The above, and they can promote to moderator and force ties<br />" +
-			"# <b>Room Owner</b> - They are leaders of the room and can almost totally control it<br />" +
-			"~ <b>Administrator</b> - They can do anything, like change what this message says"
-		);
+		this.sendReplyBox('+ <b>Voice</b> - They can use ! commands like !groups, and talk during moderated chat<br />% <b>Driver</b> - The above, and they can mute. Global % can also lock users and check for alts<br />@ <b>Moderator</b> - The above, and they can ban users<br />&amp; <b>Leader</b> - The above, and they can promote to moderator and force ties<br /># <b>Room Owner</b> - They are leaders of the room and can almost totally control it<br />~ <b>Administrator</b> - They can do anything, like change what this message says<br /><br /><a href="http://hastebin.com/raw/muvivavevo"><button class="astext"><font color="blue"><u>Click Here For The In-depth Rank Guide</u></a></button>');
 	},
 
 	git: 'opensource',

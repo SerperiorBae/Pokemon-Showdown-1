@@ -18,11 +18,11 @@ exports.BattleStatuses = {
 	chilled: {
 		duration: 3,
 		onStart: function (target, source, sourceEffect) {
-			this.add('-start', target, 'chilled');
-			this.add('-message', target.name + ' has been chilled!');
+			this.add('-start', target, 'Encased in Ice');
+			this.add('-message', target.name + ' has been Encased in Ice!');
 		},
 		onEnd: function (target) {
-			this.add('-end', target, 'chilled');
+			this.add('-end', target, 'Encased In Ice');
 		},
 		onModifySpe: function (speMod, pokemon) {
 			return this.chain(speMod, 0.1);
@@ -110,17 +110,17 @@ exports.BattleStatuses = {
 	},
 	powershield: {
 		onStart: function (pokemon) {
-			this.add('-start', pokemon, 'Power Shield');
+			this.add('-start', pokemon, 'Gurido');
 			this.add('-message', pokemon.name + ' has been shielded!');
 		},
 		onDamage: function (damage, target, source, effect) {
 			var h = Math.ceil(damage / 4);
 			this.heal(h, target, target);
-			this.add('-message', target.name + "'s Power Shield healed it for " + h + "!");
+			this.add('-message', target.name + "'s Gurido healed it for " + h + "!");
 			target.removeVolatile('powershield');
 		},
 		onEnd: function (pokemon) {
-			this.add('-end', pokemon, 'Power Shield');
+			this.add('-end', pokemon, 'Gurido');
 		}
 	},
 	rejuvenation: {

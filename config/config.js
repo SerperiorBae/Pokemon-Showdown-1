@@ -171,7 +171,6 @@ exports.customavatars = {
 	'blazingdark': 'crmxKWO.png',
 	'snaiker': '1430951145-garchomp.jpg',
 	'intellmitsue': 'RjByk3a.png',
-	'zenji': 'xenB6yH.png',
 	'holiano': 'sl3M2ms.gif',
 	'skyrio': 'h8dRP1T.png',
 	'seveneight': 'sableye-mega.gif',
@@ -197,6 +196,7 @@ exports.customavatars = {
 	'growlly': 'growlly.png',
 	'shodaimamoru': '7wjb6cB.png',
 	'buhdeath': 'groudon-primal.png',
+	'imcrazyfoxy': 'ezgif-923979556.gif',
 	'hayleysworld': 'Hayley.png',
 	'vileman': 'ezgif-3170600019.gif',
 	'fawnie': 'duQYVTf.png'

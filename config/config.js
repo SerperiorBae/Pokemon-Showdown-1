@@ -174,6 +174,7 @@ exports.customavatars = {
 	'holiano': 'sl3M2ms.gif',
 	'skyrio': 'h8dRP1T.png',
 	'seveneight': 'sableye-mega.gif',
+	'kenichaw': 'gfduj7a.png',
 	'basedlordsoldier': 'JkN7tDh.png',
 	'cll': 'JFTowoR.png',
 	'mindnight': '79332.jpg.m.gif',

@@ -181,6 +181,7 @@ exports.customavatars = {
 	'masterfloat': 'masterfloat.png',
 	'mindnight': '79332.jpg.m.gif',
 	'zzrime': '1430942873-avatar-for-kakuja.gif',
+	'mightyenaboy': 'Mighty.png',
 	'moulefrites': 'swampert-mega.png',
 	'sablette': 'me.png',
 	'toto013': 'Toto_image_player_432_324.jpg',

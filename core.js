@@ -49,7 +49,9 @@ emoticons: {
         'LooL': 'http://i.imgur.com/p4HgXIp.gif',
         'Crie': 'http://i.imgur.com/DHWjlPA.png',
         'juhBlaze': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-001.gif',
-        'baLLs': 'http://i.imgur.com/uOZkuAU.gif'
+        'baLLs': 'http://i.imgur.com/uOZkuAU.gif',
+        'DansGame': 'http://chatslang.com/images/shortcuts/twitch/admins/dansgame.png',
+        'Weed': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-002.gif'
    },
 
     processEmoticons: function (text) {

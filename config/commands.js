@@ -1963,6 +1963,10 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/BsdMZRr.png" />');
 		}
+		if (target === 'gay'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/q298g6H.png" />');
+		}
 		if (target === 'smashing'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/H9JJP25.jpg" />');

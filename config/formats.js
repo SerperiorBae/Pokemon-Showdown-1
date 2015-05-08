@@ -372,7 +372,7 @@ exports.Formats = [
 	},
 	{
 		// Derp.
-		name: "[Seasonal] You are (not) prepared",
+		name: "[Seasonal] Anime Wars",
 		section: 'OM of the Month',
 
 		team: 'randomSeasonalMay2015',
@@ -386,13 +386,13 @@ exports.Formats = [
 		onModifyMove: function (move) {
 			// Shows legit name after use...
 			var legitNames = {
-				recover: "Cura", softboiled: "Curaga", reflect: "Wild Growth", acupressure: "Power Shield",
-				holdhands: "Rejuvenation", luckychant: "Fairy Ward", followme: "Taunt", meditate: "Sacrifice",
-				helpinghand: "Cooperation", spite: "Slow Down", aromaticmist: "Healing Touch", healbell: "Penance",
-				fakeout: "Stop", endure: "Last Stand", withdraw: "Barkskin", seismictoss: "Punishment",
-				flamethrower: "Flamestrike", fireblast: "Conflagration", thunderbolt: "Moonfire", thunder: "Starfire",
-				toxic: "Corruption", leechseed: "Soul Leech", icebeam: "Ice Lance", freezeshock: "Frostbite",
-				aircutter: "Hurricane", muddywater: "Storm", furyswipes: "Fury", scratch: "Garrote", slash: "Mutilate",
+				recover: "Coffee Drink", softboiled: "Devour", reflect: "Dragon Booster", acupressure: "Gurido",
+				holdhands: "Healing Machine", luckychant: "Shield", followme: "Kuso", meditate: "Wings Of Freedom",
+				helpinghand: "A Bad Idea", spite: "Dying Breath", aromaticmist: "Perfect Form.", healbell: "Lum Berry",
+				fakeout: "First Move", endure: "Last Stand", withdraw: "Barkskin", seismictoss: "Punishment",
+				flamethrower: "Gremory Crest", fireblast: "Kagune", thunderbolt: "Kakuja", thunder: "Grappling Hook",
+				toxic: "Death Note", leechseed: "Flesh Eat", icebeam: "Quinque", freezeshock: "Absolute Death",
+				aircutter: "Annihilation", muddywater: "Storm", furyswipes: "Fury", scratch: "Garrote", slash: "Mutilate",
 				smog: "Poison Gas", protect: "Evasion"
 			};
 			if (move.id in legitNames) {
@@ -401,24 +401,44 @@ exports.Formats = [
 		},
 		onFaint: function (pokemon) {
 			var message = {
-				'Amy': 'French?', 'Princess Leia': 'Why, you stuck up, half-witted, scruffy-looking Nerf herder.',
-				'Scruffy': "Scruffy's gonna die the way he lived. [Turns page of Zero-G Juggs magazine.] Mmhm.",
-				'Yoda': 'Wrath leads to the dark side.', 'Bender': 'DEATH TO ALL HUMANS!', 'Gurren Lagann': 'Later, buddy.',
-				'Lagann': "Eh, I guess I'm no one.", 'Rei Ayanami': 'Man fears the darkness, and so he scrapes away at the edges of it with fire.',
-				'Slurms McKenzie': 'I will keep partying until the end.', 'C3PO': 'Oh, dear!',
-				'Hermes': 'I can still... limbo...', 'Professor Farnsworth': 'Bad news, everyone!', 'Kif': 'Sigh.',
-				'Jar Jar Binks': "Better dead here than deader in the Core. Ye gods, whatta meesa sayin'?",
-				'R2D2': '*beep boop*', 'Asuka Langley': 'Disgusting.', 'Chewy': 'GRARARWOOWRALWRL',
-				'Fry': 'Huh. Did everything just taste purple for a second?', 'Han Solo': 'I should have shot first...',
-				'Leela': 'Yeeee-hAW!', 'Luke Skywalker': 'I could not use the force...',
-				'Nibbler': 'I hereby place an order for one cheese pizza.',
-				'Shinji Ikari': 'It would be better if I never existed. I should just die too.', 'Zoidberg': 'Why not Zoidberg?',
-				'Anti-Spiral': 'If this is how it must be, protect the universe at all costs.', 'Gendo Ikari': 'Everything goes according to the plan.',
-				'Kaworu Nagisa': 'Dying of your own will. That is the one and only absolute freedom there is.',
-				'Jabba the Hut': 'Han, ma bukee.', 'Lilith': '...', 'Lrrr': "But I'm emperor of Omicron Persei 8!",
-				'Mommy': 'Stupid!', 'Bobba Fett': "I see now I've done terrible things.", 'Zapp Brannigan': "Oh, God, I'm pathetic. Sorry. Just go...",
-				'An angel': ',,,', 'Darth Vader': "I'm sorry, son.", 'Emperor Palpatine': 'What the hell is an "Aluminum Falcon"?',
-				'Fender': '*beeps*', 'Storm Trooper': 'But my aim is perfect!'
+				'Soul Evans': 'What is this place? Where am I? Wherever it is, it\'s completely dark. I can\'t even see my own body. It hurts... Which way is up? Which way is down? Where am I supposed to go? Someone help me.',
+				'Amon': 'I’ll show them. I will be the one to correct this wrong world.',
+				'Hatsune Miku': "The more tears you shed.. The more beautiful your heart will become.",
+				'Armin': 'The strong feed upon weak. It\'s such an obligingly simple rule. Except in this world, my friends tried to be strong.', 
+				'Moro': 'The Forest Spirit gives life and takes life away. Life and death are his alone. Or have you boars forgotten that?', 
+				'Eren': 'I\'ll kill them all! I\'ll wipe every one of them... off the face of this earth!',
+				'Ryuk': "For me, apples are like cigarettes and liquor for humans. If I\'m deprived, I go into withdrawals. My body gets all twisted, I do handstands, IT\'S NOT PRETTY!",
+				'Akeno': 'Ara Ara Ufufufu. *Jiggles Boobs*',
+				'Totoro': 'I will keep partying until the end.',
+				'Suzuya': 'They can go die for all I care.',
+				'L': 'Justice will prevail.', 
+				'Yuno': 'Don\'t worry. I will protect you.', 
+				'Issei': 'I’m going to continue fighting until I blow away girls clothes just by looking at them!',
+				'Misa': "What A Beautiful way to kill someone.",
+				'Sasha Blouse': '*Holds Potato* POTATO!',
+				'Kaneki': 'Never Kick me when I\'m down. Because when I get up. You\'re Fucked.',
+				'Touka': 'Everything is ‘terrible?’ Don’t make me laugh. So what about me…for me, it’s been terrible since I was born.',
+				'Ayato': 'The world runs on power. Everything is determined by the superior power. You are weak. That is why you lose.',
+				'Rias': 'There’s one last thing you should never forget, Ise. Even a [Pawn] can take down the [King].',
+				'Light Yagami': 'Our battle will be concluded, and I will begin my reign from the summit of victory!',
+				'Levi': 'I could not use the force...',
+				'Mikasa': 'Once I\'m dead, I won\'t even be able to remember you. So I\'ll win, no matter what. I\'ll live, no matter what!',
+				'San': 'you mean so much to me, but I can\'t forgive the humans for what they\'ve done.',
+				'Ashitaka': 'If it would lift the curse, I\'d let it tear you apart. But even that wouldn\'t end the killing now, would it? ',
+				'Freiza': 'Why... you worm! YOU DARE TO MOCK ME? ',
+				'Raynare': 'Issei-kun! Please save me! This Devil is trying to kill me!',
+				'Wrath': 'Why must everyone make such a fuss over the death of a single soldier? The moment a soldier dons his uniform, he accepts the reality that he might be buried in it.',
+				'Rize': 'Whose fault is it that things ended up like this? Coincidence? An accident? Fate? There\'s no such thing as fate.',
+				'Giratina': 'Giygogagohgwooh',
+				'Giovanni': "I see that you raise Pokémon with utmost care. A child like you would never understand what I hope to achieve. I shall step aside this time! I hope we meet again...",
+				'Eto': 'We just have to make Kaneki again, Right?',
+				'Mado': "When you\'re in front of the enemy, even if your hands are trembling - fight.",
+				'Cell': "You wretched child...how dare you...HOW DARE YOU?!",
+				'Lady Eboshi': 'Now watch closely, everyone. I\'m going to show you how to kill a god. A god of life and death. The trick is not to fear him.',
+				'Jason': 'Do what one likes...that is the right of the strong.',
+				'Ani': '*beeps*',
+				'Titan': '*peeks over the city walls*',
+				'Kira': '...'
 			}[pokemon.name];
 			this.add('-message', pokemon.name + ': ' + message);
 		}

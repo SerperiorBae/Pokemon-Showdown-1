@@ -56,7 +56,7 @@ exports.BattleStatuses = {
 			}
 		}
 	},
-	sacrifice: {
+	Wings of Freedom: {
 		duration: 4,
 		onStart: function (target) {
 			this.add('-start', target, 'Wings of Freedom');
@@ -76,7 +76,7 @@ exports.BattleStatuses = {
 			return;
 		}
 	},
-	corruption: {
+	Death Note: {
 		duration: 4,
 		onStart: function (target) {
 			this.add('-start', target, 'Death Note');
@@ -108,7 +108,7 @@ exports.BattleStatuses = {
 			this.add('-sideend', side, 'Dragon Booster');
 		}
 	},
-	powershield: {
+	Gurido: {
 		onStart: function (pokemon) {
 			this.add('-start', pokemon, 'Gurido');
 			this.add('-message', pokemon.name + ' has been shielded!');
@@ -164,7 +164,7 @@ exports.BattleStatuses = {
 			return Math.ceil(damage * 0.95);
 		}
 	},
-	penance: {
+	Lum Berry: {
 		onStart: function (pokemon) {
 			this.add('-start', pokemon, 'Lum Berry');
 		},
@@ -205,7 +205,7 @@ exports.BattleStatuses = {
 			return damage;
 		}
 	},
-	moonfire: {
+	kakuja: {
 		duration: 4,
 		onStart: function (target) {
 			this.add('-start', target, 'move: Kakuja');

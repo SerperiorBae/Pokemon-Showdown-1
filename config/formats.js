@@ -1216,7 +1216,7 @@ exports.Formats = [
 			
 			// Mods.
 			if (name === 'hayley') {
-				this.add('c|@hayleysworld|Oh. This isn\'t a Fall Out Boy Concert. And You're not Patrick Stump :^(');
+				this.add('c|@hayleysworld|Oh. This isn\'t a Fall Out Boy Concert. And You\'re not Patrick Stump :^(');
 			}
 			if (name === 'haunter') {
 				this.add('c|@haunter|Du Mea Lux');

@@ -160,7 +160,7 @@ exports.customavatars = {
 	//'userid': 'customavatar.png'
 	'sempiternus': '6GPEX9Vt.jpeg',
 	'srperor': 'p3kenM2.png',
-	'bisharpette': 'PI3Qugb.gif',
+	'bisharpette': 'mew.png',
 	'victilite': 'mega_victini__by_bitfly-d7qplqc.jpg',
 	'davidthemaster': 'IGaYdPe.png',
 	'shawott': '11247257_299517953551939_1011576751_n1.gif',

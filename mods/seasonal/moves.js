@@ -166,7 +166,7 @@ exports.BattleMovedex = {
 		pp: 20,
 		priority: 3,
 		flags: {},
-		volatileStatus: 'wings of freedom',
+		volatileStatus: 'wingsoffreedom',
 		onTry: function (attacker) {
 			this.attrLastMove('[still]');
 			this.add('-anim', attacker, 'Bulk Up', attacker);
@@ -267,7 +267,7 @@ exports.BattleMovedex = {
 		},
 		onHit: function (target, source) {
 			this.heal(Math.ceil(target.maxhp * 0.125));
-			target.addVolatile('Lum Berry');
+			target.addVolatile('lumberry');
 		},
 		secondary: false,
 		target: "allyTeam",
@@ -459,7 +459,7 @@ exports.BattleMovedex = {
 		pp: 16,
 		priority: 0,
 		flags: {protect: 1, mirror: 1},
-		volatileStatus: 'Death Note',
+		volatileStatus: 'deathnote',
 		onTry: function (attacker, defender) {
 			this.attrLastMove('[still]');
 			this.add('-anim', attacker, 'Spore', defender);

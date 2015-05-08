@@ -164,6 +164,7 @@ exports.customavatars = {
 	'victilite': 'mega_victini__by_bitfly-d7qplqc.jpg',
 	'davidthemaster': 'IGaYdPe.png',
 	'shawott': '11247257_299517953551939_1011576751_n1.gif',
+	'situmparletmort': '9GrQW8g.png',
 	'morganzedriftking': 'photo.jpg.png',
 	'nekis13': 'hO453yM.jpg',
 	'solorbeam': 'solorbeam.gif',

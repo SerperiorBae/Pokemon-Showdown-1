@@ -267,7 +267,7 @@ exports.BattleMovedex = {
 		},
 		onHit: function (target, source) {
 			this.heal(Math.ceil(target.maxhp * 0.125));
-			target.addVolatile('lum berry');
+			target.addVolatile('Lum Berry');
 		},
 		secondary: false,
 		target: "allyTeam",
@@ -432,7 +432,7 @@ exports.BattleMovedex = {
 		accuracy: 100,
 		basePower: 30,
 		basePowerCallback: function (pokemon, target) {
-			if (target.volatiles['grapplinghook']) return 40;
+			if (target.volatiles['kakuja']) return 40;
 			return 30;
 		},
 		category: "Special",
@@ -489,7 +489,7 @@ exports.BattleMovedex = {
 			},
 			onResidualOrder: 8,
 			onResidual: function (pokemon) {
-				var target = this.effectData.source.side.active[pokemon.volatiles['Flesh Eat'].sourcePosition];
+				var target = this.effectData.source.side.active[pokemon.volatiles['leechseed'].sourcePosition];
 				if (!target || target.fainted || target.hp <= 0) {
 					this.debug('Nothing to leech into');
 					return;

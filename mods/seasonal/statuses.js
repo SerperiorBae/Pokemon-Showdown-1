@@ -32,7 +32,7 @@ exports.BattleStatuses = {
 		duration: 5,
 		onStart: function (target) {
 			this.add('-start', target, 'bleeding');
-			this.add('-message', target.name + ' is bleeding!');
+			this.add('-message', target.name + ' is bleeding out!');
 		},
 		onEnd: function (target) {
 			this.add('-end', target, 'bleeding');
@@ -44,11 +44,11 @@ exports.BattleStatuses = {
 	taunting: {
 		duration: 4,
 		onStart: function (target) {
-			this.add('-start', target, 'taunting');
-			this.add('-message', target.name + ' is taunting its enemies!');
+			this.add('-start', target, 'Kuso');
+			this.add('-message', target.name + ' Has pointed at its enemies!');
 		},
 		onEnd: function (target) {
-			this.add('-end', target, 'taunting');
+			this.add('-end', target, 'Kuso');
 		},
 		onFoeRedirectTarget: function (target, source, source2, move) {
 			if (this.validTarget(this.effectData.target, source, move.target)) {
@@ -59,17 +59,17 @@ exports.BattleStatuses = {
 	sacrifice: {
 		duration: 4,
 		onStart: function (target) {
-			this.add('-start', target, 'sacrifice');
-			this.add('-message', target.name + ' is sacrificing itself for its teammates!');
+			this.add('-start', target, 'Wings of Freedom');
+			this.add('-message', target.name + ' Has redirected Incoming Damage To Themselves.');
 		},
 		onEnd: function (target) {
-			this.add('-end', target, 'sacrifice');
+			this.add('-end', target, 'Wings Of Freedom');
 		},
 		onAnyDamage: function (damage, target, source, effect) {
 			for (var i = 0; i < target.side.active.length; i++) {
-				if (target !== target.side.active[i] && target.side.active[i].volatiles['sacrifice']) {
+				if (target !== target.side.active[i] && target.side.active[i].volatiles['Wings of freedom']) {
 					this.add('-message', target.side.active[i].name + "'s Sacrifice took " + target.name + "'s damage!");
-					this.directDamage(damage, target.side.active[i], source, {id: 'sacrifice'});
+					this.directDamage(damage, target.side.active[i], source, {id: 'Wings Of Freedom'});
 					return 0;
 				}
 			}
@@ -79,14 +79,14 @@ exports.BattleStatuses = {
 	corruption: {
 		duration: 4,
 		onStart: function (target) {
-			this.add('-start', target, 'corruption');
+			this.add('-start', target, 'Death Note');
 		},
 		onEnd: function (target) {
-			this.add('-end', target, 'corruption');
+			this.add('-end', target, 'Death Note');
 		},
 		onResidual: function (pokemon) {
 			this.damage(pokemon.maxhp * 0.1);
-			this.add('-message', pokemon.name + ' took Corruption damage!');
+			this.add('-message', pokemon.name + ' Decayed a bit more!');
 		}
 	},
 	wildgrowth: {
@@ -100,12 +100,12 @@ exports.BattleStatuses = {
 				var pokemon = side.active[i];
 				if (pokemon.hp < pokemon.maxhp) {
 					this.heal(pokemon.maxhp * 0.125, pokemon, pokemon);
-					this.add('-message', 'The wild growth recovered some of ' + pokemon.name + "'s HP!");
+					this.add('-message', 'The Dragon Booster recovered some of ' + pokemon.name + "'s HP!");
 				}
 			}
 		},
 		onEnd: function (side) {
-			this.add('-sideend', side, 'Wild Growth');
+			this.add('-sideend', side, 'Dragon Booster');
 		}
 	},
 	powershield: {
@@ -117,7 +117,7 @@ exports.BattleStatuses = {
 			var h = Math.ceil(damage / 4);
 			this.heal(h, target, target);
 			this.add('-message', target.name + "'s Gurido healed it for " + h + "!");
-			target.removeVolatile('powershield');
+			target.removeVolatile('Gurido');
 		},
 		onEnd: function (pokemon) {
 			this.add('-end', pokemon, 'Gurido');
@@ -126,17 +126,17 @@ exports.BattleStatuses = {
 	rejuvenation: {
 		duration: 3,
 		onStart: function (pokemon) {
-			this.add('-start', pokemon, 'Rejuvenation');
-			this.add('-message', pokemon.name + ' is rejuvenating!');
+			this.add('-start', pokemon, 'Healing Machine');
+			this.add('-message', pokemon.name + ' is Healing!');
 		},
 		onResidualOrder: 5,
 		onResidualSubOrder: 2,
 		onResidual: function (pokemon) {
 			this.heal(pokemon.maxhp * 0.18);
-			this.add('-message', pokemon.name + ' healed due to its rejuvenation!');
+			this.add('-message', pokemon.name + ' healed due to the Healing Machine!');
 		},
 		onEnd: function (pokemon) {
-			this.add('-end', pokemon, 'Rejuvenation');
+			this.add('-end', pokemon, 'Healing Machine');
 		}
 	},
 	fairyward: {
@@ -152,12 +152,12 @@ exports.BattleStatuses = {
 			}
 		},
 		onStart: function (side) {
-			this.add('-sidestart', side, 'Fairy Ward');
+			this.add('-sidestart', side, 'Shield');
 		},
 		onResidualOrder: 21,
 		onResidualSubOrder: 2,
 		onEnd: function (side) {
-			this.add('-sideend', side, 'Fairy Ward');
+			this.add('-sideend', side, 'Shield');
 		},
 		onDamagePriority: -10,
 		onDamage: function (damage, target, source, effect) {
@@ -166,17 +166,17 @@ exports.BattleStatuses = {
 	},
 	penance: {
 		onStart: function (pokemon) {
-			this.add('-start', pokemon, 'Penance');
+			this.add('-start', pokemon, 'Lum Berry');
 		},
 		onDamagePriority: -10,
 		onDamage: function (damage, target, source, effect) {
 			var d = Math.ceil(damage * 0.0615);
 			this.heal(d, target, target);
-			this.add('-message', target.name + "'s Penance healed it for " + d + "!");
-			target.removeVolatile('penance');
+			this.add('-message', target.name + "'s Lum Berry healed it for " + d + "!");
+			target.removeVolatile('Lum Berry');
 		},
 		onEnd: function (pokemon) {
-			this.add('-end', pokemon, 'Penance');
+			this.add('-end', pokemon, 'Lum Berry');
 		}
 	},
 	barkskin: {
@@ -208,14 +208,14 @@ exports.BattleStatuses = {
 	moonfire: {
 		duration: 4,
 		onStart: function (target) {
-			this.add('-start', target, 'move: Moonfire');
+			this.add('-start', target, 'move: Kakuja');
 		},
 		onEnd: function (target) {
-			this.add('-end', target, 'move: Moonfire');
+			this.add('-end', target, 'move: Kakuja');
 		},
 		onResidual: function (pokemon) {
 			this.damage(pokemon.maxhp * 0.06);
-			this.add('-message', pokemon.name + ' took Moonfire damage!');
+			this.add('-message', pokemon.name + ' took Kakuja damage!');
 		}
 	}
 };

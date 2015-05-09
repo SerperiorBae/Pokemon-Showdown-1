@@ -10,6 +10,20 @@ button:hover {
     color: #FFF;
 }
 
+.kakuja-btn {
+  background: #A41CFF;
+  color: #FFF;
+  text-shadow: 0px 0px 2px #0D82FF;
+  border: 1px solid #0D82FF;
+  border-bottom-width: 3px;
+  padding: 3px;
+}
+
+.kakuja-btn:hover {
+  background: #FF17C1;
+  text-shadow: 0px -1px #DF13A9;
+}
+
 .astext{ 
     border: none;
     background: none;

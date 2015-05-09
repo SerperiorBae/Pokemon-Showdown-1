@@ -171,6 +171,7 @@ exports.customavatars = {
 	'old90skid': 'reagan.gif',
 	'nekis13': 'hO453yM.jpg',
 	'solorbeam': 'solorbeam.gif',
+	'darkrai9999': 'darkrai.png',
 	'blazingdark': 'crmxKWO.png',
 	'snaiker': '1430951145-garchomp.jpg',
 	'intellmitsue': 'RjByk3a.png',

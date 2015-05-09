@@ -162,7 +162,7 @@ exports.customavatars = {
 	'srperor': 'p3kenM2.png',
 	'pholovvers': 'Qlzs1GR.png',
 	'bisharpette': 'mew.png',
-	'victilite': 'mega_victini__by_bitfly-d7qplqc.jpg',
+	'victilite': 'victilite.png',
 	'davidthemaster': 'IGaYdPe.png',
 	'shawott': '11247257_299517953551939_1011576751_n1.gif',
 	'situmparletmort': '9GrQW8g.png',

@@ -190,7 +190,7 @@ exports.customavatars = {
 	'moulefrites': 'MSwampert_Shiny_ORAS.gif',
 	'sablette': 'me.png',
 	'toto013': 'Toto_image_player_432_324.jpg',
-	'wonderknight': 'Legend_of_Zelda_Sprites_by_TimeSorceror copy.png',
+	'wonderknight': 'kamina_trainer_sprite_by_xoathkeeper-d4yyt9i.png',
 	'angryty': 'wie23mdX.png',
 	'situm': 'bIawfyv.png',
 	'birdtrainersitum': 'dBLXOCt.png',

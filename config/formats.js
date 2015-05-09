@@ -133,6 +133,7 @@ exports.Formats = [
 			this.p2.pokemonLeft = this.p2.pokemon.length;
 		}
 	},
+	{
 		name: "Metronome",
 		section: 'Other Metagames',
 

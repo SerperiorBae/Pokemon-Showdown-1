@@ -180,6 +180,7 @@ exports.customavatars = {
 	'cll': 'JFTowoR.png',
 	'masterfloat': 'float.png',
 	'mindnight': '79332.jpg.m.gif',
+	'leafugisari': 'mFBuRYe.gif',
 	'psykolytic': 'avatar-blog-1214546585-tmpphpesDLi0.gif',
 	'zzrime': '1430942873-avatar-for-kakuja.gif',
 	'mightyenaboy': 'Mighty.png',

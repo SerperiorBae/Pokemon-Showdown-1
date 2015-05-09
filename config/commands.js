@@ -2046,6 +2046,14 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://0.media.dorkly.cvcdn.com/79/63/33f2d1f368e229c7e09baa64804307b4-a-wild-doge-appeared.jpg" height="242" width="300" />');
 		}
+		if (target === 'orgasm'){
+			matched = true;
+			this.sendReplyBox('<img src="http://puu.sh/hHidM/db81baee7d.png" />');
+		}
+		if (target === 'macklemore'){
+			matched = true;
+			this.sendReplyBox('<img src="http://40.media.tumblr.com/43baf9472512df7d44f8f938a0e997be/tumblr_nad882rLHK1qewacoo1_500.jpg" width="300 height="343" />');
+		}
 		if (target === 'troll'){
 			matched = true;
 			this.sendReplyBox('<img src="http://static3.wikia.nocookie.net/__cb20131014231760/legomessageboards/images/c/c2/Troll-face.png" height="200" width="200" />');

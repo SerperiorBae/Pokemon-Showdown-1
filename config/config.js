@@ -196,7 +196,7 @@ exports.customavatars = {
 	'birdtrainersitum': 'dBLXOCt.png',
 	'zukiyo': 'Ad.png',
 	'ransei': '4pQgZsM.png',
-	'annabelleritsun': 'yjwUHFu.png',
+	'annabelleritsun': 'Anna.png',
 	'markohh': 'tumblr_lxxicwMXk41qe1muco1_500.jpg',
 	'philmiester': '93jm23N.png',
 	'growlly': 'growlly.png',

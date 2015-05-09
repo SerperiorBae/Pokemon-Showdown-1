@@ -69,6 +69,21 @@ exports.Formats = [
 		banlist: ['RU', 'BL3', 'Glalitite']
 	},
 	{
+		name: "LC Monotype",
+		section: "Monotype",
+
+		maxForcedLevelLevel: 5,
+		ruleset: ['Pokemon', 'Standard', 'Little Cup', 'Same Type Clause'],
+		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger', 'LC Uber', 'Gligar']
+	},
+	{
+		name: "Monotype Random Battle",
+		section: "Monotype",
+
+		team: 'randomMonotype',
+		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+	},
+	{
 		name: "NU (suspect test)",
 		section: "ORAS Singles",
 

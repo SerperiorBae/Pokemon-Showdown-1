@@ -123,7 +123,7 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'Standard GBU', 'Team Preview GBU'],
 		requirePentagon: true,
 		validateTeam: function (team, format) {
-			if (team.length < 3) return ['You must bring at least three Pokémon.'];
+			if (team.length < 3) return ['You must bring at least three PokÃ©mon.'];
 		},
 		onBegin: function () {
 			this.debug('cutting down to 3');
@@ -132,40 +132,6 @@ exports.Formats = [
 			this.p2.pokemon = this.p2.pokemon.slice(0, 3);
 			this.p2.pokemonLeft = this.p2.pokemon.length;
 		}
-	},
-	{
-		name: "Metronome",
-		section: 'Other Metagames',
-
-		ruleset: ['Team Preview 1v1'],
-		banlist: ['Huge Power', 'Pure Power', 'Sturdy', 'Sand Stream', 'Snow Warning', 'Poison Heal', 'Wonder Guard', 'Harvest', 'Flame Body',
-			'Cursed Body', 'Pressure', 'Poison Point', 'Poison Touch', 'Magic Bounce', 'Magic Guard', 'Iron Barbs', 'Rough Skin', 'Fur Coat',
-			'Sitrus Berry', 'Leftovers', 'Rocky Helmet', 'Berry Juice', 'Black Sludge', 'Focus Sash', 'Big Root', 'Oran Berry', 'Figy Berry',
-			'Mago Berry', 'Wiki Berry', 'Mago Berry', 'Aguav Berry', 'Iapapa Berry', 'Enigma Berry', 'Soul Dew', 'BrightPowder', 'Thick Club',
-			'Lucky Punch', 'Stick', 'Shell Bell', 'Moody', 'Cheek Pouch', 'Parental Bond', 'Imposter', 'Effect Spore', 'Static', 'Aftermath',
-			'Assault Vest','Shell Bell', 'Lax Incense', 'Oran Berry', 'Aerodactylite', 'Aggronite', 'Ampharosite', 'Blastiosite', 'Blazikenite',
-			'Charizardite X', 'Charizardite Y', 'Garchompite', 'Gardevoirite', 'Gyaradosite', 'Latiasite', 'Latiosite', 'Lucarionite',
-			'Tyranitarite', 'Venusaurite'
-		],
-		validateTeam: function (team, format) {
-			var template = this.getTemplate(team.species);
-			var problems = [];
-			if (team.length > 1) problems.push('You may only bring one Pokémon.');
-			if (team[0].level && team[0].level > 100) problems.push((team[0].name || team[0].species) + ' is higher than level 100.');
-			if (team[0].level && team[0].level < 100) problems.push((team[0].name || team[0].species) + ' is lower than level 100.');
-			return problems;
-		},
-		validateSet: function (set, format) {
-			var template = this.getTemplate(set.species);
-			var problems = [];
-			var baseStats = 0;
-			for (var i in template.baseStats) {
-				baseStats += template.baseStats[i];
-			}
-			if (baseStats > 600) problems.push('You are limited to Pokémon with a BST of 600 or lower by BST Clause.');
-			set.moves = ['metronome'];
-			return problems;
-		},
 	},
 	{
 		name: "Custom Game",
@@ -234,7 +200,7 @@ exports.Formats = [
 		banlist: ['Tornadus + Defiant', 'Thundurus + Defiant', 'Landorus + Sheer Force'],
 		requirePentagon: true,
 		validateTeam: function (team, format) {
-			if (team.length < 4) return ['You must bring at least four Pokémon.'];
+			if (team.length < 4) return ['You must bring at least four PokÃ©mon.'];
 		},
 		onBegin: function () {
 			this.debug('cutting down to 4');
@@ -253,7 +219,7 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'Standard GBU', 'Team Preview VGC'],
 		requirePentagon: true,
 		validateTeam: function (team, format) {
-			if (team.length < 4) return ['You must bring at least four Pokémon.'];
+			if (team.length < 4) return ['You must bring at least four PokÃ©mon.'];
 			for (var i = 0; i < team.length; i++) {
 				var item = this.getItem(team[i].item);
 				if (item.id && !item.isBerry) return ['All items other than berries are banned.'];
@@ -279,13 +245,13 @@ exports.Formats = [
 			'Soul Dew'
 		],
 		validateTeam: function (team, format) {
-			if (team.length < 4) return ['You must bring at least four Pokémon.'];
+			if (team.length < 4) return ['You must bring at least four PokÃ©mon.'];
 			var legends = {'Mewtwo':1, 'Lugia':1, 'Ho-Oh':1, 'Kyogre':1, 'Groudon':1, 'Rayquaza':1, 'Dialga':1, 'Palkia':1, 'Giratina':1, 'Reshiram':1, 'Zekrom':1, 'Kyurem':1, 'Xerneas':1, 'Yveltal':1, 'Zygarde':1};
 			var n = 0;
 			for (var i = 0; i < team.length; i++) {
 				var template = this.getTemplate(team[i].species).baseSpecies;
 				if (template in legends) n++;
-				if (n > 2) return ["You can only use up to two legendary Pokémon."];
+				if (n > 2) return ["You can only use up to two legendary PokÃ©mon."];
 			}
 		},
 		onBegin: function () {
@@ -350,7 +316,7 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'Standard GBU', 'Team Preview'],
 		requirePentagon: true,
 		validateTeam: function (team, format) {
-			if (team.length < 6) return ['You must have six Pokémon.'];
+			if (team.length < 6) return ['You must have six PokÃ©mon.'];
 		}
 	},
 	{
@@ -451,7 +417,7 @@ exports.Formats = [
 		onFaint: function (pokemon) {
 			var message = {
 				'Soul Evans': 'What is this place? Where am I? Wherever it is, it\'s completely dark. I can\'t even see my own body. It hurts... Which way is up? Which way is down? Where am I supposed to go? Someone help me.',
-				'Amon': 'I’ll show them. I will be the one to correct this wrong world.',
+				'Amon': 'Iâ€™ll show them. I will be the one to correct this wrong world.',
 				'Hatsune Miku': "The more tears you shed.. The more beautiful your heart will become.",
 				'Armin': 'The strong feed upon weak. It\'s such an obligingly simple rule. Except in this world, my friends tried to be strong.', 
 				'Moro': 'The Forest Spirit gives life and takes life away. Life and death are his alone. Or have you boars forgotten that?', 
@@ -462,13 +428,13 @@ exports.Formats = [
 				'Suzuya': 'They can go die for all I care.',
 				'L': 'Justice will prevail.', 
 				'Yuno': 'Don\'t worry. I will protect you.', 
-				'Issei': 'I’m going to continue fighting until I blow away girls clothes just by looking at them!',
+				'Issei': 'Iâ€™m going to continue fighting until I blow away girls clothes just by looking at them!',
 				'Misa': "What A Beautiful way to kill someone.",
 				'Sasha Blouse': '*Holds Potato* POTATO!',
 				'Kaneki': 'Never Kick me when I\'m down. Because when I get up. You\'re Fucked.',
-				'Touka': 'Everything is ‘terrible?’ Don’t make me laugh. So what about me…for me, it’s been terrible since I was born.',
+				'Touka': 'Everything is â€˜terrible?â€™ Donâ€™t make me laugh. So what about meâ€¦for me, itâ€™s been terrible since I was born.',
 				'Ayato': 'The world runs on power. Everything is determined by the superior power. You are weak. That is why you lose.',
-				'Rias': 'There’s one last thing you should never forget, Ise. Even a [Pawn] can take down the [King].',
+				'Rias': 'Thereâ€™s one last thing you should never forget, Ise. Even a [Pawn] can take down the [King].',
 				'Light Yagami': 'Our battle will be concluded, and I will begin my reign from the summit of victory!',
 				'Levi': 'I could not use the force...',
 				'Mikasa': 'Once I\'m dead, I won\'t even be able to remember you. So I\'ll win, no matter what. I\'ll live, no matter what!',
@@ -479,7 +445,7 @@ exports.Formats = [
 				'Wrath': 'Why must everyone make such a fuss over the death of a single soldier? The moment a soldier dons his uniform, he accepts the reality that he might be buried in it.',
 				'Rize': 'Whose fault is it that things ended up like this? Coincidence? An accident? Fate? There\'s no such thing as fate.',
 				'Giratina': 'Giygogagohgwooh',
-				'Giovanni': "I see that you raise Pokémon with utmost care. A child like you would never understand what I hope to achieve. I shall step aside this time! I hope we meet again...",
+				'Giovanni': "I see that you raise PokÃ©mon with utmost care. A child like you would never understand what I hope to achieve. I shall step aside this time! I hope we meet again...",
 				'Eto': 'We just have to make Kaneki again, Right?',
 				'Mado': "When you\'re in front of the enemy, even if your hands are trembling - fight.",
 				'Cell': "You wretched child...how dare you...HOW DARE YOU?!",
@@ -538,7 +504,7 @@ exports.Formats = [
 			'Xerneas', 'Yveltal', 'Zekrom', 'Focus Sash', 'Kangaskhanite', 'Soul Dew'
 		],
 		validateTeam: function (team, format) {
-			if (team.length > 3) return ['You may only bring up to three Pokémon.'];
+			if (team.length > 3) return ['You may only bring up to three PokÃ©mon.'];
 		},
 		onBegin: function () {
 			this.p1.pokemon = this.p1.pokemon.slice(0, 1);
@@ -608,7 +574,7 @@ exports.Formats = [
 				for (var i in template.abilities) {
 					if (set.ability === template.abilities[i]) legalAbility = true;
 				}
-				if (!legalAbility) return ['The ability ' + set.ability + ' is banned on Pokémon that do not naturally have it.'];
+				if (!legalAbility) return ['The ability ' + set.ability + ' is banned on PokÃ©mon that do not naturally have it.'];
 			}
 		}
 	},
@@ -647,7 +613,7 @@ exports.Formats = [
 			var template = Tools.getTemplate(set.species);
 			var item = this.getItem(set.item);
 			if (item.name === 'Eviolite' && Object.values(template.baseStats).sum() <= 350) {
-				return ['Eviolite is banned on Pokémon with 350 or lower BST.'];
+				return ['Eviolite is banned on PokÃ©mon with 350 or lower BST.'];
 			}
 		}
 	},
@@ -681,7 +647,7 @@ exports.Formats = [
 		validateSet: function (set) {
 			var template = this.getTemplate(set.species || set.name);
 			if (!template.evos || template.evos.length === 0 || !template.prevo) {
-				return [set.species + " is not the middle Pokémon in an evolution chain."];
+				return [set.species + " is not the middle PokÃ©mon in an evolution chain."];
 			}
 		},
 		ruleset: ['Pokemon', 'Standard', 'Team Preview'],

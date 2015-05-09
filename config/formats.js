@@ -53,6 +53,14 @@ exports.Formats = [
 			'Metagrossite', 'Pinsirite', 'Drizzle', 'Drought', 'Shadow Tag'
 		]
 	},
+		name: "Random LC",
+		section: "ORAS Singles",
+
+		team: 'randomlc',
+		maxForcedLevelLevel: 5,
+		ruleset: ['Pokemon', 'Standard', 'Little Cup'],
+		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger', 'LC Uber', 'Gligar']
+	},
 	{
 		name: "RU",
 		section: "ORAS Singles",

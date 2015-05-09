@@ -168,6 +168,7 @@ exports.customavatars = {
 	'shawott': '11247257_299517953551939_1011576751_n1.gif',
 	'situmparletmort': '9GrQW8g.png',
 	'morganzedriftking': 'photo.jpg.png',
+	'old90skid': 'reagan.gif',
 	'nekis13': 'hO453yM.jpg',
 	'solorbeam': 'solorbeam.gif',
 	'blazingdark': 'crmxKWO.png',

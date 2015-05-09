@@ -1564,14 +1564,14 @@ var commands = exports.commands = {
 			"'s team got swept by Wobbuffet and raged!",
 			"spoke of the Wonder Guard Sableye incident!",
 			"made a coding error!",
+			"died of low ladder!",
 			"was eaten by a Mightyena!",
 			"got confused by the Anime tier!",
 			"insulted Sable in front of Serp!",
 			"got choice locked!",
 			"exploded!",
 			"got confused and tried to use Flying type against Wind type!",
-			"tried to join the Midget Room and was too tall!",
-			"died of a broken heart."
+			"tried to join the Midget Room and was too tall!"
 		];
 
 		return function (target, room, user) {

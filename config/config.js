@@ -190,7 +190,7 @@ exports.customavatars = {
 	'angryty': 'wie23mdX.png',
 	'situm': 'bIawfyv.png',
 	'birdtrainersitum': 'dBLXOCt.png',
-	'zukiyo': 'zukiyo.png',
+	'zukiyo': 'Ad.png',
 	'ransei': '4pQgZsM.png',
 	'annabelleritsun': 'yjwUHFu.png',
 	'markohh': 'tumblr_lxxicwMXk41qe1muco1_500.jpg',

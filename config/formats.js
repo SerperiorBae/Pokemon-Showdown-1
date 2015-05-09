@@ -53,7 +53,7 @@ exports.Formats = [
 			'Metagrossite', 'Pinsirite', 'Drizzle', 'Drought', 'Shadow Tag'
 		]
 	},
-		name: "Random LC",
+		name: "LC Random",
 		section: "ORAS Singles",
 
 		team: 'randomlc',

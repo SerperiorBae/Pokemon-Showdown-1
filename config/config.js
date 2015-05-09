@@ -173,6 +173,7 @@ exports.customavatars = {
 	'blazingdark': 'crmxKWO.png',
 	'snaiker': '1430951145-garchomp.jpg',
 	'intellmitsue': 'RjByk3a.png',
+	'fredmercury': 'tumblr_mznbchb2kv1spmbo7o1_400.gif',
 	'holiano': 'sl3M2ms.gif',
 	'skyrio': 'h8dRP1T.png',
 	'seveneight': 'sableye-mega.gif',

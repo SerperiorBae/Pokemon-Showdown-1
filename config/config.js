@@ -160,7 +160,7 @@ exports.customavatars = {
 	//'userid': 'customavatar.png'
 	'sempiternus': '6GPEX9Vt.jpeg',
 	'srperor': 'p3kenM2.png',
-	'serperiorette': 'p3kenM2.png',
+	'serperiorette': 'serpp.png',
 	'pholovvers': 'Qlzs1GR.png',
 	'bisharpette': 'mew.png',
 	'victilite': 'victilite.png',
@@ -185,6 +185,8 @@ exports.customavatars = {
 	'masterfloat': 'float.png',
 	'mindnight': '79332.jpg.m.gif',
 	'leafugisari': 'mFBuRYe.gif',
+	'tessilith': 'tess.png',
+	'alexmeowth': 'alex.png',
 	'psykolytic': 'avatar-blog-1214546585-tmpphpesDLi0.gif',
 	'zzrime': '1430942873-avatar-for-kakuja.gif',
 	'mightyenaboy': 'Mighty.png',

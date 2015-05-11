@@ -184,6 +184,7 @@ exports.customavatars = {
 	'basedlordsoldier': 'JkN7tDh.png',
 	'cll': 'JFTowoR.png',
 	'masterfloat': 'float.png',
+	'testman9999999': 'Sprite_5_n_491_s.png',
 	'mindnight': '79332.jpg.m.gif',
 	'leafugisari': 'mFBuRYe.gif',
 	'tessilith': 'tess.png',

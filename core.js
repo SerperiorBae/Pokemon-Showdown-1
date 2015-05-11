@@ -51,6 +51,9 @@ emoticons: {
         'juhBlaze': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-001.gif',
         'baLLs': 'http://i.imgur.com/uOZkuAU.gif',
         'DansGame': 'http://chatslang.com/images/shortcuts/twitch/admins/dansgame.png',
+        ';)': 'http://fc02.deviantart.net/fs71/f/2012/039/b/6/meowth_wink_avatar_by_milfeyu-d4p2vi8.png',
+        'Reagan': 'http://puu.sh/hJQFn/675369762a.jpg',
+        'troLL': 'http://puu.sh/hJQFn/675369762a.jpg',
         'Weed': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-002.gif'
    },
 

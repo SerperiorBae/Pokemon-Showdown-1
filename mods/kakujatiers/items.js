@@ -4651,22 +4651,6 @@ exports.BattleItems = {
 		gen: 3,
 		desc: "No competitive use."
 	},
-		"whip": {
-		id: "whip",
-		name: "Whip",
-		fling: {
-			basePower: 60
-		},
-		spritenum: 631,
-		onModifyMove: function (move, user) {
-			if (user.baseTemplate.species === 'Serperior') {
-				move.critRatio += 2;
-			}
-		},
-		num: 684,
-		gen: 6,
-		desc: "If holder is a Serperior, its critical hit ratio is raised by 2 stages."
-	},
 	"whiteherb": {
 		id: "whiteherb",
 		name: "White Herb",

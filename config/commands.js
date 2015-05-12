@@ -1946,13 +1946,29 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Y5bbFq1.jpg" />');
 		}
+		if (target === 'anorexic'){
+			matched = true;
+			this.sendReplyBox('<img src="http://www.humorsharing.com/media/images/1402/i_anorexic_funny_meme_52f6564e73b39.jpg" width="300" height="285" />');
+		}
+		if (target === 'bitches'){
+			matched = true;
+			this.sendReplyBox('<img src="http://www.killthehydra.com/wp-content/uploads/patrick-stewart-star-trek-meme1.jpg" width="400" height="280" />');
+		}
+		if (target === 'booty'){
+			matched = true;
+			this.sendReplyBox('<img src="http://www.quickmeme.com/img/70/702b57e6590f78366b7ada8e4910f43971be735bbed075e5fec653482f572820.jpg" width="420" height="280" />');
+		}
+		if (target === 'disgusting'){
+			matched = true;
+			this.sendReplyBox('<img src=http://i.imgur.com/f5l52n8.jpg" width="400" height="275" />');
+		}
 		if (target === 'arsenal'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/BsdMZRr.png" />');
 		}
 		if (target === 'gay'){
 			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/q298g6H.png" />');
+			this.sendReplyBox('<center><font size="5">LOL NICE TRY FAGGOT</font></center>');
 		}
 		if (target === 'smashing'){
 			matched = true;

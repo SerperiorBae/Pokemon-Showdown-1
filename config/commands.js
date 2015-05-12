@@ -2182,6 +2182,14 @@ var commands = exports.commands = {
                         matched = true;
                         this.sendReplyBox('<img src="http://i.imgur.com/EoITea4.gifg" />');
                 }
+                if (target === 'the fuck did you just say to me'){
+                        matched = true;
+                        this.sendReplyBox('<img src="http://i.imgur.com/1lOmwGW.jpg" />');
+                }
+                if (target === 'u fukn wot'){
+                        matched = true;
+                        this.sendReplyBox('<img src="http://i.imgur.com/L332nfL.jpg" />');
+                }
                 if (target === ''){
 			}
 		else if (!matched) {
@@ -2239,7 +2247,7 @@ var commands = exports.commands = {
 	},
 		emotes: function(target, room, user) {
 		if (!this.canBroadcast()) return;
-		this.sendReplyBox('<center><font size="4" color="#FF24E5"><b>Kakuja Emotes</b></font></center><br><center><font size="2"><i>If you have a suggestion PM an Admin(~) or Leader(&) with the name and image you want, and they will add it ASAP. (Size Limit of : 40x40)</font></center><button class="astext"><img src="http://i.imgur.com/6Evl1pL.jpg" width="30" height="25"><br>badaSS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/irQ3x6G.png" width="30" height="30"><br>cHild</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/RhMeAme.gif" width="30" height="30"><br>feelspink</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-3a624954918104fe-19x27.png" width="20" height="30"><br>Kreygasm</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://a.deviantart.net/avatars/d/o/dogeoffical.gif" width="30" height="30"><br>Doge</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="https://fungustime.pw/tastyplug/emotes/gifs/34.gif" width="36" height="35"><br>KappaSpin</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://www.freesmileys.org/emoticons/emoticon-pokemon-015.gif" width="32" height="32"><br>ZZzz</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/kixjIOR.gif" width="32" height="23"><br>Stare</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/uOZkuAU.gif" width="23" height="34"><br>baLLs</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://puu.sh/hDSDm/9e75df80e5.gif" width="72" height="56"><br>LooL</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/DHWjlPA.png" width="29" height="26"><br>Crie</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://www.freesmileys.org/emoticons/emoticon-pokemon-001.gif" width="45" height="45"><br>juhBlaze</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://chatslang.com/images/shortcuts/twitch/admins/dansgame.png" width="27" height="37"><br>DansGame</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://www.freesmileys.org/emoticons/emoticon-pokemon-002.gif" width="39" height="43"><br>Weed</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://www.ps4news.de/forum/public/style_emoticons/default/trollface%20.gif" width="40" height="33"><br>troLL</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://puu.sh/hJQFn/675369762a.jpg" width="35" height="48"><br>Reagan</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://fc02.deviantart.net/fs71/f/2012/039/b/6/meowth_wink_avatar_by_milfeyu-d4p2vi8.png" width="49" height="35"><br>;)</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
+		this.sendReplyBox('<center><font size="4" color="#FF24E5"><b>Kakuja Emotes</b></font></center><br><center><font size="2"><i>If you have a suggestion PM an Admin(~) or Leader(&) with the name and image you want, and they will add it ASAP. (Size Limit of : 40x40)</font></center><button class="astext"><img src="http://i.imgur.com/6Evl1pL.jpg" width="30" height="25"><br>badaSS</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/irQ3x6G.png" width="30" height="30"><br>cHild</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/RhMeAme.gif" width="30" height="30"><br>feelspink</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://static-cdn.jtvnw.net/jtv_user_pictures/chansub-global-emoticon-3a624954918104fe-19x27.png" width="20" height="30"><br>Kreygasm</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://a.deviantart.net/avatars/d/o/dogeoffical.gif" width="30" height="30"><br>Doge</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="https://fungustime.pw/tastyplug/emotes/gifs/34.gif" width="36" height="35"><br>KappaSpin</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://www.freesmileys.org/emoticons/emoticon-pokemon-015.gif" width="32" height="32"><br>ZZzz</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/kixjIOR.gif" width="32" height="23"><br>Stare</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/uOZkuAU.gif" width="23" height="34"><br>baLLs</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://puu.sh/hDSDm/9e75df80e5.gif" width="72" height="56"><br>LooL</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/DHWjlPA.png" width="29" height="26"><br>Crie</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://www.freesmileys.org/emoticons/emoticon-pokemon-001.gif" width="45" height="45"><br>juhBlaze</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://chatslang.com/images/shortcuts/twitch/admins/dansgame.png" width="27" height="37"><br>DansGame</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://www.freesmileys.org/emoticons/emoticon-pokemon-002.gif" width="39" height="43"><br>Weed</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://www.ps4news.de/forum/public/style_emoticons/default/trollface%20.gif" width="40" height="33"><br>troLL</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://puu.sh/hJQFn/675369762a.jpg" width="35" height="48"><br>Reagan</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://fc02.deviantart.net/fs71/f/2012/039/b/6/meowth_wink_avatar_by_milfeyu-d4p2vi8.png" width="49" height="35"><br>;)</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/MiwopCh.png" width="25" height="25"><br>^_^</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/Qmv32c7.png" width="25" height="25"><br>challengeaccepted</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="http://i.imgur.com/kd7oeiX.png" width="25" height="25"><br>fuckyeah</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/FChx5bz.png" width="25" height="25"><br>gj</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/uRJ4yNR.png" width="28" height="25"><br>justin</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/V3exz0t.png" width="27" height="29"><br>gusta</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/cee078K.png" width="35" height="35"><br>miley</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/7s6zezZ.png" width="30" height="30"><br>nicki</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/4Y4oQI2.png" width="25" height="25"><br>notbad</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/foDFdu5.png" width="30" height="31"><br>stopit</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="astext"><img src="http://i.imgur.com/NPwDs9k.png" width="20" height="20"><br>pokerface</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
 	},
 		kevin: function(target, room, user) {
 		if (!this.canBroadcast()) return;
@@ -2306,7 +2314,7 @@ t2 = 'Working';
 break;
 case 'eating':
 t = 'Ⓔⓐⓣⓘⓝⓖ';
-t2 = 'Eating';
+t2 = 'Eating delicious foods.';
 break;
 case 'fapping':
 t = 'Ⓕⓐⓟⓟⓘⓝⓖ';
@@ -2314,11 +2322,11 @@ t2 = 'Fapping';
 break;
 case 'sexting':
 t = 'Ⓢⓔⓧⓣⓘⓝⓖ';
-t2 = 'Sexting';
+t2 = 'getting laid in rp';
 break;
 case 'coding':
 t = 'Ⓒⓞⓓⓘⓝⓖ';
-t2 = 'Coding';
+t2 = 'stressing over code';
 break;
 case 'anime':
 t = 'Ⓐⓝⓘⓜⓔ';

@@ -65,6 +65,7 @@ emoticons: {
 	'notbad': 'http://i.imgur.com/4Y4oQI2.png',
 	'stopit': 'http://i.imgur.com/foDFdu5.png',
 	'pokerface': 'http://i.imgur.com/NPwDs9k.png',
+	'(makeup)': 'http://forum.femina.mk/styles/default/femina/emoticons/0504.gif',
         'Weed': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-002.gif'
    },
 

@@ -163,6 +163,7 @@ exports.customavatars = {
 	'serperiorette': 'serpp.png',
 	'pholovvers': 'Qlzs1GR.png',
 	'auroramewtwo': 'mew.png',
+	'blazethesamurai': 'blazey.png',
 	'victilite': 'victilite.png',
 	'davidthemaster': 'IGaYdPe.png',
 	'shawott': '11247257_299517953551939_1011576751_n1.gif',

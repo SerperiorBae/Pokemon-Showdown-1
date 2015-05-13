@@ -726,6 +726,11 @@ var commands = {
 				tournament.removeUser(user, this);
 			}
 		},
+		fj: 'forcejoin',
+		fjoin: 'forcejoin',
+		forcejoin: function (tournament, target) {
+			tournament.addUser(target, false, this);
+		},
 		getusers: function (tournament) {
 			if (!this.canBroadcast()) return;
 			var users = usersToNames(tournament.generator.getUsers(true).sort());

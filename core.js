@@ -38,6 +38,7 @@ settings: {
 },
 
 emoticons: {
+	/*
         'badaSS': 'http://i.imgur.com/6Evl1pL.jpg',
         'cHild': 'http://i.imgur.com/irQ3x6G.png',
         'feelspink': 'http://i.imgur.com/RhMeAme.gif',
@@ -77,6 +78,7 @@ emoticons: {
 	'hoers': 'http://cdn.backyardchickens.com/9/9a/500x1000px-LL-9ad46178_funny-two-legged-horse-smiley-emoticon.gif',
 	'(mooning)': 'http://1.bp.blogspot.com/-62l0Cv-DjZI/U1AXGvdQERI/AAAAAAAAGkI/CqhwMLUG-cM/s1600/mooning-skype-emoticon.gif',
         'Weed': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-002.gif'
+        */
    },
 
     processEmoticons: function (text) {

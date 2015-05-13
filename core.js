@@ -70,7 +70,11 @@ emoticons: {
 	'suspicious': 'http://www.zeldalegends.net/admin/style_emoticons/default/l;suspicious.gif',
 	'deadhorse': 'http://www.evacommentary.org/forums/images/smiles/deadhorse.gif',
 	'notworthy': 'https://marinasleeps.files.wordpress.com/2011/09/we-are-not-worthy.gif',
-	'gassy': 'https://marinasleeps.files.wordpress.com/2011/09/we-are-not-worthy.gif',
+	'solorbeam': 'http://fc00.deviantart.net/fs48/f/2009/195/4/6/massive_emote_sex_by_MenInASuitcase.gif',
+	'gassy': 'http://media.newschoolers.com/uploads/images/17/00/52/36/36/523636.gif',
+	'hipthrust': 'http://i50.tinypic.com/v6hugx.gif',
+	'bunny': 'http://smileys.emoticonsonly.com/emoticons/h/happy_surprise-1823.gif',
+	'hoers': 'http://cdn.backyardchickens.com/9/9a/500x1000px-LL-9ad46178_funny-two-legged-horse-smiley-emoticon.gif',
 	'(mooning)': 'http://1.bp.blogspot.com/-62l0Cv-DjZI/U1AXGvdQERI/AAAAAAAAGkI/CqhwMLUG-cM/s1600/mooning-skype-emoticon.gif',
         'Weed': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-002.gif'
    },

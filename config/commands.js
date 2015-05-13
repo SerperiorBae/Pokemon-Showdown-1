@@ -1958,6 +1958,10 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://www.quickmeme.com/img/70/702b57e6590f78366b7ada8e4910f43971be735bbed075e5fec653482f572820.jpg" width="420" height="280" />');
 		}
+		if (target === 'kakuja'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/6bbkc0v.png" />');
+		}
 		if (target === 'disgusting'){
 			matched = true;
 			this.sendReplyBox('<img src=http://i.imgur.com/f5l52n8.jpg" width="400" height="275" />');

@@ -2254,6 +2254,12 @@ var commands = exports.commands = {
 		this.sendReplyBox('<center><img src="http://puu.sh/hEZ0K/0bd7e38ecb.png" width="396" height="356"><br><font size="5">"Call Me Christian Gray"</font></center>');
 			
 	},
+	
+		fj: 'forcejoin',
+		fjoin: 'forcejoin',
+		forcejoin: function (tournament, target) {
+			tournament.addUser(target, false, this);
+	},
 
         away: function (target, room, user) {
 		user.away = !user.away;

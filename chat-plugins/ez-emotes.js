@@ -92,7 +92,7 @@ exports.commands = {
 					this.sendReplyBox("Core.emoticons = " + fs.readFileSync('config/emotes.json','utf8'));
 					break;
 				case 'status':
-					if (!this.can('pban')) return this.sendReply("Access denied.");
+					if (!this.can('potd')) return this.sendReply("Access denied.");
 					if (!parts[1]) {
 						switch (Core.settings.emoteStatus) {
 							case true:
@@ -106,20 +106,20 @@ exports.commands = {
 						switch (toId(parts[1])) {
 							case 'on':
 							case 'enable':
-								if (!this.can('pban')) return this.sendReply("Access denied.");
+								if (!this.can('potd')) return this.sendReply("Access denied.");
 								Core.settings.emoteStatus = true;
 								room.add(Tools.escapeHTML(user.name) + ' has enabled chat emotes.');
 								this.logModCommand(Tools.escapeHTML(user.name) + ' has enabled chat emotes.');
 								break;
 							case 'off':
 							case 'disable':
-								if (!this.can('pban')) return this.sendReply("Access denied.");
+								if (!this.can('potd')) return this.sendReply("Access denied.");
 								Core.settings.emoteStatus = false;
 								room.add(Tools.escapeHTML(user.name) + " has disabled chat emotes.");
 								this.logModCommand(Tools.escapeHTML(user.name) + " has disabled chat emotes.");
 								break;
 							default:
-								if (!this.can('pban')) return this.sendReply("Access denied.");
+								if (!this.can('potd')) return this.sendReply("Access denied.");
 								this.sendReply("Usage: /ezemote status - views the current emote status OR /ezemote status, [off / on] - Turns emotes on / off.  Requires &, ~.");
 						}
 					}

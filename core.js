@@ -66,6 +66,12 @@ emoticons: {
 	'stopit': 'http://i.imgur.com/foDFdu5.png',
 	'pokerface': 'http://i.imgur.com/NPwDs9k.png',
 	'(makeup)': 'http://forum.femina.mk/styles/default/femina/emoticons/0504.gif',
+	'(dog)': 'http://solverbase.com/images/1/17/Skype_hidden_Emoticon_Dog.gif',
+	'suspicious': 'http://www.zeldalegends.net/admin/style_emoticons/default/l;suspicious.gif',
+	'deadhorse': 'http://www.evacommentary.org/forums/images/smiles/deadhorse.gif',
+	'notworthy': 'https://marinasleeps.files.wordpress.com/2011/09/we-are-not-worthy.gif',
+	'gassy': 'https://marinasleeps.files.wordpress.com/2011/09/we-are-not-worthy.gif',
+	'(mooning)': 'http://1.bp.blogspot.com/-62l0Cv-DjZI/U1AXGvdQERI/AAAAAAAAGkI/CqhwMLUG-cM/s1600/mooning-skype-emoticon.gif',
         'Weed': 'http://www.freesmileys.org/emoticons/emoticon-pokemon-002.gif'
    },
 

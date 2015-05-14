@@ -4603,7 +4603,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	bisharp: {
-		randomBattleMoves: ["swordsdance","substitute","suckerpunch","payback",bulletpunch","meteormash","nightbullet","metalshot","ironhead","brickbreak","knockoff"],
+		randomBattleMoves: ["swordsdance","substitute","suckerpunch","payback","bulletpunch","meteormash","nightbullet","metalshot","ironhead","brickbreak","knockoff"],
 		randomDoubleBattleMoves: ["swordsdance","substitute","suckerpunch","ironhead","brickbreak","knockoff","protect"],
 		tier: "OU"
 	},

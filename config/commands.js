@@ -1960,7 +1960,7 @@ var commands = exports.commands = {
 		}
 		if (target === 'kakuja'){
 			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/D3mBel0.png" />');
+			this.sendReplyBox('<img src="http://i.imgur.com/wZuYDht.png" />');
 		}
 		if (target === 'disgusting'){
 			matched = true;

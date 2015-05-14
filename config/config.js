@@ -174,6 +174,7 @@ exports.customavatars = {
 	'solorbeam': 'solorbeam.gif',
 	'darkrai9999': 'darkrai.png',
 	'thundru': 'tR7BxtL.gif',
+	'flareblitzle': 'Blitzle_XY.gif',
 	'blazingdark': 'crmxKWO.png',
 	'snaiker': '1430951145-garchomp.jpg',
 	'sparkl3y': 'chicken_pie_by_deathpwny-d52alyu.gif',

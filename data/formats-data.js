@@ -579,7 +579,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	abra: {
-		randomBattleMoves: ["calmmind","psychic","psyshock","hiddenpowerfighting","shadowball","encore","substitute"],
+		randomBattleMoves: ["calmmind","psychic","psyshock","dazzlingglgeam","signalbeam","hiddenpowerfighting","shadowball","encore","substitute"],
 		randomDoubleBattleMoves: ["protect","psychic","psyshock","hiddenpowerfighting","shadowball","encore","substitute"],
 		tier: "LC"
 	},
@@ -1366,7 +1366,7 @@ exports.BattleFormatsData = {
 		tier: "NU"
 	},
 	aerodactyl: {
-		randomBattleMoves: ["stealthrock","taunt","headsmash","stoneedge","earthquake","aquatail","roost","doubleedge"],
+		randomBattleMoves: ["stealthrock","taunt","headsmash","bravebird","stoneedge","earthquake","aquatail","roost","doubleedge"],
 		randomDoubleBattleMoves: ["wideguard","taunt","stoneedge","rockslide","earthquake","aquatail","protect","icefang","skydrop","tailwind"],
 		eventPokemon: [
 			{"generation":5,"level":15,"gender":"M","isHidden":false,"abilities":["pressure"],"moves":["steelwing","icefang","firefang","thunderfang"],"pokeball":"cherishball"}
@@ -2025,7 +2025,7 @@ exports.BattleFormatsData = {
 		tier: "UU"
 	},
 	suicune: {
-		randomBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","nastyplot","aurorabeam","aquaring","surf","earthpower","freezedry","rest","sleeptalk","calmmind"],
+		randomBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","nastyplot","airslash","extrasensory","aurorabeam","aquaring","surf","earthpower","freezedry","rest","sleeptalk","calmmind"],
 		randomDoubleBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","snarl","tailwind","protect","calmmind"],
 		eventPokemon: [
 			{"generation":3,"level":70,"moves":["gust","aurorabeam","mist","mirrorcoat"]},
@@ -2917,7 +2917,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	absol: {
-		randomBattleMoves: ["swordsdance","suckerpunch","knockoff","superpower","pursuit","playrough"],
+		randomBattleMoves: ["swordsdance","suckerpunch","psychocut","nightslash","extremespeed","knockoff","superpower","pursuit","playrough"],
 		randomDoubleBattleMoves: ["swordsdance","suckerpunch","knockoff","fireblast","superpower","protect","playrough"],
 		eventPokemon: [
 			{"generation":3,"level":5,"abilities":["pressure"],"moves":["scratch","leer","wish"]},
@@ -3617,7 +3617,7 @@ exports.BattleFormatsData = {
 		tier: "LC"
 	},
 	abomasnow: {
-		randomBattleMoves: ["woodhammer","iceshard","blizzard","gigadrain","leechseed","substitute","focuspunch","earthquake"],
+		randomBattleMoves: ["woodhammer","iceshard","blizzard","gigadrain","energyball","petalblizzard","bulletseed","iciclespear","rockblast","curse","revenge","avalanche","payback","leechseed","substitute","focuspunch","earthquake"],
 		randomDoubleBattleMoves: ["blizzard","iceshard","gigadrain","protect","focusblast","woodhammer","earthquake"],
 		tier: "UU"
 	},
@@ -4560,7 +4560,7 @@ exports.BattleFormatsData = {
 		tier: "LC"
 	},
 	accelgor: {
-		randomBattleMoves: ["spikes","yawn","bugbuzz","focusblast","gigadrain","hiddenpowerrock","encore"],
+		randomBattleMoves: ["spikes","yawn","bugbuzz","stickyweb","toxicspikes","raindance","aquajet","rapidspin","focusblast","gigadrain","hiddenpowerrock","encore"],
 		randomDoubleBattleMoves: ["protect","yawn","bugbuzz","focusblast","gigadrain","hiddenpowerrock","encore","sludgebomb"],
 		tier: "RU"
 	},
@@ -4603,7 +4603,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	bisharp: {
-		randomBattleMoves: ["swordsdance","substitute","suckerpunch","bulletpunch","meteormash","nightbullet","metalshot","ironhead","brickbreak","knockoff"],
+		randomBattleMoves: ["swordsdance","substitute","suckerpunch","payback",bulletpunch","meteormash","nightbullet","metalshot","ironhead","brickbreak","knockoff"],
 		randomDoubleBattleMoves: ["swordsdance","substitute","suckerpunch","ironhead","brickbreak","knockoff","protect"],
 		tier: "OU"
 	},

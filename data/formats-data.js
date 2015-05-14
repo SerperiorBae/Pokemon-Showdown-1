@@ -3512,7 +3512,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	spiritomb: {
-		randomBattleMoves: ["shadowsneak","suckerpunch","pursuit","willowisp","somnolence","soulconsumption","embodiment","manifest","etheralallure","remembrance","darkpulse","rest","sleeptalk","foulplay","painsplit","calmmind"],
+		randomBattleMoves: ["shadowsneak","suckerpunch","pursuit","willowisp","darkpulse","rest","sleeptalk","foulplay","painsplit","calmmind"],
 		randomDoubleBattleMoves: ["shadowsneak","suckerpunch","icywind","willowisp","snarl","darkpulse","protect","foulplay","painsplit"],
 		eventPokemon: [
 			{"generation":5,"level":61,"gender":"F","nature":"Quiet","isHidden":false,"moves":["darkpulse","psychic","silverwind","embargo"],"pokeball":"cherishball"}
@@ -4914,7 +4914,7 @@ exports.BattleFormatsData = {
 		randomBattleMoves: ["sleeppowder","quiverdance","hurricane","bugbuzz","substitute"],
 		randomDoubleBattleMoves: ["sleeppowder","quiverdance","hurricane","bugbuzz","roost","protect"],
 		eventPokemon: [
-			// Poké Ball pattern
+			// PokÃ© Ball pattern
 			{"generation":6,"level":12,"gender":"M","isHidden":false,"moves":["stunspore","gust","lightscreen","strugglebug"],"pokeball":"cherishball"},
 			// Fancy pattern
 			{"generation":6,"level":12,"isHidden":false,"moves":["gust","lightscreen","strugglebug","holdhands"],"pokeball":"cherishball"}

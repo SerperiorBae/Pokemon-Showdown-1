@@ -3512,7 +3512,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	spiritomb: {
-		randomBattleMoves: ["shadowsneak","suckerpunch","pursuit","willowisp","darkpulse","rest","sleeptalk","foulplay","painsplit","calmmind"],
+		randomBattleMoves: ["shadowsneak","suckerpunch","pursuit","willowisp","somnolence","soulconsumption","embodiment","manifest","etheralallure","remembrance","darkpulse","rest","sleeptalk","foulplay","painsplit","calmmind"],
 		randomDoubleBattleMoves: ["shadowsneak","suckerpunch","icywind","willowisp","snarl","darkpulse","protect","foulplay","painsplit"],
 		eventPokemon: [
 			{"generation":5,"level":61,"gender":"F","nature":"Quiet","isHidden":false,"moves":["darkpulse","psychic","silverwind","embargo"],"pokeball":"cherishball"}

@@ -173,6 +173,7 @@ exports.customavatars = {
 	'nekis13': 'hO453yM.jpg',
 	'solorbeam': 'solorbeam.gif',
 	'darkrai9999': 'darkrai.png',
+	'thundru': 'tR7BxtL.gif',
 	'blazingdark': 'crmxKWO.png',
 	'snaiker': '1430951145-garchomp.jpg',
 	'sparkl3y': 'chicken_pie_by_deathpwny-d52alyu.gif',

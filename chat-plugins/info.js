@@ -1084,9 +1084,12 @@ var commands = exports.commands = {
 		var type1 = Tools.getType(targets[0]);
 		var type2 = Tools.getType(targets[1]);
 		var type3 = Tools.getType(targets[2]);
+		var type4 = Tools.getType(targets[3]);
 
 		if (pokemon.exists) {
 			target = pokemon.species;
+		} else if (type1.exists && type2.exists && type3.exists && type4.exists && type1 !== type2 && type2 !== type3 && type3 !== type4) {
+			pokemon = {types: [type1.id, type2.id, type3.id, type4.id]};
 		} else if (type1.exists && type2.exists && type3.exists && type1 !== type2 && type2 !== type3) {
 			pokemon = {types: [type1.id, type2.id, type3.id]};
 			target = type1.id + "/" + type2.id + "/" + type3.id;

@@ -1088,9 +1088,9 @@ var commands = exports.commands = {
 
 		if (pokemon.exists) {
 			target = pokemon.species;
-		} else if (type1.exists && type2.exists && type3.exists && type4.exists && type1 !== type2 && type2 !== type3 && type3 !== type4) {
+		} else if (type1.exists && type2.exists && type3.exists && type4.exists && type1 !== type2 && type1 !== type3 && type1 !== type4 && type2 !== type3 && type2 !== type4 && type3 !== type4) {
 			pokemon = {types: [type1.id, type2.id, type3.id, type4.id]};
-		} else if (type1.exists && type2.exists && type3.exists && type1 !== type2 && type2 !== type3) {
+		} else if (type1.exists && type2.exists && type3.exists && type1 !== type2 && type1 !== type3 && type2 !== type3) {
 			pokemon = {types: [type1.id, type2.id, type3.id]};
 			target = type1.id + "/" + type2.id + "/" + type3.id;
 		} else if (type1.exists && type2.exists && type1 !== type2) {

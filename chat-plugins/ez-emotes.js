@@ -55,7 +55,7 @@ exports.commands = {
 					if (!this.can('ban')) return this.sendReply("Access denied.");
 					if (!parts[1]) return this.sendReplyBox("/ezemote remove, [emote]");
 					var emoteName = parts[1];
-					if (!Core.emoticons[emoteName]) return this.sendReplyBox("ERROR - the emote: " + emoteName + " does not exist.");
+					if (!Core.emoticons[emoteName]) return this.sendReply("ERROR - the emote: " + emoteName + " does not exist.");
 					delete Core.emoticons[emoteName];
 					delete emotes[emoteName];
 					saveEmotes();
@@ -74,7 +74,6 @@ exports.commands = {
 					break;
 				case 'view':
 					if (!this.canBroadcast()) return;
-					if (this.broadcasting) return this.sendReply("ERROR: this command is too spammy to broadcast.  Use / instead of ! to see it for yourself.");
 					if (!Core.settings.emoteStatus) {
 						return this.sendReplyBox("<b><font color=red>Sorry, chat emotes have been disabled. :(</b></font>");
 					} else {
@@ -93,7 +92,7 @@ exports.commands = {
 					this.sendReplyBox("Core.emoticons = " + fs.readFileSync('config/emotes.json','utf8'));
 					break;
 				case 'status':
-					if (!this.can('potd')) return this.sendReply("Access denied.");
+					if (!this.can('pban')) return this.sendReply("Access denied.");
 					if (!parts[1]) {
 						switch (Core.settings.emoteStatus) {
 							case true:
@@ -107,20 +106,20 @@ exports.commands = {
 						switch (toId(parts[1])) {
 							case 'on':
 							case 'enable':
-								if (!this.can('potd')) return this.sendReply("Access denied.");
+								if (!this.can('pban')) return this.sendReply("Access denied.");
 								Core.settings.emoteStatus = true;
 								room.add(Tools.escapeHTML(user.name) + ' has enabled chat emotes.');
 								this.logModCommand(Tools.escapeHTML(user.name) + ' has enabled chat emotes.');
 								break;
 							case 'off':
 							case 'disable':
-								if (!this.can('potd')) return this.sendReply("Access denied.");
+								if (!this.can('pban')) return this.sendReply("Access denied.");
 								Core.settings.emoteStatus = false;
 								room.add(Tools.escapeHTML(user.name) + " has disabled chat emotes.");
 								this.logModCommand(Tools.escapeHTML(user.name) + " has disabled chat emotes.");
 								break;
 							default:
-								if (!this.can('potd')) return this.sendReply("Access denied.");
+								if (!this.can('pban')) return this.sendReply("Access denied.");
 								this.sendReply("Usage: /ezemote status - views the current emote status OR /ezemote status, [off / on] - Turns emotes on / off.  Requires &, ~.");
 						}
 					}
@@ -129,15 +128,17 @@ exports.commands = {
 				default:
 					if (!this.canBroadcast()) return;
 					this.sendReplyBox(
-						"EZ-Emote Commands:<br />" +
-						"/ezemote add, [emote], [link] - Adds an emote. Requires @, &, ~.<br />" +
-						"/ezemote remove, [emote] - Removes an emote. Requires @, &, ~.<br />" +
-						"/ezemote status - Views the current status of emotes.  Requires &, ~.<br />" +
-						"/ezemote status, [on / off] - Enables or disables the status of emotes. Requires &, ~.<br />" +
-						"/ezemote list - Shows the emotes that were added with this command.<br />" +
-						"/ezemote view - Shows all of the current emotes with their respected image.<br />" +
-						"/ezemote object - Shows the object of Core.emoticons.<br />" +
-						"/ezemote help - Shows this help command.<br />"
+						"<table bgcolor=\"#ADD8E6\" width=\"100%\"><td>" +
+							"<b><center>EZ-Emote Commands:</center></b><br />" +
+							"/ezemote <code>add, [emote], [link]</code> - Adds an emote. Requires @, &, ~.<br />" +
+							"/ezemote <code>remove, [emote]</code> - Removes an emote. Requires @, &, ~.<br />" +
+							"/ezemote <code>status</code> - Views the current status of emotes.  Requires &, ~.<br />" +
+							"/ezemote <code>status, [on / off]</code> - Enables or disables the status of emotes. Requires &, ~.<br />" +
+							"/ezemote <code>list</code> - Shows the emotes that were added with this command.<br />" +
+							"/ezemote <code>view</code> - Shows all of the current emotes with their respected image.<br />" +
+							"/ezemote <code>object</code> - Shows the object of Core.emoticons. (Mostly for development usage)<br />" +
+							"/ezemote <code>help</code> - Shows this help command.<br />" +
+						"</table></td>"
 					);
 			}
 		} catch (e) {

@@ -129,7 +129,7 @@ exports.commands = {
 				default:
 					if (!this.canBroadcast()) return;
 					this.sendReplyBox(
-						"<table bgcolor=\"#ADD8E6\" width=\"100%\"><td>" +
+						"<table bgcolor=\"#ADD8E6\" width=\"100%\"><td><font color=\"black\">" +
 							"<b><center>EZ-Emote Commands:</center></b><br />" +
 							"/ezemote <code>add, [emote], [link]</code> - Adds an emote. Requires @, &, ~.<br />" +
 							"/ezemote <code>remove, [emote]</code> - Removes an emote. Requires @, &, ~.<br />" +
@@ -139,7 +139,7 @@ exports.commands = {
 							"/ezemote <code>view</code> - Shows all of the current emotes with their respected image.<br />" +
 							"/ezemote <code>object</code> - Shows the object of Core.emoticons. (Mostly for development usage)<br />" +
 							"/ezemote <code>help</code> - Shows this help command.<br />" +
-						"</table></td>"
+						"</table></td></font>"
 					);
 			}
 		} catch (e) {

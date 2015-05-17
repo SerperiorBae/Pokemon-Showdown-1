@@ -169,7 +169,7 @@ exports.customavatars = {
 	'victilite': 'ma3rka.png',
 	'situmparletmort': '9GrQW8g.png',
 	'morganzedriftking': 'photo.jpg.png',
-	'styxiangaius': 'Sty.png'
+	'styxiangaius': 'Sty.png',
 	'nekis13': 'hO453yM.jpg',
 	'solorbeam': 'solorbeam.gif',
 	'darkrai9999': 'darkrai.png',

@@ -164,7 +164,6 @@ exports.customavatars = {
 	'pholovvers': 'Qlzs1GR.png',
 	'auroramewtwo': 'mew.png',
 	'blazethesamurai': 'blazey.png',
-	'victilite': 'Marka.png',
 	'davidthemaster': 'IGaYdPe.png',
 	'shawott': '11247257_299517953551939_1011576751_n1.gif',
 	'situmparletmort': '9GrQW8g.png',
@@ -218,7 +217,6 @@ exports.customavatars = {
 	'imcrazyfoxy': 'ezgif-923979556.gif',
 	'hayleysworld': 'Hayley.png',
 	'vileman': 'ezgif-3170600019.gif',
-	'fawnie': 'duQYVTf.png'
 };
 
 // Tournament announcements

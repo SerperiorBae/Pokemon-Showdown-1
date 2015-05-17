@@ -166,6 +166,7 @@ exports.customavatars = {
 	'blazethesamurai': 'blazey.png',
 	'davidthemaster': 'IGaYdPe.png',
 	'shawott': '11247257_299517953551939_1011576751_n1.gif',
+	'victilite': 'Marka.png',
 	'situmparletmort': '9GrQW8g.png',
 	'morganzedriftking': 'photo.jpg.png',
 	'styxiangaius': 'Sty.png'

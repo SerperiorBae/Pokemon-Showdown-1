@@ -2194,6 +2194,10 @@ var commands = exports.commands = {
                         matched = true;
                         this.sendReplyBox('<img src="http://i.imgur.com/L332nfL.jpg" />');
                 }
+                if (target === 'getrekt'){
+                        matched = true;
+                        this.sendReplyBox('<img src="http://i.imgur.com/XU7JlpQ.png" />');
+                }
                 if (target === ''){
 			}
 		else if (!matched) {

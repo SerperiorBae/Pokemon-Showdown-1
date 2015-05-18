@@ -175,6 +175,8 @@ exports.customavatars = {
 	'darkrai9999': 'darkrai.png',
 	'mscizorsstab': 'sciz.png',
 	'sheerforceskitty': 'annabelle.png',
+	'cavestoryo3o': 'CS_E3_Artwork2a.jpg',
+	'richhomiemikael': 'I3NUjQ8.png',
 	'deice': 'cha.png',
 	'joltythejolteon': 'jolty.gif',
 	'thundru': 'tR7BxtL.gif',

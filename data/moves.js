@@ -2566,7 +2566,7 @@ exports.BattleMovedex = {
 		flags: {protect: 1, mirror: 1},
 		secondary: false,
 		target: "allAdjacentFoes",
-		type: "Spirit"
+		type: "Fairy"
 	},
 	"defendorder": {
 		num: 455,

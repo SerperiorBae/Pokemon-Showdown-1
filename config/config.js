@@ -188,6 +188,7 @@ exports.customavatars = {
 	'intellmitsue': 'RjByk3a.png',
 	'fredmercury': 'tumblr_mznbchb2kv1spmbo7o1_400.gif',
 	'holiano': 'sl3M2ms.gif',
+	'suicunicide': 'Photo on 3-25-15 at 3.41 PM #2.png',
 	'skyrio': 'h8dRP1T.png',
 	'seveneight': 'sableye-mega.gif',
 	'kenichaw': 'gfduj7a.png',

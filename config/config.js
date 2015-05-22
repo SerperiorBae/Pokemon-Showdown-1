@@ -201,7 +201,7 @@ exports.customavatars = {
 	'mindnight': '79332.jpg.m.gif',
 	'leafugisari': 'mFBuRYe.gif',
 	'tessilith': 'tess.png',
-	'ezrfarquen': 'Ezra.png',
+	'ezrfarqun': 'Ezra.png',
 	'alexmeowth': 'alex.png',
 	'cryptik': 'Cryptik.png',
 	'psykolytic': 'avatar-blog-1214546585-tmpphpesDLi0.gif',

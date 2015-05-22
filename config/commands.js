@@ -2040,7 +2040,7 @@ var commands = exports.commands = {
 		}
 		if (target === 'ps mafia'){
 			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/GrLo4FV.png" />');
+			this.sendReplyBox('<img src="http://i.imgur.com/qIkfkoJ.png" />');
 		}
 		if (target === 'pretty'){
 			matched = true;

@@ -186,7 +186,7 @@ exports.customavatars = {
 	'snaiker': '1430951145-garchomp.jpg',
 	'sparkl3y': 'chicken_pie_by_deathpwny-d52alyu.gif',
 	'intellmitsue': 'RjByk3a.png',
-	'ampharosthebeast': 'yxws3sX.png',
+	'ampharosthebeast': 'so2Lkn33.png',
 	'fredmercury': 'tumblr_mznbchb2kv1spmbo7o1_400.gif',
 	'holiano': 'sl3M2ms.gif',
 	'suicunicide': 'fallen angel.png',

@@ -202,7 +202,7 @@ exports.customavatars = {
 	'leafugisari': 'mFBuRYe.gif',
 	'tessilith': 'tess.png',
 	'alexmeowth': 'alex.png',
-	'cryptik': 'Cryptik.png'
+	'cryptik': 'Cryptik.png',
 	'psykolytic': 'avatar-blog-1214546585-tmpphpesDLi0.gif',
 	'zzrime': '1430942873-avatar-for-kakuja.gif',
 	'mightyenaboy': 'Mighty.png',

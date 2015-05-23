@@ -135,7 +135,7 @@ exports.BattleMovedex = {
 	},
 	"mistralwinds": {
 		num: 650,
-		accuracy: 100,
+		accuracy: 69,
 		basePower: 0,
 		category: "Status",
 		desc: "Freezes the target.",

@@ -2712,7 +2712,7 @@ exports.BattleFormatsData = {
 		tier: "LC"
 	},
 	altaria: {
-		randomBattleMoves: ["dragondance","dracometeor","airslash","icywind","outrage","dragonclaw","earthquake","roost","fireblast","healbell"],
+		randomBattleMoves: ["dragondance","dracometeor","mistralwinds","airslash","icywind","outrage","dragonclaw","earthquake","roost","fireblast","healbell"],
 		randomDoubleBattleMoves: ["dragondance","dracometeor","protect","dragonclaw","earthquake","fireblast","tailwind"],
 		eventPokemon: [
 			{"generation":3,"level":45,"moves":["takedown","dragonbreath","dragondance","refresh"]},
@@ -2905,11 +2905,11 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	chingling: {
-		randomBattleMoves: ["hypnosis","reflect","lightscreen","toxic","recover","psychic","signalbeam","healbell"],
+		randomBattleMoves: ["hypnosis","reflect","lightscreen","windchime","toxic","recover","psychic","signalbeam","healbell"],
 		tier: "LC"
 	},
 	chimecho: {
-		randomBattleMoves: ["psychic","yawn","recover","calmmind","shadowball","healingwish","healbell","taunt"],
+		randomBattleMoves: ["psychic","yawn","recover","calmmind","windchime","shadowball","healingwish","healbell","taunt"],
 		randomDoubleBattleMoves: ["protect","psychic","thunderwave","recover","shadowball","dazzlinggleam","trickroom","helpinghand","taunt"],
 		eventPokemon: [
 			{"generation":3,"level":10,"gender":"M","moves":["wrap","growl","astonish"]}
@@ -4184,11 +4184,11 @@ exports.BattleFormatsData = {
 		tier: "BL"
 	},
 	cottonee: {
-		randomBattleMoves: ["encore","taunt","substitute","leechseed","toxic","stunspore"],
+		randomBattleMoves: ["encore","taunt","windchime","substitute","leechseed","toxic","stunspore"],
 		tier: "LC"
 	},
 	whimsicott: {
-		randomBattleMoves: ["encore","taunt","substitute","leechseed","uturn","toxic","stunspore","memento","tailwind","moonblast"],
+		randomBattleMoves: ["encore","taunt","substitute","windchime","leechseed","uturn","toxic","stunspore","memento","tailwind","moonblast"],
 		randomDoubleBattleMoves: ["encore","taunt","substitute","leechseed","uturn","helpinghand","stunspore","moonblast","tailwind","dazzlinggleam","gigadrain","protect"],
 		eventPokemon: [
 			{"generation":5,"level":50,"gender":"F","nature":"Timid","isHidden":false,"abilities":["prankster"],"moves":["swagger","gigadrain","beatup","helpinghand"],"pokeball":"cherishball"}
@@ -4694,7 +4694,7 @@ exports.BattleFormatsData = {
 		tier: "RU"
 	},
 	tornadus: {
-		randomBattleMoves: ["bulkup","acrobatics","knockoff","substitute","hurricane","heatwave","superpower","uturn","taunt","tailwind"],
+		randomBattleMoves: ["bulkup","acrobatics","knockoff","mistralwinds","typhoon","substitute","hurricane","heatwave","superpower","uturn","taunt","tailwind"],
 		randomDoubleBattleMoves: ["hurricane","airslash","uturn","superpower","focusblast","taunt","substitute","heatwave","tailwind","protect","skydrop"],
 		eventPokemon: [
 			{"generation":5,"level":70,"gender":"M","isHidden":false,"moves":["hurricane","hammerarm","airslash","hiddenpower"],"pokeball":"cherishball"}
@@ -4703,7 +4703,7 @@ exports.BattleFormatsData = {
 		tier: "BL2"
 	},
 	tornadustherian: {
-		randomBattleMoves: ["hurricane","airslash","heatwave","knockoff","superpower","uturn","taunt"],
+		randomBattleMoves: ["hurricane","airslash","heatwave","mistralwinds","typhoon","knockoff","superpower","uturn","taunt"],
 		randomDoubleBattleMoves: ["hurricane","airslash","focusblast","uturn","heatwave","skydrop","tailwind","taunt","protect"],
 		eventPokemon: [
 			{"generation":5,"level":70,"gender":"M","isHidden":false,"moves":["hurricane","hammerarm","airslash","hiddenpower"],"pokeball":"cherishball"}

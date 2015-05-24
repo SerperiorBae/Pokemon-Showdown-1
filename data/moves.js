@@ -80,15 +80,15 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Poison"
 	},
-	“cuddle”: {
+	"cuddle": {
 		num: 653,
 		accuracy: 100,
 		basePower: 100,
 		category: "Special",
 		desc: "Causes the target to become infatuated, making it unable to attack 50% of the time. Fails if both the user and the target are the same gender, if either is genderless, or if the target is already infatuated. The effect ends when either the user or the target is no longer active. Pokemon with the Ability Oblivious or protected by the Ability Aroma Veil are immune.",
 		shortDesc: "A target of the opposite gender gets infatuated.",
-		id: “cuddle”,
-		name: “Cuddle”,
+		id: "cuddle",
+		name: "Cuddle",
 		pp: 15,
 		priority: 0,
 		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
@@ -130,7 +130,7 @@ exports.BattleMovedex = {
 		},
 		secondary: false,
 		target: "normal",
-		type: “Psychic”
+		type: "Psychic"
 	},
 	"acrobatics": {
 		num: 512,

@@ -2025,7 +2025,7 @@ exports.BattleFormatsData = {
 		tier: "UU"
 	},
 	suicune: {
-		randomBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","nastyplot","airslash","extrasensory","aurorabeam","aquaring","surf","earthpower","freezedry","rest","sleeptalk","calmmind"],
+		randomBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","cuddle","nastyplot","airslash","extrasensory","aurorabeam","aquaring","surf","earthpower","freezedry","rest","sleeptalk","calmmind"],
 		randomDoubleBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","snarl","tailwind","protect","calmmind"],
 		eventPokemon: [
 			{"generation":3,"level":70,"moves":["gust","aurorabeam","mist","mirrorcoat"]},
@@ -3925,7 +3925,7 @@ exports.BattleFormatsData = {
 		tier: "PU"
 	},
 	serperior: {
-		randomBattleMoves: ["leafstorm","dragonpulse","dracometeor","hiddenpowerfire","substitute","leechseed","glare"],
+		randomBattleMoves: ["leafstorm","dragonpulse","dracometeor","cuddle","hiddenpowerfire","substitute","leechseed","glare"],
 		randomDoubleBattleMoves: ["leafstorm","hiddenpowerfire","substitute","taunt","dragonpulse","protect"],
 		eventPokemon: [
 			{"generation":5,"level":100,"gender":"M","isHidden":false,"moves":["leafstorm","substitute","gigadrain","leechseed"],"pokeball":"cherishball"},

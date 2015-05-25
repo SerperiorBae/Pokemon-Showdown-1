@@ -189,6 +189,7 @@ exports.customavatars = {
 	'psykolytic': 'avatar-blog-1214546585-tmpphpesDLi0.gif',
 	'mightyenaboy': 'Mighty.png',
 	'leshinyzorua': 'me.png',
+	'sablette': 'me.png',
 	'toto013': 'Toto_image_player_432_324.jpg',
 	'wonderknight': 'kamina_trainer_sprite_by_xoathkeeper-d4yyt9i.png',
 	'zukiyo': 'Ad.png',

@@ -161,6 +161,7 @@ exports.customavatars = {
 	'sempiternus': '6GPEX9Vt.jpeg',
 	'srperor': 'p3kenM2.png',
 	'snivvu': 'serpp.png',
+	'audinoprimal': 'audinoprimal.gif',
 	'serperiorette': 'serpp2.png',
 	'darknessumbreon': 'a6a6f06999719abd312f16233250a174_400x400.jpeg',
 	'auroramewtwo': 'mew.png',

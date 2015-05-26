@@ -166,7 +166,7 @@ exports.customavatars = {
 	'darknessumbreon': 'a6a6f06999719abd312f16233250a174_400x400.jpeg',
 	'auroramewtwo': 'mew.png',
 	'blazethesamurai': 'blazey.png',
-	'victilite': 'ma3rka.png',
+	'keyboys': 'ma3rka.png',
 	'morganzedriftking': 'photo.jpg.png',
 	'styxiangaius': 'Sty.png',
 	'nekis13': 'hO453yM.jpg',

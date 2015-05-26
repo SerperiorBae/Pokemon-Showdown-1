@@ -200,7 +200,7 @@ exports.customavatars = {
 	'markohh': 'tumblr_lxxicwMXk41qe1muco1_500.jpg',
 	'philmiester': 'Phil2.png',
 	'mysuicideissilent': 'rZKZKAz.png',
-	'growlly': 'gr.png',
+	'growlly': 'gro.png',
 	'sazhkatzroy': 'T.png',
 	'hayleysworld': 'Hayley.png',
 	'vileman': 'ezgif-3170600019.gif',

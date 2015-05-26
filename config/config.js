@@ -171,6 +171,7 @@ exports.customavatars = {
 	'styxiangaius': 'Sty.png',
 	'nekis13': 'hO453yM.jpg',
 	'solorbeam': 'solorbeam.gif',
+	'equinoxskitty': 'annabelle2.png',
 	'sheerforceskitty': 'annabelle2.png',
 	'sundar18': 'sun.png',
 	'cavestoryo3o': 'CS_E3_Artwork2a.jpg',

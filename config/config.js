@@ -185,7 +185,7 @@ exports.customavatars = {
 	'masterfloat': 'float.png',
 	'leafugisari': 'mFBuRYe.gif',
 	'tessilith': 'tess.png',
-	'ezrfarqun': 'Ezra.png',
+	'ezrfarqun': 'Ezraa.png',
 	'alexmeowth': 'alex.png',
 	'cryptik': 'Cryptik.png',
 	'psykolytic': 'avatar-blog-1214546585-tmpphpesDLi0.gif',

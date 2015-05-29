@@ -199,7 +199,7 @@ exports.customavatars = {
 	'ransei': '4pQgZsM.png',
 	'annabelleritsun': 'Anna.png',
 	'markohh': 'tumblr_lxxicwMXk41qe1muco1_500.jpg',
-	'philmiester': 'Phil2.png',
+	'philmiester': '6pxZUc1.png',
 	'mysuicideissilent': 'rZKZKAz.png',
 	'growlly': 'gro.png',
 	'sazhkatzroy': 'T.png',

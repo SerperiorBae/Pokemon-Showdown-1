@@ -2882,6 +2882,22 @@ exports.BattleAbilities = {
 		rating: 2,
 		num: 67
 	},
+	"toxicabsorb": {
+		desc: "This Pokemon is immune to Poison-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Poison-type move.",
+		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Poison moves; poison immunity.",
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Poison') {
+				if (!this.heal(target.maxhp / 4)) {
+					this.add('-immune', target, '[msg]');
+				}
+				return null;
+			}
+		},
+		id: "toxicabsorb",
+		name: "Toxic Absorb",
+		rating: 3.5,
+		num: 192
+	},
 	"toxicboost": {
 		desc: "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
 		shortDesc: "While this Pokemon is poisoned, its physical attacks have 1.5x power.",

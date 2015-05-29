@@ -800,7 +800,7 @@ exports.BattleMovedex = {
 		id: "aurorabeam",
 		name: "Aurora Beam",
 		pp: 20,
-		priority: 0,
+		priority: 1,
 		flags: {protect: 1, mirror: 1},
 		secondary: {
 			chance: 10,

@@ -456,6 +456,22 @@ exports.BattleAbilities = {
 		rating: 3,
 		num: 186
 	},
+	"darkdrink": {
+		desc: "This Pokemon is immune to Dark-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Dark-type move.",
+		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Dark moves; Dark immunity.",
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Dark') {
+				if (!this.heal(target.maxhp / 4)) {
+					this.add('-immune', target, '[msg]');
+				}
+				return null;
+			}
+		},
+		id: "darkdrink",
+		name: "Dark Drink",
+		rating: 3.5,
+		num: 196
+	},
 	"defeatist": {
 		desc: "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
 		shortDesc: "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",
@@ -906,6 +922,22 @@ exports.BattleAbilities = {
 		name: "Frisk",
 		rating: 1.5,
 		num: 119
+	},
+	"frostdrink": {
+		desc: "This Pokemon is immune to Ice-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Ice-type move.",
+		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Ice moves; Ice immunity.",
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Ice') {
+				if (!this.heal(target.maxhp / 4)) {
+					this.add('-immune', target, '[msg]');
+				}
+				return null;
+			}
+		},
+		id: "frostdrink",
+		name: "Frost Drink",
+		rating: 3.5,
+		num: 194
 	},
 	"furcoat": {
 		shortDesc: "This Pokemon's Defense is doubled.",
@@ -1686,6 +1718,22 @@ exports.BattleAbilities = {
 		name: "No Guard",
 		rating: 4,
 		num: 99
+	},
+		"normabsorb": {
+		desc: "This Pokemon is immune to Normal-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Normal-type move.",
+		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Normal moves; Normal immunity.",
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Normal') {
+				if (!this.heal(target.maxhp / 4)) {
+					this.add('-immune', target, '[msg]');
+				}
+				return null;
+			}
+		},
+		id: "normabsorb",
+		name: "Normabsorb",
+		rating: 3.5,
+		num: 195
 	},
 	"normalize": {
 		desc: "This Pokemon's moves are changed to be Normal type. This effect comes before other effects that change a move's type.",
@@ -2514,6 +2562,21 @@ exports.BattleAbilities = {
 		name: "Soundproof",
 		rating: 2,
 		num: 43
+	},
+		"specialboost": {
+		desc: "This Pokemon's Special Attack is raised by 1 stage at the end of each full turn it has been on the field.",
+		shortDesc: "This Pokemon's SAtk is raised 1 stage at the end of each full turn on the field.",
+		onResidualOrder: 26,
+		onResidualSubOrder: 1,
+		onResidual: function (pokemon) {
+			if (pokemon.activeTurns) {
+				this.boost({spa:1});
+			}
+		},
+		id: "specialboost",
+		name: "Special Boost",
+		rating: 4.5,
+		num: 197
 	},
 	"speedboost": {
 		desc: "This Pokemon's Speed is raised by 1 stage at the end of each full turn it has been on the field.",

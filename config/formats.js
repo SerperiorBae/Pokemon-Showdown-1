@@ -995,6 +995,16 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'Standard'],
 		banlist: ['Uber']
 	},
+	
+			name: "[Gen 2] Random Battle",
+		section: "Past Generations",
+
+		mod: 'gen2',
+		searchShow: false,
+		team: 'random',
+		ruleset: ['Pokemon', 'Standard']
+	},
+	
 	{
 		name: "[Gen 2] Custom Game",
 		section: "Past Generations",

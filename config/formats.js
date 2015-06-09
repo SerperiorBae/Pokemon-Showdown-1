@@ -68,21 +68,8 @@ exports.Formats = [
 		ruleset: ['RU'],
 		banlist: ['RU', 'BL3', 'Glalitite']
 	},
-	{
-		name: "LC Monotype",
-		section: "Monotype",
-
-		maxForcedLevelLevel: 5,
-		ruleset: ['Pokemon', 'Standard', 'Little Cup', 'Same Type Clause'],
-		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger', 'LC Uber', 'Gligar']
-	},
-	{
-		name: "Monotype Random Battle",
-		section: "Monotype",
-
-		team: 'randomMonotype',
-		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
-	},
+	
+	
 	{
 		name: "NU (suspect test)",
 		section: "ORAS Singles",
@@ -106,6 +93,64 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'Endless Battle Clause', 'HP Percentage Mod', 'Cancel Mod', 'Team Preview'],
 		banlist: ['Unreleased', 'Illegal']
 	},
+	
+	// Monotype //
+	{
+		name: "Random Monotype",
+		section: "Monotype",
+		column: 2,
+
+		team: 'randommonotype',
+		ruleset: ['Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod']
+	},
+	{
+		name: "Monotype",
+		section: "Monotype",
+
+		ruleset: ['Pokemon', 'Standard', 'Baton Pass Clause', 'Swagger Clause', 'Same Type Clause', 'Team Preview'],
+		banlist: ['Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh',
+			'Kyogre', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Talonflame', 'Xerneas', 'Yveltal', 'Zekrom',
+			'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Salamencite', 'Slowbronite', 'Soul Dew'
+		]
+	},
+	{
+		name: "Ubers Monotype",
+		section: "Monotype",
+
+		ruleset: ['Pokemon', 'Standard Ubers', 'Same Type Clause'],
+		banlist: []
+	},
+	{
+		name: "UU Monotype",
+		section: "Monotype",
+
+		ruleset: ['OU', 'Same Type Clause'],
+		banlist: ['OU', 'BL', 'Heracronite', 'Medichamite', 'Gardevoirite', 'Drizzle', 'Drought']
+	},
+	{
+		name: "RU Monotype",
+		section: "Monotype",
+
+		ruleset: ['UU', 'Same Type Clause'],
+		banlist: ['UU', 'BL2']
+	},
+	{
+		name: "NU Monotype",
+		section: "Monotype",
+
+		ruleset: ['RU (beta)', 'Same Type Clause'],
+		banlist: ['RU', 'BL3']
+	},
+	{
+		name: "LC Monotype",
+		section: "Monotype",
+
+		maxLevel: 5,
+		ruleset: ['Pokemon', 'Standard', 'Little Cup', 'Same Type Clause'],
+		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger', 'LC Uber', 'Gligar']
+	},
+
+
 	/*{
 		name: "CAP Plasmanta Playtest",
 		section: "ORAS Singles",

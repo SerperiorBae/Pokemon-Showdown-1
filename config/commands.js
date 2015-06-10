@@ -2205,6 +2205,82 @@ var commands = exports.commands = {
 			this.sendReply(''+target+' is not available or non existent.');
 		}
 	},
+	
+	  masspm: 'pmall',
+    pmall: function (target, room, user) {
+        if (!this.can('pmall')) return;
+        if (!target) return this.parse('/help pmall');
+
+        var pmName = '~Server PM [Do not reply]';
+
+        for (var i in Users.users) {
+            var message = '|pm|' + pmName + '|' + Users.users[i].getIdentity() + '|' + target;
+            Users.users[i].send(message);
+        }
+    },
+
+    rmall: function (target, room, user) {
+        if(!this.can('declare')) return;
+        if (!target) return this.parse('/help rmall');
+
+        var pmName = '~Server PM [Do not reply]';
+
+        for (var i in room.users) {
+            var message = '|pm|' + pmName + '|' + room.users[i].getIdentity() + '|' + target;
+            room.users[i].send(message);
+        }
+    },
+
+    roomlist: function (target, room, user) {
+        if(!this.can('roomlist')) return;
+
+        var rooms = Object.keys(Rooms.rooms),
+            len = rooms.length,
+            official = ['<b><font color="#1a5e00" size="2">Official chat rooms</font></b><br><br>'],
+            nonOfficial = ['<hr><b><font color="#000b5e" size="2">Chat rooms</font></b><br><br>'],
+            privateRoom = ['<hr><b><font color="#5e0019" size="2">Private chat rooms</font></b><br><br>'];
+
+        while (len--) {
+            var _room = Rooms.rooms[rooms[(rooms.length - len) - 1]];
+            if (_room.type === 'chat') {
+                if (_room.isOfficial) {
+                    official.push(('<a href="/' + _room.title + '" class="ilink">' + _room.title + '</a>'));
+                    continue;
+                }
+                if (_room.isPrivate) {
+                    privateRoom.push(('<a href="/' + _room.title + '" class="ilink">' + _room.title + '</a>'));
+                    continue;
+                }
+                nonOfficial.push(('<a href="/' + _room.title + '" class="ilink">' + _room.title + '</a>'));
+            }
+        }
+
+        this.sendReplyBox(official.join(' ') + nonOfficial.join(' ') + privateRoom.join(' '));
+    },
+	 
+	   sudo: function (target, room, user) {
+        if (!user.can('sudo')) return;
+        var parts = target.split(',');
+        if (parts.length < 2) return this.parse('/help sudo');
+        if (parts.length >= 3) parts.push(parts.splice(1, parts.length).join(','));
+        var targetUser = parts[0],
+            cmd = parts[1].trim().toLowerCase(),
+            commands = Object.keys(CommandParser.commands).join(' ').toString(),
+            spaceIndex = cmd.indexOf(' '),
+            targetCmd = cmd;
+
+        if (spaceIndex > 0) targetCmd = targetCmd.substr(1, spaceIndex - 1);
+
+        if (!Users.get(targetUser)) return this.sendReply('User ' + targetUser + ' not found.');
+        if (commands.indexOf(targetCmd.substring(1, targetCmd.length)) < 0 || targetCmd === '') return this.sendReply('Not a valid command.');
+        if (cmd.match(/\/me/)) {
+            if (cmd.match(/\/me./)) return this.parse('/control ' + targetUser + ', say, ' + cmd);
+            return this.sendReply('You must put a target to make a user use /me.');
+        }
+        CommandParser.parse(cmd, room, Users.get(targetUser), Users.get(targetUser).connections[0]);
+        this.sendReply('You have made ' + targetUser + ' do ' + cmd + '.');
+    },
+	
 		kakujarules: function(target, room, user) {
 		if (!this.canBroadcast()) return;
 		this.sendReplyBox('<font size="4" color="#FF24E5"><b>Kakuja Rules</b></font><br><font size="2" color="#3DA5FF">1.) Staff members are not to warn, mute, or lock any other staff without an admin\'s permission (unless of course they break a global rule)<br>2.) Anyone who mentions nudes will receive an instant lock. If they mention it again, they will be banned, no questions asked.<br>3.) All warnings, mutes, and locks should be delivered maturely and for warranted reasons, not personal reasons.<br>4.) Kakuja has made some changes to typings, type effectiveness, moves, movesets, abilities, and stats. If you have any questions about the changes, please feel free to click on the Kakuja Pokemon button in the roomintro or message an admin.<br>8.) There is a fine line between constructive criticism and disrespect.<br>5.) Staff, please remember that locks are a final measure for discipline, and to deliver warns and mutes first, lock only if the behaviour continues.<br>6.) Be nice.<br>7.) We do not talk about the Wonder Guard Sableye incident. ');

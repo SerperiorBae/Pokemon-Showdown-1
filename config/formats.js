@@ -96,12 +96,12 @@ exports.Formats = [
 	
 	// Monotype //
 	{
--		name: "Monotype Random Battle",
--		section: "Monotype",
--
--		team: 'randomMonotype',
--		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
--	},
+		name: "Monotype Random Battle",
+		section: "Monotype",
+
+		team: 'randomMonotype',
+		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+	},
 	{
 		name: "Monotype",
 		section: "Monotype",

@@ -2211,7 +2211,7 @@ var commands = exports.commands = {
         if (!this.can('pmall')) return;
         if (!target) return this.parse('/help pmall');
 
-        var pmName = '~Server PM [Do not reply]';
+        var pmName = '~Kakuja Staff [Do not reply]';
 
         for (var i in Users.users) {
             var message = '|pm|' + pmName + '|' + Users.users[i].getIdentity() + '|' + target;
@@ -2223,7 +2223,7 @@ var commands = exports.commands = {
         if(!this.can('declare')) return;
         if (!target) return this.parse('/help rmall');
 
-        var pmName = '~Server PM [Do not reply]';
+        var pmName = '~Kakuja Staff [Room Message]';
 
         for (var i in room.users) {
             var message = '|pm|' + pmName + '|' + room.users[i].getIdentity() + '|' + target;
@@ -2339,12 +2339,6 @@ var commands = exports.commands = {
 			
 	},
 	
-	fj: 'forcejoin',
-	fjoin: 'forcejoin',
-	forcejoin: function (tournament, target) {
-		tournament.addUser(target, false, this);
-	},
-
         away: function (target, room, user) {
 		user.away = !user.away;
 		user.updateIdentity();

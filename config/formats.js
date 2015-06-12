@@ -94,62 +94,6 @@ exports.Formats = [
 		banlist: ['Unreleased', 'Illegal']
 	},
 	
-	// Monotype //
-	{
-		name: "Monotype Random Battle",
-		section: "Monotype",
-
-		team: 'randomMonotype',
-		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
-	},
-	{
-		name: "Monotype",
-		section: "Monotype",
-
-		ruleset: ['Pokemon', 'Standard', 'Baton Pass Clause', 'Swagger Clause', 'Same Type Clause', 'Team Preview'],
-		banlist: ['Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh',
-			'Kyogre', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Talonflame', 'Xerneas', 'Yveltal', 'Zekrom',
-			'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Salamencite', 'Slowbronite', 'Soul Dew'
-		]
-	},
-	{
-		name: "Ubers Monotype",
-		section: "Monotype",
-
-		ruleset: ['Pokemon', 'Standard Ubers', 'Same Type Clause'],
-		banlist: []
-	},
-	{
-		name: "UU Monotype",
-		section: "Monotype",
-
-		ruleset: ['OU', 'Same Type Clause'],
-		banlist: ['OU', 'BL', 'Heracronite', 'Medichamite', 'Gardevoirite', 'Drizzle', 'Drought']
-	},
-	{
-		name: "RU Monotype",
-		section: "Monotype",
-
-		ruleset: ['UU', 'Same Type Clause'],
-		banlist: ['UU', 'BL2']
-	},
-	{
-		name: "NU Monotype",
-		section: "Monotype",
-
-		ruleset: ['RU (beta)', 'Same Type Clause'],
-		banlist: ['RU', 'BL3']
-	},
-	{
-		name: "LC Monotype",
-		section: "Monotype",
-
-		maxLevel: 5,
-		ruleset: ['Pokemon', 'Standard', 'Little Cup', 'Same Type Clause'],
-		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger', 'LC Uber', 'Gligar']
-	},
-
-
 	/*{
 		name: "CAP Plasmanta Playtest",
 		section: "ORAS Singles",
@@ -189,6 +133,71 @@ exports.Formats = [
 		// no restrictions, for serious (other than team preview)
 		ruleset: ['Team Preview', 'Cancel Mod']
 	},
+	
+	// Monotype //
+	{
+		name: "Monotype Random Battle",
+		section: "Monotype",
+		column: 2,
+
+		team: 'randomMonotype',
+		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+	},
+	{
+		name: "Monotype",
+		section: "Monotype",
+		column: 2,
+
+		ruleset: ['Pokemon', 'Standard', 'Baton Pass Clause', 'Swagger Clause', 'Same Type Clause', 'Team Preview'],
+		banlist: ['Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh',
+			'Kyogre', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Talonflame', 'Xerneas', 'Yveltal', 'Zekrom',
+			'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Salamencite', 'Slowbronite', 'Soul Dew'
+		]
+	},
+	{
+		name: "Ubers Monotype",
+		section: "Monotype",
+		column: 2,
+
+		ruleset: ['Pokemon', 'Standard Ubers', 'Same Type Clause'],
+		banlist: []
+	},
+	{
+		name: "UU Monotype",
+		section: "Monotype",
+		column: 2,
+
+		ruleset: ['OU', 'Same Type Clause'],
+		banlist: ['OU', 'BL', 'Heracronite', 'Medichamite', 'Gardevoirite', 'Drizzle', 'Drought']
+	},
+	{
+		name: "RU Monotype",
+		section: "Monotype",
+		column: 2,
+
+		ruleset: ['UU', 'Same Type Clause'],
+		banlist: ['UU', 'BL2']
+	},
+	{
+		name: "NU Monotype",
+		section: "Monotype",
+		column: 2,
+
+		ruleset: ['RU (beta)', 'Same Type Clause'],
+		banlist: ['RU', 'BL3']
+	},
+	{
+		name: "LC Monotype",
+		section: "Monotype",
+		column: 2,
+
+		maxLevel: 5,
+		ruleset: ['Pokemon', 'Standard', 'Little Cup', 'Same Type Clause'],
+		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger', 'LC Uber', 'Gligar']
+	},
+
+
+	
 
 	// XY Doubles
 	///////////////////////////////////////////////////////////////////
@@ -557,17 +566,7 @@ exports.Formats = [
 			this.p2.pokemonLeft = this.p2.pokemon.length;
 		}
 	},
-	{
-		name: "Monotype",
-		section: "Other Metagames",
-
-		ruleset: ['Pokemon', 'Standard', 'Baton Pass Clause', 'Swagger Clause', 'Same Type Clause', 'Team Preview'],
-		banlist: ['Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh',
-			'Kyogre', 'Kyurem-White', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Talonflame', 'Xerneas', 'Yveltal', 'Zekrom',
-			'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Salamencite', 'Shaymin-Sky', 'Slowbronite', 'Soul Dew'
-		]
-	},
-	{
+		{
 		name: "Tier Shift",
 		section: "Other Metagames",
 
@@ -755,56 +754,41 @@ exports.Formats = [
 	///////////////////////////////////////////////////////////////////
 	
 	{
-		name: "Kakuja Ubers",
-		section: "Kakuja Tiers",
+		name: "Smogon Ubers",
+		section: "Smogon Tiers",
 		mod: 'kakujatiers',
 
 		ruleset: ['Pokemon', 'Standard Ubers', 'Swagger Clause', 'Team Preview', 'Mega Rayquaza Ban Mod'],
 		banlist: ['Blue Orb', 'Red Orb']
 	},
 	{
-		name: "Kakuja OU",
-		section: "Kakuja Tiers",
+		name: "Smogon OU",
+		section: "Smogon Tiers",
 		mod: 'kakujatiers',
 
 		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
 		banlist: ['Uber', 'Soul Dew', 'Blazikenite', 'Gengarite', 'Kangaskhanite', 'Mewtwonite X',  'Mewtwonite Y', 'Salamencite', 'Darkrai + Dark Void', 'Blaziken + Baton Pass', 'Darkrai + Hypnosis', 'Blaziken + Speed Boost', 'Sylveon + Geomancy']
 	},
 	{
-		name: "Kakuja MU",
-		section: "Kakuja Tiers",
-		mod: 'kakujatiers',
-
-		ruleset: ['Pokemon', 'Standard', 'Team Preview', 'Swagger Clause', 'Baton Pass Clause'],
-		banlist: ['OU', 'Charizardite X', 'Galladite', 'Latiosite', 'Lucarionite', 'Mawilite', 'Metagrossite', 'Sablenite', 'Slowbronite']
-	},
-	{
-		name: "Kakuja UU",
-		section: "Kakuja Tiers",
+		name: "Smogon UU",
+		section: "Smogon Tiers",
 		mod: 'kakujatiers',
 
 		ruleset: ['OU'],
 		banlist: ['UU', 'BL', 'Drizzle', 'Drought', 'Shadow Tag', 'Alakazite', 'Altarianite', 'Charizardite Y', 'Diancite', 'Garchompite', 'Gardevoirite', 'Gyaradosite', 'Heracronite', 'Latiasite', 'Lopunnite', 'Medichamite', 'Pinsirite', 'Scizorite', 'Tyranitarite', 'Venusaurite']
 	},
 	{
-		name: "Kakuja RU",
+		name: "Smogon RU",
 		section: "Kakuja Tiers",
 		mod: 'kakujatiers',
 
 		ruleset: ['UU'],
 		banlist: ['UU', 'Absolite', 'Aerodactylite', 'Aggronite', 'Ampharosite', 'Beedrillite', 'Blastoisinite', 'Houndoominite', 'Manectite', 'Pidgeotite', 'Sceptilite', 'Sharpedonite', 'Swampertite']
 	},
-	{
-		name: "Kakuja BU",
-		section: "Kakuja Tiers",
-		mod: 'kakujatiers',
 
-		ruleset: ['RU'],
-		banlist: ['RU', 'Abomasite', 'Banettite', 'Glalitite', 'Steelixite']
-	},	
 	{
-		name: "Kakuja NU",
-		section: "Kakuja Tiers",
+		name: "Smogon NU",
+		section: "Smogon Tiers",
 		mod: 'kakujatiers',
 
 		ruleset: ['RU'],

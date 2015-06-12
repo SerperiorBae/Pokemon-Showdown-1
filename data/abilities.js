@@ -74,6 +74,22 @@ exports.BattleAbilities = {
 		rating: 4,
 		num: 185
 	},
+		"airabsorb": {
+		desc: "This Pokemon is immune to Flying-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Flying-type move.",
+		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Flying moves; Flying immunity.",
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Flying') {
+				if (!this.heal(target.maxhp / 4)) {
+					this.add('-immune', target, '[msg]');
+				}
+				return null;
+			}
+		},
+		id: "airabsorb",
+		name: "Air Absorb",
+		rating: 3.5,
+		num: 198
+	},
 	"airlock": {
 		shortDesc: "While this Pokemon is active, the effects of weather conditions are disabled.",
 		onStart: function (pokemon) {
@@ -472,6 +488,28 @@ exports.BattleAbilities = {
 		rating: 3.5,
 		num: 196
 	},
+		"darken": {
+		desc: "This Pokemon's Normal-type moves become Dark-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Dark type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Dark';
+				if (move.category !== 'Status') pokemon.addVolatile('darken');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "darken",
+		name: "darken",
+		rating: 4,
+		num: 201
+	},
 	"defeatist": {
 		desc: "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
 		shortDesc: "While this Pokemon has 1/2 or less of its max HP, its Attack and Sp. Atk are halved.",
@@ -589,6 +627,22 @@ exports.BattleAbilities = {
 		name: "Download",
 		rating: 4,
 		num: 88
+	},
+		"dracodrink": {
+		desc: "This Pokemon is immune to Dragon-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Dragon-type move.",
+		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Dragon moves; Dragon immunity.",
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Dragon') {
+				if (!this.heal(target.maxhp / 4)) {
+					this.add('-immune', target, '[msg]');
+				}
+				return null;
+			}
+		},
+		id: "dracodrink",
+		name: "dracodrink",
+		rating: 3.5,
+		num: 200
 	},
 	"drizzle": {
 		shortDesc: "On switch-in, this Pokemon summons Rain Dance.",
@@ -2422,6 +2476,22 @@ exports.BattleAbilities = {
 		name: "Shield Dust",
 		rating: 2.5,
 		num: 19
+	},
+		"silversipper": {
+		desc: "This Pokemon is immune to Steel-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Steel-type move.",
+		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Steel moves; Steel immunity.",
+		onTryHit: function (target, source, move) {
+			if (target !== source && move.type === 'Steel') {
+				if (!this.heal(target.maxhp / 4)) {
+					this.add('-immune', target, '[msg]');
+				}
+				return null;
+			}
+		},
+		id: "silversipper",
+		name: "Silver Sipper",
+		rating: 3.5,
+		num: 199
 	},
 	"simple": {
 		shortDesc: "If this Pokemon's stat stages are raised or lowered, the effect is doubled instead.",

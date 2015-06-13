@@ -134,6 +134,49 @@ exports.Formats = [
 		ruleset: ['Team Preview', 'Cancel Mod']
 	},
 	
+	// Serp Breaks Tiers //
+		{
+		name: "Serps Broken Random Battles",
+		section: "Serp Breaks Tiers",
+		column: 4,
+
+		mod: 'gen4',
+		searchShow: false,
+		team: 'random',
+		ruleset: ['PoTD', 'Pokemon', 'Standard']
+	},
+	{
+		name: "[Gen 1] Monotype Random Battle",
+		section: "Serp Breaks Tiers",
+		column: 4,
+		
+		mod: 'gen1',
+		team: 'randomMonotype',
+		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+	},
+		{
+		name: "[Gen 2] Monotype Random Battle",
+		section: "Serp Breaks Tiers",
+		
+		mod: 'gen2',
+		team: 'randomMonotype',
+		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+	},
+	{
+		name: "LC Monotype Random Battle",
+		section: "Serp Breaks Tiers",
+		
+		team: 'randomMonotype',
+		ruleset: ['Pokemon', 'Little Cup', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+	},
+	{
+		name: "LC Monotype Random Battle",
+		section: "Serp Breaks Tiers",
+		
+		team: 'randomMonotype',
+		ruleset: ['Pokemon', 'Standard Ubers', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+	},
+	
 	// Monotype //
 	{
 		name: "Monotype Random Battle",
@@ -989,15 +1032,7 @@ exports.Formats = [
 		ruleset: ['Pokemon', 'Standard', 'Little Cup'],
 		banlist: ['Berry Juice', 'DeepSeaTooth', 'Dragon Rage', 'Sonic Boom', 'Meditite', 'Misdreavus', 'Murkrow', 'Scyther', 'Sneasel', 'Tangela', 'Yanma']
 	},
-	{
-		name: "[Gen 4] Random Battle",
-		section: "Past Generations",
 
-		mod: 'gen4',
-		searchShow: false,
-		team: 'random',
-		ruleset: ['PoTD', 'Pokemon', 'Standard']
-	},
 	{
 		name: "[Gen 4] Custom Game",
 		section: "Past Generations",

@@ -779,6 +779,7 @@ exports.Formats = [
 		name: "Smogon Random Battle",
 		section: "Smogon Tiers",
 		mod: 'kakujatiers',
+		column: 4,
 
 		team: 'random',
 		ruleset: ['PotD', 'Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']

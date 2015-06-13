@@ -3221,7 +3221,7 @@ exports.BattleScripts = {
 			pokemonLeft++;
 
 			// Increment Uber/NU counters
-
+		}
 		return pokemon;
 	},
 	randomSeasonalStaffTeam: function (side) {

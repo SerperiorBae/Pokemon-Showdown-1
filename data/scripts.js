@@ -3162,68 +3162,6 @@ exports.BattleScripts = {
 		}
 		return pokemon;
 	},
-	randomLCMonotypeTeam: function (side) {
-		var pokemonLeft = 0;
-		var pokemon = [];
-		var excludedTiers = {'OU':1, 'UU':1, 'Uber':1, 'PU':1, 'NU':1, 'RU':1, 'CAP':1};
-		var allowedNFE = {'Chansey':1, 'Scyther':1};
-		var typePool = Object.keys(this.data.TypeChart);
-		var type = typePool[this.random(typePool.length)];
-
-		var pokemonPool = [];
-		for (var id in this.data.FormatsData) {
-			var template = this.getTemplate(id);
-			if (!excludedTiers[template.tier] && template.types.indexOf(type) > -1 && !template.isMega && !template.isPrimal && !template.isNonstandard && template.randomBattleMoves) {
-				pokemonPool.push(id);
-			}
-		}
-
-		var baseFormes = {};
-		var uberCount = 0;
-		var puCount = 0;
-		var megaCount = 0;
-
-		while (pokemonPool.length && pokemonLeft < 6) {
-			var template = this.getTemplate(this.sampleNoReplace(pokemonPool));
-			if (!template.exists) continue;
-
-			// Limit to one of each species (Species Clause)
-			if (baseFormes[template.baseSpecies]) continue;
-
-			// Not available on ORAS
-			if (template.species === 'Pichu-Spiky-eared') continue;
-
-			// Only certain NFE Pokemon are allowed
-			if (template.evos.length && !allowedNFE[template.species]) continue;
-
-			var tier = template.tier;
-			switch (tier) {
-			case 'LC Uber':
-				// PUs are limited to 2 but have a 20% chance of being added anyway.
-				if (puCount > 1 && this.random(5) >= 1) continue;
-				break;
-			}
-
-			// Adjust rate for species with multiple formes
-			
-
-			var set = this.randomSet(template, pokemon.length, megaCount);
-
-			// Illusion shouldn't be on the last pokemon of the team
-			if (set.ability === 'Illusion' && pokemonLeft > 4) continue;
-
-			// Limit the number of Megas to one
-
-			// Okay, the set passes, add it to our team
-			pokemon.push(set);
-
-			// Now that our Pokemon has passed all checks, we can increment our counters
-			pokemonLeft++;
-
-			// Increment Uber/NU counters
-		}
-		return pokemon;
-	},
 	randomSeasonalStaffTeam: function (side) {
 		var team = [];
 		var variant = this.random(2);

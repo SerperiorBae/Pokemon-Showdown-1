@@ -1,4 +1,4 @@
-xports.BattleTypeChart = {
+Exports.BattleTypeChart = {
 	"Bug": {
 		damageTaken: {
 			"Bug": 0,

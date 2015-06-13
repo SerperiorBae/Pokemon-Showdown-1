@@ -2148,7 +2148,7 @@ exports.BattleFormatsData = {
 	},
 	blazikenmega: {
 		randomBattleMoves: ["flareblitz","highjumpkick","protect","swordsdance","substitute","batonpass","stoneedge","knockoff"],
-		requiredItem: "Blazikenite"
+		requiredItem: "Blazikenite",
 		tier: "Uber"
 	},
 	mudkip: {

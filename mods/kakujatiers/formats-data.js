@@ -2726,7 +2726,7 @@ exports.BattleFormatsData = {
 	altariamega: {
 		randomBattleMoves: ["dragondance","return","hypervoice","healbell","earthquake","roost","dracometeor","fireblast"],
 		randomDoubleBattleMoves: ["dragondance","return","doubleedge","dragonclaw","earthquake","protect","fireblast"],
-		requiredItem: "Altarianite"
+		requiredItem: "Altarianite",
 		tier: "Uber"
 	},
 	zangoose: {

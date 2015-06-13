@@ -128,7 +128,7 @@ exports.BattleFormatsData = {
 	beedrillmega: {
 		randomBattleMoves: ["xscissor","swordsdance","uturn","poisonjab","drillrun","knockoff"],
 		randomDoubleBattleMoves: ["xscissor","uturn","substitute","poisonjab","drillrun","knockoff","protect"],
-		requiredItem: "Beedrillite"
+		requiredItem: "Beedrillite",
 		tier: "OU"
 	},
 	pidgey: {

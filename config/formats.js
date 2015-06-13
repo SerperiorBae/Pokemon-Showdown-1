@@ -167,14 +167,16 @@ exports.Formats = [
 		section: "Serp Breaks Tiers",
 		
 		team: 'randomMonotype',
-		ruleset: ['Pokemon', 'Little Cup', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+		maxLevel: 5,
+		ruleset: ['Pokemon', 'Standard', 'Little Cup', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod'],
+		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger', 'LC Uber', 'Gligar']
 	},
 	{
-		name: "LC Monotype Random Battle",
+		name: "Ubers Monotype Random Battle",
 		section: "Serp Breaks Tiers",
 		
 		team: 'randomMonotype',
-		ruleset: ['Pokemon', 'Standard Ubers', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+		ruleset: ['Pokemon', 'Standard Ubers', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod']
 	},
 	
 	// Monotype //

@@ -1739,6 +1739,12 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReply("/vote [option] - votes for the specified option in the poll.");
 		}
+		if (target === 'hangman') {
+			matched = true;
+			this.sendReply("/hangman start, [Word], [Clue] - Start a game of hangman [Word] is limited to 10 characters and [Clue] to 30.");
+			this.sendReply("/hangman view - View the current Hangman Game");
+			this.sendReply("/g or /gw - Guess a letter or word.");
+		}
 		// driver commands
 		if (target === 'lock' || target === 'l') {
 			matched = true;
@@ -1909,7 +1915,26 @@ var commands = exports.commands = {
 			this.sendReply("/privateroom [on/off] - Makes or unmakes a room private. Requires: ~");
 			this.sendReply("/hiddenroom [on/off] - Makes or unmakes a room hidden. Hidden rooms will maintain global ranks of users. Requires: \u2605 ~");
 		}
-
+		if (target === 'sudo') {
+			matched = true;
+			this.sendReply("/sudo [User], [Command] -  Used to make users perform Commands. - Most Mod Commands and a few commands are not allowed. (Requires ~)");
+		}
+		if (target === 'pmall') {
+			matched = true;
+			this.sendReply("/pmall [Message] - Used to send a Server message to the entire Server (Requires ~)");
+		}
+		if (target === 'rmall') {
+			matched = true;
+			this.sendReply("/pmall [Message] - Used to send a Room Message to All the users in the current room. (Requires & or ~)");
+		}
+		if (target === 'roomlist') {
+			matched = true;
+			this.sendReply("/roomlist - Shows a list of all the current rooms on the server. (Requires Global @ % & or ~");
+		}
+		if (target === 'clearall') {
+			matched = true;
+			this.sendReply("/clearall - Used to clear an entire chatrooms Log. Do not abuse. (Requires ~");
+		}
 		// overall
 		if (target === 'help' || target === 'h' || target === '?' || target === 'commands') {
 			matched = true;

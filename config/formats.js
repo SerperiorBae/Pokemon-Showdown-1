@@ -146,8 +146,7 @@ exports.Formats = [
 	{
 		name: "Monotype",
 		section: "Monotype",
-		column: 2,
-
+		
 		ruleset: ['Pokemon', 'Standard', 'Baton Pass Clause', 'Swagger Clause', 'Same Type Clause', 'Team Preview'],
 		banlist: ['Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Giratina-Origin', 'Groudon', 'Ho-Oh',
 			'Kyogre', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Talonflame', 'Xerneas', 'Yveltal', 'Zekrom',
@@ -157,40 +156,35 @@ exports.Formats = [
 	{
 		name: "Ubers Monotype",
 		section: "Monotype",
-		column: 2,
-
+		
 		ruleset: ['Pokemon', 'Standard Ubers', 'Same Type Clause'],
 		banlist: []
 	},
 	{
 		name: "UU Monotype",
 		section: "Monotype",
-		column: 2,
-
+		
 		ruleset: ['OU', 'Same Type Clause'],
 		banlist: ['OU', 'BL', 'Heracronite', 'Medichamite', 'Gardevoirite', 'Drizzle', 'Drought']
 	},
 	{
 		name: "RU Monotype",
 		section: "Monotype",
-		column: 2,
-
+		
 		ruleset: ['UU', 'Same Type Clause'],
 		banlist: ['UU', 'BL2']
 	},
 	{
 		name: "NU Monotype",
 		section: "Monotype",
-		column: 2,
-
+		
 		ruleset: ['RU (beta)', 'Same Type Clause'],
 		banlist: ['RU', 'BL3']
 	},
 	{
 		name: "LC Monotype",
 		section: "Monotype",
-		column: 2,
-
+		
 		maxLevel: 5,
 		ruleset: ['Pokemon', 'Standard', 'Little Cup', 'Same Type Clause'],
 		banlist: ['Dragon Rage', 'Sonic Boom', 'Swagger', 'LC Uber', 'Gligar']
@@ -752,7 +746,25 @@ exports.Formats = [
 	
 	// Kakuja Tiers
 	///////////////////////////////////////////////////////////////////
-	
+	{
+		name: "Smogon Random Battle",
+		section: "Smogon Tiers",
+		mod: 'kakujatiers',
+
+		team: 'random',
+		ruleset: ['PotD', 'Pokemon', 'Sleep Clause Mod', 'HP Percentage Mod', 'Cancel Mod']
+	},
+	{
+		name: "Smogon Monotype",
+		section: "Smogon Tiers",
+		mod: 'kakujatiers',
+
+		ruleset: ['Pokemon', 'Standard', 'Baton Pass Clause', 'Swagger Clause', 'Same Type Clause', 'Team Preview'],
+		banlist: ['Arceus', 'Blaziken', 'Darkrai', 'Deoxys', 'Deoxys-Attack', 'Dialga', 'Giratina', 'Giratina-Origin', 'Greninja', 'Groudon', 'Ho-Oh',
+			'Kyogre', 'Kyurem-White', 'Lugia', 'Mewtwo', 'Palkia', 'Rayquaza', 'Reshiram', 'Talonflame', 'Xerneas', 'Yveltal', 'Zekrom',
+			'Gengarite', 'Kangaskhanite', 'Lucarionite', 'Mawilite', 'Metagrossite', 'Salamencite', 'Shaymin-Sky', 'Slowbronite', 'Soul Dew'
+		]
+	},
 	{
 		name: "Smogon Ubers",
 		section: "Smogon Tiers",
@@ -978,6 +990,15 @@ exports.Formats = [
 		banlist: ['Berry Juice', 'DeepSeaTooth', 'Dragon Rage', 'Sonic Boom', 'Meditite', 'Misdreavus', 'Murkrow', 'Scyther', 'Sneasel', 'Tangela', 'Yanma']
 	},
 	{
+		name: "[Gen 4] Random Battle",
+		section: "Past Generations",
+
+		mod: 'gen4',
+		searchShow: false,
+		team: 'random',
+		ruleset: ['PoTD', 'Pokemon', 'Standard']
+	},
+	{
 		name: "[Gen 4] Custom Game",
 		section: "Past Generations",
 
@@ -1005,6 +1026,15 @@ exports.Formats = [
 		mod: 'gen3',
 		ruleset: ['Pokemon', 'Standard'],
 		banlist: ['Wobbuffet + Leftovers']
+	},
+	{
+		name: "[Gen 3] Random Battle",
+		section: "Past Generations",
+
+		mod: 'gen3',
+		searchShow: false,
+		team: 'random',
+		ruleset: ['PoTD', 'Pokemon', 'Standard']
 	},
 	{
 		name: "[Gen 3] Custom Game",

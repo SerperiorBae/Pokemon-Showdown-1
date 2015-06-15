@@ -2492,7 +2492,7 @@ var commands = exports.commands = {
 		this.sendReplyBox('<center><img src="http://puu.sh/hEZ0K/0bd7e38ecb.png" width="396" height="356"><br><font size="5">"Call Me Christian Gray"</font></center>');
 			
 	},
-	
+	/** Pending hotpatch of new command.
         away: function (target, room, user) {
 		user.away = !user.away;
 		user.updateIdentity();
@@ -2628,5 +2628,5 @@ return this.sendReply('You are not set as away.');
 }
  
 user.updateIdentity();
-	},
+	}, Pending hotpatch of new command. **/
 };

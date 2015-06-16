@@ -2223,6 +2223,10 @@ var commands = exports.commands = {
                         matched = true;
                         this.sendReplyBox('<img src="http://i.imgur.com/XU7JlpQ.png" />');
                 }
+                if (target === 'ba ton pass'){
+                        matched = true;
+                        this.sendReplyBox('<img src="http://i.imgur.com/T0rHSiB.jpg" width="400" height="300" />');
+                }
                 if (target === ''){
 			}
 		else if (!matched) {
@@ -2533,7 +2537,7 @@ case 'peeing':
 t = 'ⓟⓔⓔⓘⓝⓖ';
 t2 = 'Relieveing themselves';
 break;
-case 'peeing':
+case 'bot':
 t = 'Ⓑⓞⓣ';
 t2 = 'Serps Bot';
 break;

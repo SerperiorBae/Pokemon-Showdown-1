@@ -118,7 +118,7 @@ emoticons: {
         	message = this.processEmoticons(message);
         	if (user.userid === 'panpawn') {
         		if (user.hiding) return room.add('|raw|<div class="chat"><button class="astext" name="parseCommand" value="/user '+ Tools.escapeHTML(user.name) +'" target="_blank"><strong><font color="#DA9D01"><small></small><span class="username" data-name="' + Tools.escapeHTML(user.name) + '">' + Tools.escapeHTML(user.name) + '</span>:</font></strong></button> <em class="mine">' + message + '</em></div>');
-			room.add('|raw|<div class="chat"><button class="astext" name="parseCommand" value="/user '+user.name+'" target="_blank"><strong><font color="#DA9D01"><small>' + user.group + '</small><span class="username" data-name="' + user.group + user.name + '">' + user.name + '</span>:</font></strong></button> <em class="mine">' + message + '</em></div>');
+			room.add('|raw|<div class="chat"><button class="astext" name="parseCommand" value="/user '+user.name+'" target="_blank"><strong><font color="#DA9D01"><small>' + user.group + '</small><span class="username" data-name="' + user.group + user.name + '">' + Tools.escapeHTML(user.name) + '</span>:</font></strong></button> <em class="mine">' + message + '</em></div>');
 			return false;
         	} else {
         		if (user.hiding) return room.add('|raw|<div class="chat"><button class="astext" name="parseCommand" value="/user '+user.name+'" target="_blank"><strong><font color="' + hashColor(user.userid)+'"><small></small><span class="username" data-name="' + Tools.escapeHTML(user.name) + '">' + Tools.escapeHTML(user.name) + '</span>:</font></strong></button> <em class="mine">' + message + '</em></div>');

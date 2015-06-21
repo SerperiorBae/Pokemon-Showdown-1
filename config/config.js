@@ -166,7 +166,7 @@ exports.customavatars = {
 	'darknessumbreon': 'a6a6f06999719abd312f16233250a174_400x400.jpeg',
 	'bisharpette': 'mew.png',
 	'ordergallade': 'j8elKm.png',
-	'orderzantier': 'zaniter.png',
+	'orderkingzantier': 'zaniter.png',
 	'orderseductess': 'seductress.jpg',
 	'asubstitute': 'substitute.gif',
 	'situm': 'situm.png',

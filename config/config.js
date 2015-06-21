@@ -196,7 +196,7 @@ exports.customavatars = {
 	'psykolytic': 'avatar-blog-1214546585-tmpphpesDLi0.gif',
 	'mightyenaboy': 'Mighty2.png',
 	'leshinyzorua': 'me.png',
-	'sablette': 'me.png',
+	'sablette': 'Sui.png',
 	'chimechoo': 'ZNa52H4.png',
 	'tblfriedchicken': 'c4bQ9G1.png',
 	'misteon': '3cVYX5c.jpg',

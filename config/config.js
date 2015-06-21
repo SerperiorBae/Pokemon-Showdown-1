@@ -175,7 +175,7 @@ exports.customavatars = {
 	'situm': 'situm.png',
 	'ithi': 'ithi.jpg',
 	'adamantjester': 'jester.jpg',
-	'orderqueennurina': 'nurina2.png',
+	'orderqueennurina': 'nurina3.png',
 	'blazethesamurai': 'blazey.png',
 	'keyboys': 'ma3rka.png',
 	'morganzedriftking': 'photo.jpg.png',

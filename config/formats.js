@@ -787,6 +787,7 @@ exports.Formats = [
 	{
 		name: "Smogon Random Doubles Battle",
 		section: "Smogon Tiers",
+		mod: 'kakujatiers',
 
 		gameType: 'doubles',
 		team: 'randomDoubles',
@@ -795,6 +796,7 @@ exports.Formats = [
 	{
 		name: "Smogon Random Triples Battle",
 		section: "Smogon Tiers",
+		mod: 'kakujatiers',
 
 		gameType: 'triples',
 		team: 'randomDoubles',
@@ -803,6 +805,7 @@ exports.Formats = [
 	{
 		name: "Smogon Monotype Random Battle",
 		section: "Smogon Tiers",
+		mod: 'kakujatiers',
 	
 		team: 'randomMonotype',
 		ruleset: ['Pokemon', 'Same Type Clause', 'Sleep Clause Mod', 'HP Percentage Mod']
@@ -810,6 +813,7 @@ exports.Formats = [
 	{
 		name: "Smogon Challenge Cup",
 		section: "Smogon Tiers",
+		mod: 'kakujatiers',
 
 		team: 'randomCC',
 		ruleset: ['Pokemon', 'HP Percentage Mod']
@@ -817,6 +821,7 @@ exports.Formats = [
 	{
 		name: "Smogon CC 1vs1",
 		section: "Smogon Tiers",
+		mod: 'kakujatiers',
 
 		team: 'randomCC',
 		ruleset: ['Pokemon', 'Team Preview 1v1', 'HP Percentage Mod'],
@@ -831,6 +836,7 @@ exports.Formats = [
 	{
 		name: "Smogon Hackmons CC",
 		section: "Smogon Tiers",
+		mod: 'kakujatiers',
 
 		team: 'randomHackmonsCC',
 		searchShow: false,
@@ -840,6 +846,7 @@ exports.Formats = [
 	
 		name: "[Gen 2] Smogon Random Battle",
 		section: "Smogon Tiers",
+		mod: 'kakujatiers',
 
 		mod: 'gen2',
 		searchShow: false,
@@ -849,6 +856,7 @@ exports.Formats = [
 	{
 		name: "[Gen 1] Smogon Random Battle",
 		section: "Smogon Tiers",
+		mod: 'kakujatiers',
 
 		mod: 'gen1',
 		team: 'random',

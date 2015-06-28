@@ -870,7 +870,7 @@ exports.BattleFormatsData = {
 		tier: "LC"
 	},
 	electrode: {
-		randomBattleMoves: ["voltswitch","thunderbolt","taunt","foulplay","hiddenpowergrass","signalbeam"],
+		randomBattleMoves: ["voltswitch","thunderbolt","taunt","foulplay","explosion","selfdestruct","hiddenpowergrass","signalbeam"],
 		randomDoubleBattleMoves: ["voltswitch","discharge","taunt","foulplay","hiddenpowerice","protect","thunderwave"],
 		tier: "PU"
 	},
@@ -2679,7 +2679,7 @@ exports.BattleFormatsData = {
 		tier: "NFE"
 	},
 	flygon: {
-		randomBattleMoves: ["earthquake","outrage","uturn","roost","stoneedge","firepunch","fireblast","defog"],
+		randomBattleMoves: ["earthquake","outrage","boomburst","uturn","roost","stoneedge","firepunch","fireblast","defog"],
 		randomDoubleBattleMoves: ["earthquake","protect","dragonclaw","uturn","rockslide","firepunch","fireblast","tailwind","feint"],
 		eventPokemon: [
 			{"generation":3,"level":45,"moves":["sandtomb","crunch","dragonbreath","screech"]},
@@ -4658,7 +4658,7 @@ exports.BattleFormatsData = {
 		tier: "NFE"
 	},
 	hydreigon: {
-		randomBattleMoves: ["uturn","dracometeor","aurasphere","waterpulse","bulletpunch","dragonpulse","earthpower","fireblast","darkpulse","roost","flashcannon","superpower"],
+		randomBattleMoves: ["uturn","dracometeor","triattack","aurasphere","waterpulse","bulletpunch","dragonpulse","earthpower","fireblast","darkpulse","roost","flashcannon","superpower"],
 		randomDoubleBattleMoves: ["uturn","dracometeor","dragonpulse","earthpower","fireblast","darkpulse","roost","flashcannon","superpower","tailwind","protect"],
 		eventPokemon: [
 			{"generation":5,"level":70,"shiny":true,"gender":"M","moves":["hypervoice","dragonbreath","flamethrower","focusblast"],"pokeball":"cherishball"}

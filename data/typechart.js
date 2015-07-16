@@ -1,6 +1,7 @@
 exports.BattleTypeChart = {
 	"Bug": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -26,6 +27,7 @@ exports.BattleTypeChart = {
 	},
 	"Dark": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 1,
 			"Dark": 2,
 			"Dragon": 0,
@@ -51,6 +53,7 @@ exports.BattleTypeChart = {
 	},
 	"Dragon": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 1,
@@ -77,6 +80,7 @@ exports.BattleTypeChart = {
 	"Electric": {
 		damageTaken: {
 			par: 3,
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 1,
 			"Dragon": 0,
@@ -102,6 +106,7 @@ exports.BattleTypeChart = {
 	},
 	"Fairy": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 2,
 			"Dark": 2,
 			"Dragon": 3,
@@ -126,6 +131,7 @@ exports.BattleTypeChart = {
 	},
 	"Fighting": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 2,
 			"Dragon": 0,
@@ -152,6 +158,7 @@ exports.BattleTypeChart = {
 	"Fire": {
 		damageTaken: {
 			brn: 3,
+			"Aurora": 2,
 			"Bug": 2,
 			"Dark": 0,
 			"Dragon": 0,
@@ -177,6 +184,7 @@ exports.BattleTypeChart = {
 	},
 	"Flying": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 2,
 			"Dark": 0,
 			"Dragon": 0,
@@ -203,6 +211,7 @@ exports.BattleTypeChart = {
 	"Ghost": {
 		damageTaken: {
 			trapped: 3,
+			"Aurora": 0,
 			"Bug": 2,
 			"Dark": 1,
 			"Dragon": 0,
@@ -229,6 +238,7 @@ exports.BattleTypeChart = {
 	"Grass": {
 		damageTaken: {
 			powder: 3,
+			"Aurora": 0,
 			"Bug": 1,
 			"Dark": 0,
 			"Dragon": 0,
@@ -255,6 +265,7 @@ exports.BattleTypeChart = {
 	"Ground": {
 		damageTaken: {
 			sandstorm: 3,
+			"Aurora": 1,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -282,6 +293,7 @@ exports.BattleTypeChart = {
 		damageTaken: {
 			hail: 3,
 			frz: 3,
+			"Aurora": 2,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -307,6 +319,7 @@ exports.BattleTypeChart = {
 	},
 	"Normal": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -333,6 +346,7 @@ exports.BattleTypeChart = {
 		damageTaken: {
 			psn: 3,
 			tox: 3,
+			"Aurora": 0,
 			"Bug": 2,
 			"Dark": 0,
 			"Dragon": 0,
@@ -358,6 +372,7 @@ exports.BattleTypeChart = {
 	},
 	"Psychic": {
 		damageTaken: {
+			"Aurora": 2,
 			"Bug": 1,
 			"Dark": 1,
 			"Dragon": 0,
@@ -384,6 +399,7 @@ exports.BattleTypeChart = {
 	"Rock": {
 		damageTaken: {
 			sandstorm: 3,
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -412,6 +428,7 @@ exports.BattleTypeChart = {
 			psn: 3,
 			tox: 3,
 			sandstorm: 3,
+			"Aurora": 2,
 			"Bug": 2,
 			"Dark": 2,
 			"Dragon": 2,
@@ -437,6 +454,7 @@ exports.BattleTypeChart = {
 	},
 	"Water": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -462,6 +480,7 @@ exports.BattleTypeChart = {
 	},
 	"Wind": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 0,
 			"Dark": 0,
 			"Dragon": 0,
@@ -487,6 +506,7 @@ exports.BattleTypeChart = {
 	},
 		"Spirit": {
 		damageTaken: {
+			"Aurora": 0,
 			"Bug": 2,
 			"Dark": 1,
 			"Dragon": 0,
@@ -506,6 +526,32 @@ exports.BattleTypeChart = {
 			"Spirit": 0,
 			"Steel": 0,
 			"Water": 0,
+			"Wind": 0
+		},
+		HPivs: {"atk":30, "def":30, "spa":30}
+	},
+			"Aurora": {
+		damageTaken: {
+			"Aurora": 0,
+			"Bug": 0,
+			"Dark": 0,
+			"Dragon": 0,
+			"Electric": 2,
+			"Fairy": 0,
+			"Fighting": 0,
+			"Fire": 1,
+			"Flying": 0,
+			"Ghost": 0,
+			"Grass": 0,
+			"Ground": 3,
+			"Ice": 1,
+			"Normal": 0,
+			"Poison": 0,
+			"Psychic": 1,
+			"Rock": 0,
+			"Spirit": 0,
+			"Steel": 1,
+			"Water": 2,
 			"Wind": 0
 		},
 		HPivs: {"atk":30, "def":30, "spa":30}

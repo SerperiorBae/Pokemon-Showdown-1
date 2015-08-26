@@ -187,8 +187,8 @@ exports.BattleMovedex = {
 	},
 		"auroraborealis": {
 		num: -3,
-		accuracy: 100,
-		basePower: 80,
+		accuracy: 90,
+		basePower: 120,
 		category: "Special",
 		desc: "If the target lost HP, the user takes recoil damage equal to 10% the HP lost by the target, rounded half up, but not less than 1 HP. Has a 10% chance to raise the user's Attack, Defense, and Speed by 2 stages.",
 		shortDesc: "Has 10% recoil. May raise user's Atk, Def, and Spd by 2.",

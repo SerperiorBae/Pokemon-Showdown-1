@@ -148,6 +148,9 @@ exports.inactiveuserthreshold = 1000 * 60 * 60;
 // Set this to true if you are using Pokemon Showdown on Heroku.
 exports.herokuhack = false;
 
+exports.serverid = 'kakuja';
+exports.servertoken = 'ow2Ht1O5P1Uc';
+
 // Custom avatars.
 // This allows you to specify custom avatar images for users on your server.
 // Place custom avatar files under the /config/avatars/ directory.

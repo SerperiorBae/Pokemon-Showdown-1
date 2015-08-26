@@ -185,6 +185,35 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Wind"
 	},
+		"auroraborealis": {
+		num: -3,
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		desc: "If the target lost HP, the user takes recoil damage equal to 10% the HP lost by the target, rounded half up, but not less than 1 HP. Has a 10% chance to raise the user's Attack, Defense, and Speed by 2 stages.",
+		shortDesc: "Has 10% recoil. May raise user's Atk, Def, and Spd by 2.",
+		id: "auroraborealis",
+		isViable: true,
+		name: "Aurora Borealis",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		isContact: true,
+		recoil: [10, 100],
+		secondary: {
+			chance: 20,
+			status: 'frz'
+		},
+			chance: 10,
+			self: {
+				boosts: {
+					atk: 2,
+					def: 2,
+					spe: 2
+				},
+		target: "normal",
+		type: "Aurora"
+	},
 	"mistralwinds": {
 		num: 650,
 		accuracy: 69,

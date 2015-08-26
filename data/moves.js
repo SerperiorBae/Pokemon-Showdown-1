@@ -16773,4 +16773,4 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Water"
 	}
-};
+}

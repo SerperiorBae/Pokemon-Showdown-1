@@ -204,13 +204,6 @@ exports.BattleMovedex = {
 			chance: 20,
 			status: 'frz'
 		},
-			chance: 10,
-			self: {
-				boosts: {
-					atk: 2,
-					def: 2,
-					spe: 2
-				},
 		target: "normal",
 		type: "Aurora"
 	},

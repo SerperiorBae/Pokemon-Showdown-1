@@ -2026,10 +2026,10 @@ exports.BattleFormatsData = {
 	},
 	suicune: {
 		randomBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","cuddle","nastyplot","airslash","extrasensory","aurorabeam","aquaring","surf","earthpower","freezedry","rest","sleeptalk","calmmind"],
-		randomDoubleBattleMoves: ["hydropump","icebeam","scald","hiddenpowergrass","snarl","tailwind","protect","calmmind"],
+		randomDoubleBattleMoves: ["hydropump","auroraborealis","icebeam","scald","hiddenpowergrass","snarl","tailwind","protect","calmmind"],
 		eventPokemon: [
 			{"generation":3,"level":70,"moves":["gust","aurorabeam","mist","mirrorcoat"]},
-			{"generation":4,"level":30,"shiny":true,"nature":"Relaxed","moves":["sheercold","airslash","extremespeed","aquaring"],"pokeball":"cherishball"}
+			{"generation":4,"level":30,"shiny":true,"nature":"Modest","moves":["sheercold","airslash","extremespeed","aquaring"],"pokeball":"cherishball"}
 		],
 		unreleasedHidden: true,
 		tier: "UU"

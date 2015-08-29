@@ -1362,13 +1362,16 @@ exports.BattleAbilities = {
 		num: 22
 	},
 	"iridescence": {
-		desc: "All Special moves that check accuracy have their accuracy changed to 50% when used on this Pokemon. This change is done before any other accuracy modifying effects.",
-		shortDesc: "Special moves with accuracy checks are 50% accurate when used on this Pokemon.",
+		desc: "All Special moves that check accuracy have their accuracy changed to 50% when used on this Pokemon. All Special moves that check accuracy have their accuracy increased by 50% when used by this Pokemon. This change is done before any other accuracy modifying effects.",
+		shortDesc: "Special moves with accuracy checks are 50% accurate when used on this Pokemon and increase by 50% when used by this Pokemon.",
 		onAccuracyPriority: 10,
 		onAccuracy: function (accuracy, target, source, move) {
 			if (move.category === 'Special' && typeof move.accuracy === 'number') {
 				this.debug('Iridescence - setting accuracy to 50');
 				return 50;
+			if (typeof accuracy !== 'number') return;
+			this.debug('iridescence - enhancing accuracy');
+			return accuracy * 1.5;
 			}
 		},
 		id: "iridescence",

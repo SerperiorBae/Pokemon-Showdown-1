@@ -1361,6 +1361,21 @@ exports.BattleAbilities = {
 		rating: 3.5,
 		num: 22
 	},
+	"iridescence": {
+		desc: "All Special moves that check accuracy have their accuracy changed to 50% when used on this Pokemon. This change is done before any other accuracy modifying effects.",
+		shortDesc: "Special moves with accuracy checks are 50% accurate when used on this Pokemon.",
+		onAccuracyPriority: 10,
+		onAccuracy: function (accuracy, target, source, move) {
+			if (move.category === 'Special' && typeof move.accuracy === 'number') {
+				this.debug('Iridescence - setting accuracy to 50');
+				return 50;
+			}
+		},
+		id: "iridescence",
+		name: "Iridescence",
+		rating: 4,
+		num: -1
+	},
 	"ironbarbs": {
 		desc: "Pokemon making contact with this Pokemon lose 1/8 of their maximum HP, rounded down.",
 		shortDesc: "Pokemon making contact with this Pokemon lose 1/8 of their max HP.",

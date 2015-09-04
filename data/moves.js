@@ -80,58 +80,6 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Poison"
 	},
-	"cuddle": {
-		num: 653,
-		accuracy: 100,
-		basePower: 100,
-		category: "Special",
-		desc: "Causes the target to become infatuated, making it unable to attack 50% of the time. Fails if both the user and the target are the same gender, if either is genderless, or if the target is already infatuated. The effect ends when either the user or the target is no longer active. Pokemon with the Ability Oblivious or protected by the Ability Aroma Veil are immune.",
-		shortDesc: "A target of the opposite gender gets infatuated.",
-		id: "cuddle",
-		name: "Cuddle",
-		pp: 15,
-		priority: 0,
-		flags: {protect: 1, reflectable: 1, mirror: 1, authentic: 1},
-		isBounceable: true,
-		volatileStatus: 'attract',
-		effect: {
-			noCopy: true, // doesn't get copied by Baton Pass
-			onStart: function (pokemon, source, effect) {
-				if (!(pokemon.gender === 'M' && source.gender === 'F') && !(pokemon.gender === 'F' && source.gender === 'M')) {
-					this.debug('incompatible gender');
-					return false;
-				}
-				if (!this.runEvent('Attract', pokemon, source)) {
-					this.debug('Attract event failed');
-					return false;
-				}
-
-				if (effect.id === 'cutecharm') {
-					this.add('-start', pokemon, 'Attract', '[from] ability: Cute Charm', '[of] ' + source);
-				} else if (effect.id === 'destinyknot') {
-					this.add('-start', pokemon, 'Attract', '[from] item: Destiny Knot', '[of] ' + source);
-				} else {
-					this.add('-start', pokemon, 'Attract');
-				}
-			},
-			onBeforeMovePriority: 2,
-			onBeforeMove: function (pokemon, target, move) {
-				if (this.effectData.source && !this.effectData.source.isActive && pokemon.volatiles['attract']) {
-					this.debug('Removing Attract volatile on ' + pokemon);
-					pokemon.removeVolatile('attract');
-					return;
-				}
-				this.add('-activate', pokemon, 'Attract', '[of] ' + this.effectData.source);
-				if (this.random(2) === 0) {
-					this.add('cant', pokemon, 'Attract');
-					return false;
-				}
-			}
-		},
-		secondary: false,
-		target: "normal",
-		type: "Psychic"
-	},
 	"acrobatics": {
 		num: 512,
 		accuracy: 100,
@@ -158,7 +106,6 @@ exports.BattleMovedex = {
 		type: "Flying"
 	},
 	"typhoon": {
-		num: 649,
 		accuracy: 100,
 		basePower: 80,
 		category: "Physical",
@@ -186,7 +133,6 @@ exports.BattleMovedex = {
 		type: "Wind"
 	},
 		"auroraborealis": {
-		num: -3,
 		accuracy: 90,
 		basePower: 120,
 		category: "Special",
@@ -208,7 +154,6 @@ exports.BattleMovedex = {
 		type: "Aurora"
 	},
 	"mistralwinds": {
-		num: 650,
 		accuracy: 69,
 		basePower: 0,
 		category: "Status",
@@ -227,7 +172,6 @@ exports.BattleMovedex = {
 		type: "Wind"
 	},
 	"cyclone": {
-		num: 651,
 		accuracy: 100,
 		basePower: 40,
 		category: "Special",
@@ -246,7 +190,6 @@ exports.BattleMovedex = {
 		type: "Wind"
 	},
 	"windchime": {
-		num: 652,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -16009,7 +15952,6 @@ exports.BattleMovedex = {
 		type: "Grass"
 	},
 	"flamedart": {
-		num: 623,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -16027,7 +15969,6 @@ exports.BattleMovedex = {
 		type: "Fire"
 	},
 	"stormrush": {
-		num: 624,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -16045,7 +15986,6 @@ exports.BattleMovedex = {
 		type: "Electric"
 	},
 	"petalslash": {
-		num: 625,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -16063,7 +16003,6 @@ exports.BattleMovedex = {
 		type: "Grass"
 	},
 	"poisondart": {
-		num: 626,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -16081,7 +16020,6 @@ exports.BattleMovedex = {
 		type: "Poison"
 	},
 	"sandstrike": {
-		num: 627,
 		accuracy: 100,
 		basePower: 40,
 		category: "Special",
@@ -16099,7 +16037,6 @@ exports.BattleMovedex = {
 		type: "Ground"
 	},
 	"featherslash": {
-		num: 628,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -16117,7 +16054,6 @@ exports.BattleMovedex = {
 		type: "Flying"
 	},
 	"psyblink": {
-		num: 629,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -16135,7 +16071,6 @@ exports.BattleMovedex = {
 		type: "Psychic"
 	},
 	"quicksweep": {
-		num: 630,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -16153,7 +16088,6 @@ exports.BattleMovedex = {
 		type: "Bug"
 	},
 	"speedstone": {
-		num: 631,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -16171,7 +16105,6 @@ exports.BattleMovedex = {
 		type: "Rock"
 	},
 	"Dragon Fury": {
-		num: 632,
 		accuracy: 100,
 		basePower: 40,
 		category: "Physical",
@@ -16189,7 +16122,6 @@ exports.BattleMovedex = {
 		type: "Dragon"
 	},
 	"mysticprayer": {
-		num: 633,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -16210,7 +16142,6 @@ exports.BattleMovedex = {
 		type: "Dragon"
 	},
 	"flamebullet": {
-		num: 634,
 		accuracy: 90,
 		basePower: 25,
 		category: "Physical",
@@ -16228,7 +16159,6 @@ exports.BattleMovedex = {
 		type: "Fire"
 	},
 	"electroshot": {
-		num: 635,
 		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
@@ -16246,7 +16176,6 @@ exports.BattleMovedex = {
 		type: "Electric"
 	},
 	"poisonpellet": {
-		num: 636,
 		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
@@ -16264,7 +16193,6 @@ exports.BattleMovedex = {
 		type: "Poison"
 	},
 	"wingslash": {
-		num: 637,
 		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
@@ -16282,7 +16210,6 @@ exports.BattleMovedex = {
 		type: "Flying"
 	},
 	"psyshot": {
-		num: 638,
 		accuracy: 100,
 		basePower: 25,
 		category: "Special",
@@ -16300,7 +16227,6 @@ exports.BattleMovedex = {
 		type: "Special"
 	},
 	"shadowshot": {
-		num: 639,
 		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
@@ -16318,7 +16244,6 @@ exports.BattleMovedex = {
 		type: "Ghost"
 	},
 	"nightbullet": {
-		num: 640,
 		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
@@ -16336,7 +16261,6 @@ exports.BattleMovedex = {
 		type: "Dark"
 	},
 	"metalshot": {
-		num: 641,
 		accuracy: 100,
 		basePower: 25,
 		category: "Physical",
@@ -16354,7 +16278,6 @@ exports.BattleMovedex = {
 		type: "Steel"
 	},
 	"fairylights": {
-		num: 642,
 		accuracy: 100,
 		basePower: 25,
 		category: "Special",
@@ -16447,7 +16370,6 @@ exports.BattleMovedex = {
 		type: "Normal"
 	},
 	"embodiment": {
-		num: 643,
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
@@ -16466,7 +16388,6 @@ exports.BattleMovedex = {
 		type: "Spirit"
 	},
 	"manifest": {
-		num: 644,
 		accuracy: 100,
 		basePower: 120,
 		category: "Physical",
@@ -16485,7 +16406,6 @@ exports.BattleMovedex = {
 		type: "Spirit"
 	},
 	"etherealallure": {
-		num: 645,
 		accuracy: 100,
 		basePower: 0,
 		category: "Status",
@@ -16506,7 +16426,6 @@ exports.BattleMovedex = {
 		type: "Spirit"
 	},
 	"somnolence": {
-		num: 646,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",
@@ -16525,7 +16444,6 @@ exports.BattleMovedex = {
 		type: "Spirit"
 	},
 	"remembrance": {
-		num: 647,
 		accuracy: 90,
 		basePower: 30,
 		category: "Physical",
@@ -16546,7 +16464,6 @@ exports.BattleMovedex = {
 		type: "Spirit"
 	},
 	"soulconsumption": {
-		num: 648,
 		accuracy: true,
 		basePower: 0,
 		category: "Status",

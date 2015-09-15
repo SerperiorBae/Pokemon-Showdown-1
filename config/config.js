@@ -162,7 +162,6 @@ exports.servertoken = 'ow2Ht1O5P1Uc';
 exports.customavatars = {
 	//'userid': 'customavatar.png'
 	'awildkakuja': 'char.png',
-	'darknessumbreon':'ghfZQUp.gif',
 	'narcomania': 'serpy.gif',
 };
 

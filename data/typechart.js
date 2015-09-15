@@ -442,7 +442,7 @@ exports.BattleTypeChart = {
 		},
 		HPivs: {"atk":30, "def":30, "spa":30}
 	},
-			"Aurora": {
+	"Aurora": {
 		damageTaken: {
 			"Aurora": 0,
 			"Bug": 0,

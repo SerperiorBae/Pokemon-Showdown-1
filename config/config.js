@@ -163,6 +163,7 @@ exports.customavatars = {
 	//'userid': 'customavatar.png'
 	'awildkakuja': 'char.png',
 	'darknessumbreon': 'dark.jpg',
+	'mystifi': 'vVGPiMK.png',
 	'narcomania': 'serpy.gif',
 };
 

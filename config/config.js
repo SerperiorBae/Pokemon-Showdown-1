@@ -164,6 +164,7 @@ exports.customavatars = {
 	'awildkakuja': 'char.png',
 	'darknessumbreon': 'dark.jpg',
 	'mystifi': 'vVGPiMK.png',
+	'nekis13': '5UhFtHc-1.png',
 	'narcomania': 'serpy.gif',
 };
 

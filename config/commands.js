@@ -1995,7 +1995,7 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/BsdMZRr.png" />');
 		}
-		if (target === 'i like trains'){
+		if (target === 'trains'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/5GV6Z3k.gif" />');
 		}

@@ -161,7 +161,7 @@ exports.servertoken = 'ow2Ht1O5P1Uc';
 // displayed in the client.
 exports.customavatars = {
 	//'userid': 'customavatar.png'
-	'awildkakuja': 'char.png',
+	'zoroicune': 'char.png',
 	'darknessumbreon': 'dark.jpg',
 	'mystifi': 'vVGPiMK.png',
 	'nekis13': '5UhFtHc-1.png',

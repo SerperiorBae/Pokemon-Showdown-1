@@ -166,6 +166,7 @@ exports.customavatars = {
 	'mystifi': 'vVGPiMK.png',
 	'nekis13': '5UhFtHc-1.png',
 	'narcomania': 'serpy.gif',
+	'lfluttershyl': 'VD6fqII.png',
 };
 
 // Tournament announcements

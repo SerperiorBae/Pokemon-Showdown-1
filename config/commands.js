@@ -2497,9 +2497,6 @@ var commands = exports.commands = {
 			
 	},
  
-//delete the user object with the new name in case it exists - if it does it can cause issues with forceRename
-delete Users.get(newName);
- 
 user.forceRename(newName, undefined, true);
  
 //user will be authenticated

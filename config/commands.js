@@ -2497,20 +2497,4 @@ var commands = exports.commands = {
 			
 	},
  
-user.forceRename(newName, undefined, true);
- 
-//user will be authenticated
-user.authenticated = true;
- 
-if (user.isStaff) this.add('|raw|-- <b><font color="#088cc7">' + newName + '</font color></b> is no longer away.');
- 
-user.originalName = '';
-user.isAway = false;
-}
-else {
-return this.sendReply('You are not set as away.');
-}
- 
-user.updateIdentity();
-	},
 };

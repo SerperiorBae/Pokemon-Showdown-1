@@ -1997,7 +1997,7 @@ var commands = exports.commands = {
 		}
 		if (target === 'i like trains'){
 			matched = true;
-			this.sendReplyBox('<http://i.imgur.com/5GV6Z3k.gif" />');
+			this.sendReplyBox('<img src="http://i.imgur.com/5GV6Z3k.gif" />');
 		}
 		if (target === 'gay'){
 			matched = true;

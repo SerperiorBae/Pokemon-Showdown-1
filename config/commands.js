@@ -1995,6 +1995,10 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/BsdMZRr.png" />');
 		}
+		if (target === 'i like trains'){
+			matched = true;
+			this.sendReplyBox('<http://i.imgur.com/5GV6Z3k.gif" />');
+		}
 		if (target === 'gay'){
 			matched = true;
 			this.sendReplyBox('<center><font size="5">LOL NICE TRY FAGGOT</font></center>');

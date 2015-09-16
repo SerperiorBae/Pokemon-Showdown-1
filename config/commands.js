@@ -1967,266 +1967,286 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<center><b><font color="purple"><a href="http://pastebin.com/VT7Nc06s">List of memes!</a><br>Is there a meme missing that you want added? Message a & or ~ and we will consider adding it!</font></b></center>');
                 }
+                
 		if (target === 'salt'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Y5bbFq1.jpg" />');
 		}
+		
 		if (target === 'anorexic'){
 			matched = true;
 			this.sendReplyBox('<img src="http://www.humorsharing.com/media/images/1402/i_anorexic_funny_meme_52f6564e73b39.jpg" width="300" height="285" />');
 		}
+		
 		if (target === 'bitches'){
 			matched = true;
 			this.sendReplyBox('<img src="http://www.killthehydra.com/wp-content/uploads/patrick-stewart-star-trek-meme1.jpg" width="400" height="280" />');
 		}
+		
 		if (target === 'booty'){
 			matched = true;
 			this.sendReplyBox('<img src="http://www.quickmeme.com/img/70/702b57e6590f78366b7ada8e4910f43971be735bbed075e5fec653482f572820.jpg" width="420" height="280" />');
 		}
+		
 		if (target === 'kakuja'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/6DC0uxD.png" />');
 		}
+		
 		if (target === 'disgusting'){
 			matched = true;
 			this.sendReplyBox('<img src=http://i.imgur.com/f5l52n8.jpg" width="400" height="275" />');
 		}
+		
 		if (target === 'arsenal'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/BsdMZRr.png" />');
 		}
-		if (target === 'trains'){
+		
+		if (target === 'i like trains'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/5GV6Z3k.gif" />');
 		}
-		if (target === 'gay'){
-			matched = true;
-			this.sendReplyBox('<center><font size="5">LOL NICE TRY FAGGOT</font></center>');
-		}
+		
 		if (target === 'smashing'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/H9JJP25.jpg" />');
 		}
+		
 		if (target === 'that escalated quickly'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/27OWcbj.jpg" />');
 		}
+		
 		if (target === 'lady gogo'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/YT444tK.png" />');
-		}
-		if (target === 'boyfriend of the year'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/Xfy2q87.png" />');
-		}
-		if (target === 'nipples'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/p1pKlws.png" />');
 		}
 		if (target === 'spider'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/UEQGyCi.jpg" />');
 		}
-		if (target === 'patrickstump'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/dzSqDKG.jpg" />');
-		}
+		
 		if (target === 'mlg'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/STG6Ugz.jpg" />');
 		}
-		if (target === 'christian gray'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/LVzM9us.png" />');
-		}
+		
 		if (target === 'dj not nice'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/fjl9XW7.png" />');
 		}
+		
 		if (target === 'deez nuts'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/nYD6ctb.gif" />');
 		}
+		
 		if (target === 'fucked'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/trZWW6P.png" />');
 		}
+		
 		if (target === 'uwot'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/cumZfCh.png" />');
 		}
+		
 		if (target === 'fedora'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/FbbdUT9.jpg" />');
 		}
+		
 		if (target === 'bongos'){
 			matched = true;
 			this.sendReplyBox('<img src="http://26.media.tumblr.com/tumblr_lzyy696EpI1r34jyyo2_250.gif" />');
 		}
+		
 		if (target === 'dont blink'){
 			matched = true;
 			this.sendReplyBox('<img src="http://www.scaredstiffreviews.com/wp-content/uploads/2014/11/Dont-Blink2.gif" />');
 		}
-		if (target === 'ps mafia'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/qIkfkoJ.png" />');
-		}
-		if (target === 'pretty'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/qoFSQ6A.gif" />');
-		}
-		if (target === 'what even'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/pkm4Bj3.png" />');
-		}
-		if (target === 'girl you fine'){
-			matched = true;
-			this.sendReplyBox('<img src="http://i.imgur.com/YD6gPo9.png" />');
-		}
+		
 		if (target === 'umad'){
 			matched = true;
 			this.sendReplyBox('<img src="http://dailysnark.com/wp-content/uploads/2013/11/umad.gif" />');
 		}
+		
 		if (target === 'if you know what i mean'){
 			matched = true;
 			this.sendReplyBox('<img src="http://fcdn.mtbr.com/attachments/california-norcal/805709d1370480032-should-strava-abandon-kom-dh-2790387-if-you-know-what-i-mean.png" />');
 		}
+		
 		if (target === 'doge'){
 			matched = true;
 			this.sendReplyBox('<img src="http://0.media.dorkly.cvcdn.com/79/63/33f2d1f368e229c7e09baa64804307b4-a-wild-doge-appeared.jpg" height="242" width="300" />');
 		}
+		
 		if (target === 'orgasm'){
 			matched = true;
 			this.sendReplyBox('<img src="http://puu.sh/hHidM/db81baee7d.png" />');
 		}
+		
 		if (target === 'macklemore'){
 			matched = true;
 			this.sendReplyBox('<img src="http://40.media.tumblr.com/43baf9472512df7d44f8f938a0e997be/tumblr_nad882rLHK1qewacoo1_500.jpg" width="300 height="343" />');
 		}
+		
 		if (target === 'troll'){
 			matched = true;
 			this.sendReplyBox('<img src="http://static3.wikia.nocookie.net/__cb20131014231760/legomessageboards/images/c/c2/Troll-face.png" height="200" width="200" />');
 		}
+		
 		if (target === 'fail'){
 			matched = true;
 			this.sendReplyBox('<img src="http://diginomica.com/wp-content/uploads/2013/11/+big-fail2.jpg" height="180" width="320" />');
 		}
+		
 		if (target === 'hawkward'){
 			matched = true;
 			this.sendReplyBox('<img src="https://i.imgflip.com/e6cip.jpg" height="350" width="330" />');
 		}
+		
 		if (target === 'cool story bro'){
 			matched = true;
 			this.sendReplyBox('<img src="http://www.troll.me/images/creepy-willy-wonka/cool-story-bro-lets-hear-it-one-more-time.jpg" height="275" width="275" />');
 		}
+		
 		if (target === 'udense'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i2.kym-cdn.com/photos/images/newsfeed/000/461/903/3a9.png" height="250" width="340" />');
 		}
+		
 		if (target === 'you dont say'){
 			matched = true;
 			this.sendReplyBox('<img src="http://www.wired.com/images_blogs/gamelife/2014/01/youdontsay.jpg" height="209" width="250" />');
 		}
+		
 		if (target === 'ninjask\'d'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/ST7DNnh.png" />');
 		}
+		
 		if (target === 'fuck this'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i3.kym-cdn.com/photos/images/original/000/571/700/c3a.gif" height="150" width="300" />');
 		}
+		
 		if (target === 'slowbro'){
 			matched = true;
 			this.sendReplyBox('<img src="http://static.fjcdn.com/pictures/U_698d9e_2568950.jpg" height="216" width="199" />');
 		}
+		
 		if (target === 'rekt'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/47JMugo.jpg" />');
 		}
+		
 		if (target === 'badass'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Ai78NEt.png" />');
 		}
+		
 		if (target === 'fabulous'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/HsY0KpR.gif" />');
 		}
+		
 		if (target === 'wrong neighborhood'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/aiv8eyj.gif" />');
 		}
+		
 		if (target === 'i regret nothing'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/1brNf9v.gif" />');
 		}
+		
 		if (target === 'twss'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/cRoo7mt.jpg" />');
 		}
+		
 		if (target === 'hm01'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/zl7CBuw.jpg" />');
 		}
+		
 		if (target === 'bitch please'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/8hwtxWt.gif" />');
 		}
+		
 		if (target === 'control your orgasms'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/QNO3TcF.gif" />');
 		}
+		
 		if (target === 'haters gonna hate'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/FigQw0C.gif" />');
 		}
+		
 		if (target === 'your mom'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/gBsEdHr.jpg" />');
 		}
+		
 		if (target === 'shrekt'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/vXffwmY.jpg" />');
 		}
+		
 		if (target === 'snickers'){
 			matched = true;
 			this.sendReplyBox('<img src="http://static.fjcdn.com/pictures/Grab+a+snickers+not+mine_b3375c_4726614.png" />');
 		}
+		
 		if (target === 'baka'){
 			matched = true;
 			this.sendReplyBox('<img src="http://cdn.sakuramagazine.com/wp-content/uploads/2013/12/Baka-manga-34558590-640-512.jpg" width="320" height="256" />');
 		}
+		
 		if (target === 'tits or gtfo'){
 			matched = true;
 			this.sendReplyBox('<img src="http://static.fjcdn.com/pictures/Tits_858516_1361125.jpg" width="250" height="329" />');
 		}
+		
 		if (target === 'swiggity'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/9yZA32s.gif" />');
 		}
+		
 		if (target === 'dat ass'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/owuyFAB.png" />');
 		}
+		
 		if (target === 'in a row'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/W5K7Ey1.png" />');
 		}
+		
                 if (target === 'i made this for you'){
                         matched = true;
                         this.sendReplyBox('<img src="http://i.imgur.com/EoITea4.gifg" />');
                 }
+                
                 if (target === 'the fuck did you just say to me'){
                         matched = true;
                         this.sendReplyBox('<img src="http://i.imgur.com/1lOmwGW.jpg" />');
                 }
+                
                 if (target === 'u fukn wot'){
                         matched = true;
                         this.sendReplyBox('<img src="http://i.imgur.com/L332nfL.jpg" />');
                 }
-                if (target === 'getrekt'){
+                
+                if (target === 'get rekt'){
                         matched = true;
                         this.sendReplyBox('<img src="http://i.imgur.com/XU7JlpQ.png" />');
                 }
+                
                 if (target === 'ba ton pass'){
                         matched = true;
                         this.sendReplyBox('<img src="http://i.imgur.com/T0rHSiB.jpg" width="400" height="300" />');
@@ -2242,108 +2262,6 @@ var commands = exports.commands = {
 	/*********************************************************
 	 * inb5 serp breaks the server with these
 	 *********************************************************/
-	
-		urand: 'ud',
-	udrand: 'ud',
-	u: 'ud',
-	ud: function(target, room, user, connection, cmd) {
-		if (!target) {
-			var target = '';
-			var random = true;
-		} else {
-			var random = false;
-		}
-		if (target.toString().length > 50) return this.sendReply('/ud - <phrase> can not be longer than 50 characters.');
-		if (!this.canBroadcast()) return;
-		if (user.userid === 'roseybear' && this.broadcasting) return this.sendReply('lol nope');
-
-		if (!random) {
-			options = {
-			    url: 'http://www.urbandictionary.com/iphone/search/define',
-			    term: target,
-			    headers: {
-  			    	'Referer': 'http://m.urbandictionary.com'
-   	 			},
-		    	qs: {
-		   	 		'term': target
-   		 		}
-			};
-		} else {
-			options = {
-			    url: 'http://www.urbandictionary.com/iphone/search/random',
-			    headers: {
-  			    	'Referer': 'http://m.urbandictionary.com'
-   	 			},
-			};
-		}
-
-		var milliseconds = ((44640 * 60) * 1000);
-
-		if (urbanCache[target.toLowerCase().replace(/ /g, '')] && Math.round(Math.abs((urbanCache[target.toLowerCase().replace(/ /g, '')].time - Date.now())/(24*60*60*1000))) < 31) {
-			return this.sendReplyBox("<b>" + Tools.escapeHTML(target) + ":</b> " + urbanCache[target.toLowerCase().replace(/ /g, '')].definition.substr(0,400));
-		}
-
-		self = this;
-
-		function callback(error, response, body) {
-		    if (!error && response.statusCode == 200) {
-		        page = JSON.parse(body);
-		        definitions = page['list'];
-		        if (page['result_type'] == 'no_results') {
-		        	self.sendReplyBox('No results for <b>"' + Tools.escapeHTML(target) + '"</b>.');
-		        	return room.update();
-		        } else {
-		        	if (!definitions[0]['word'] || !definitions[0]['definition']) {
-		        		self.sendReplyBox('No results for <b>"' + Tools.escapeHTML(target) + '"</b>.');
-		        		return room.update();
-		        	}
-		        	output = '<b>' + Tools.escapeHTML(definitions[0]['word']) + ':</b> ' + Tools.escapeHTML(definitions[0]['definition']).replace(/\r\n/g, '<br />').replace(/\n/g, ' ');
-		        	if (output.length > 400) output = output.slice(0,400) + '...';
-		        	cacheUrbanWord(target, Tools.escapeHTML(definitions[0]['definition']).replace(/\r\n/g, '<br />').replace(/\n/g, ' '));
-		        	self.sendReplyBox(output);
-		        	return room.update();
-		        }
-		    }
-		}
-		request(options, callback);
-	},
-
-	def: 'define',
-	define: function(target, room, user) {
-		if (!target) return this.sendReply('Usage: /define <word>');
-		target = toId(target);
-		if (target > 50) return this.sendReply('/define <word> - word can not be longer than 50 characters.');
-		if (!this.canBroadcast()) return;
-
-		var options = {
-		    url: 'http://api.wordnik.com:80/v4/word.json/'+target+'/definitions?limit=3&sourceDictionaries=all' +
-		    '&useCanonical=false&includeTags=false&api_key=a2a73e7b926c924fad7001ca3111acd55af2ffabf50eb4ae5',
-		};
-
-		var self = this;
-
-		function callback(error, response, body) {
-		    if (!error && response.statusCode == 200) {
-		        var page = JSON.parse(body);
-		        var output = '<font color=#24678d><b>Definitions for ' + target + ':</b></font><br />';
-		        if (!page[0]) {
-		        	self.sendReplyBox('No results for <b>"' + target + '"</b>.');
-		        	return room.update();
-		        } else {
-		        	var count = 1;
-		        	for (var u in page) {
-		        		if (count > 3) break;
-		        		output += '(<b>'+count+'</b>) ' + Tools.escapeHTML(page[u]['text']) + '<br />';
-		        		count++;
-		        	}
-		        	self.sendReplyBox(output);
-		        	return room.update();
-		        }
-		    }
-		}
-		request(options, callback);
-	},
-	
 
 	clearall: function (target, room, user) {
 		if (!this.can('clearall')) return;
@@ -2373,7 +2291,7 @@ var commands = exports.commands = {
         if (!this.can('pmall')) return;
         if (!target) return this.parse('/help pmall');
 
-        var pmName = '~Kakuja Staff [Do not reply]';
+        var pmName = '~The Admins [Server PM]';
 
         for (var i in Users.users) {
             var message = '|pm|' + pmName + '|' + Users.users[i].getIdentity() + '|' + target;
@@ -2385,7 +2303,7 @@ var commands = exports.commands = {
         if(!this.can('declare')) return;
         if (!target) return this.parse('/help rmall');
 
-        var pmName = '~Kakuja Staff [Room Message]';
+        var pmName = '~The Admins [Room PM]';
 
         for (var i in room.users) {
             var message = '|pm|' + pmName + '|' + room.users[i].getIdentity() + '|' + target;

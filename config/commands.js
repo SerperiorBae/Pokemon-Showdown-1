@@ -2497,8 +2497,6 @@ var commands = exports.commands = {
 			
 	},
  
-var newName = user.originalName;
- 
 //delete the user object with the new name in case it exists - if it does it can cause issues with forceRename
 delete Users.get(newName);
  

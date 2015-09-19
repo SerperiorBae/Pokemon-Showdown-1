@@ -2444,75 +2444,51 @@ var commands = exports.commands = {
        salty: 'away',
        away: function(target, room, user, connection, cmd) {
             // unicode away message idea by Siiilver
-            var t = 'â’¶â“¦â“â“¨';
+            var t = 'Ⓐⓦⓐⓨ';
             var t2 = 'Away';
             switch (cmd) {
            case 'busy':
-t = 'â’·â“¤â“¢â“¨';
+t = 'Ⓑⓤⓢⓨ';
 t2 = 'Busy';
 break;
 case 'sleeping':
-t = 'â“ˆâ“›â“”â“”â“Ÿâ“˜â“â“–';
+t = 'Ⓢⓛⓔⓔⓟⓘⓝⓖ';
 t2 = 'Sleeping';
 break;
 case 'peeing':
-t = 'â“Ÿâ“”â“”â“˜â“â“–';
+t = 'Ⓟⓔⓔⓘⓝⓖ';
 t2 = 'Relieveing themselves';
 break;
-case 'bot':
-t = 'â’·â“žâ“£';
-t2 = 'Serps Bot';
-break;
 case 'sleep':
-t = 'â“ˆâ“›â“”â“”â“Ÿâ“˜â“â“–';
+t = 'Ⓢⓛⓔⓔⓟⓘⓝⓖ';
 t2 = 'Sleeping';
 break;
-case 'smashing':
-t = 'â“ˆâ“œâ“â“¢â“—â“˜â“â“–';
-t2 = 'Smashing';
-break;
 case 'gaming':
-t = 'â’¼â“â“œâ“˜â“â“–';
+t = 'Ⓖⓐⓜⓘⓝⓖ';
 t2 = 'Gaming';
 break;
 case 'working':
-t = 'â“Œâ“žâ“¡â“šâ“˜â“â“–';
-t2 = 'Working';
-break;
-case 'skype':
-t = 'â“ˆâ“šâ“¨â“Ÿâ“”';
-t2 = 'on Skype';
-break;
-case 'work':
-t = 'â“Œâ“žâ“¡â“šâ“˜â“â“–';
+t = 'Ⓦⓞⓡⓚⓘⓝⓖ';
 t2 = 'Working';
 break;
 case 'eating':
-t = 'â’ºâ“â“£â“˜â“â“–';
+t = 'Ⓔⓐⓣⓘⓝⓖ';
 t2 = 'Eating delicious foods.';
 break;
-case 'fapping':
-t = 'â’»â“â“Ÿâ“Ÿâ“˜â“â“–';
-t2 = 'Fapping';
-break;
-case 'sexting':
-t = 'â“ˆâ“”â“§â“£â“˜â“â“–';
-t2 = 'getting laid in rp';
-break;
 case 'coding':
-t = 'â’¸â“žâ““â“˜â“â“–';
+t = 'Ⓒⓞⓓⓘⓝⓖ';
 t2 = 'stressing over code';
 break;
 case 'anime':
-t = 'â’¶â“â“˜â“œâ“”';
+t = 'Ⓐⓝⓘⓜⓔ';
 t2 = 'Watching Anime';
 break;
 case 'shower':
-t = 'â“ˆâ“—â“žâ“¦â“”â“¡';
+t = 'Ⓢⓗⓞⓦⓔⓡ';
 t2 = 'In the shower';
 break;
 default:
-t = 'â’¶â“¦â“â“¨'
+t = 'Ⓐⓦⓐⓨ'
 t2 = 'Away';
 break;
 }

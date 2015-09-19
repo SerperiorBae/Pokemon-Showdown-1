@@ -1972,7 +1972,11 @@ var commands = exports.commands = {
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/Y5bbFq1.jpg" />');
 		}
-		
+		if (target === 'milk'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/u4o8UTo.png" />');
+		}
+
 		if (target === 'anorexic'){
 			matched = true;
 			this.sendReplyBox('<img src="http://www.humorsharing.com/media/images/1402/i_anorexic_funny_meme_52f6564e73b39.jpg" width="300" height="285" />');

@@ -2008,6 +2008,11 @@ var commands = exports.commands = {
 			this.sendReplyBox('<img src="http://i.imgur.com/5GV6Z3k.gif" />');
 		}
 		
+		if (target === 'lgbt'){
+			matched = true;
+			this.sendReplyBox('<img src="http://i.imgur.com/Cnwepz7.png" />');
+		}
+		
 		if (target === 'smashing'){
 			matched = true;
 			this.sendReplyBox('<img src="http://i.imgur.com/H9JJP25.jpg" />');

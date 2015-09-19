@@ -74,7 +74,7 @@ exports.BattleAbilities = {
 		rating: 4,
 		num: 185
 	},
-		"airabsorb": {
+	"airabsorb": {
 		desc: "This Pokemon is immune to Flying-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Flying-type move.",
 		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Flying moves; Flying immunity.",
 		onTryHit: function (target, source, move) {
@@ -88,7 +88,7 @@ exports.BattleAbilities = {
 		id: "airabsorb",
 		name: "Air Absorb",
 		rating: 3.5,
-		num: 198
+		num: -5
 	},
 	"airlock": {
 		shortDesc: "While this Pokemon is active, the effects of weather conditions are disabled.",
@@ -272,6 +272,28 @@ exports.BattleAbilities = {
 		name: "Blaze",
 		rating: 2,
 		num: 66
+	},
+	"brawlate": {
+		desc: "This Pokemon's Normal-type moves become Fighting-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Fighting-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Fighting';
+				if (move.category !== 'Status') pokemon.addVolatile('brawlate');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "brawlate",
+		name: "Brawlate",
+		rating: 4,
+		num: -20
 	},
 	"bulletproof": {
 		shortDesc: "This Pokemon is immune to bullet moves.",
@@ -486,16 +508,16 @@ exports.BattleAbilities = {
 		id: "darkdrink",
 		name: "Dark Drink",
 		rating: 3.5,
-		num: 196
+		num: -6
 	},
-		"darken": {
+	"yamnize": {
 		desc: "This Pokemon's Normal-type moves become Dark-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
 		shortDesc: "This Pokemon's Normal-type moves become Dark type and have 1.3x power.",
 		onModifyMovePriority: -1,
 		onModifyMove: function (move, pokemon) {
 			if (move.type === 'Normal' && move.id !== 'naturalgift') {
 				move.type = 'Dark';
-				if (move.category !== 'Status') pokemon.addVolatile('darken');
+				if (move.category !== 'Status') pokemon.addVolatile('yamnize');
 			}
 		},
 		effect: {
@@ -505,10 +527,10 @@ exports.BattleAbilities = {
 				return this.chainModify([0x14CD, 0x1000]);
 			}
 		},
-		id: "darken",
-		name: "darken",
+		id: "yamnize",
+		name: "Yamnize",
 		rating: 4,
-		num: 201
+		num: -7
 	},
 	"defeatist": {
 		desc: "While this Pokemon has 1/2 or less of its maximum HP, its Attack and Special Attack are halved.",
@@ -628,7 +650,7 @@ exports.BattleAbilities = {
 		rating: 4,
 		num: 88
 	},
-		"dracodrink": {
+	"dracodrink": {
 		desc: "This Pokemon is immune to Dragon-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Dragon-type move.",
 		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Dragon moves; Dragon immunity.",
 		onTryHit: function (target, source, move) {
@@ -642,7 +664,7 @@ exports.BattleAbilities = {
 		id: "dracodrink",
 		name: "dracodrink",
 		rating: 3.5,
-		num: 200
+		num: -8
 	},
 	"draconiate": {
 		desc: "This Pokemon's Normal-type moves become Dragon-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
@@ -664,7 +686,7 @@ exports.BattleAbilities = {
 		id: "draconiate",
 		name: "Draconiate",
 		rating: 4,
-		num: 202
+		num: -9
 	},
 	"drizzle": {
 		shortDesc: "On switch-in, this Pokemon summons Rain Dance.",
@@ -715,6 +737,28 @@ exports.BattleAbilities = {
 		name: "Dry Skin",
 		rating: 3.5,
 		num: 87
+	},
+	"dustify": {
+		desc: "This Pokemon's Normal-type moves become Ground-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Ground-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Ground';
+				if (move.category !== 'Status') pokemon.addVolatile('dustify');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "dustify",
+		name: "Dustify",
+		rating: 4,
+		num: -22
 	},
 	"earlybird": {
 		shortDesc: "This Pokemon's sleep counter drops by 2 instead of 1.",
@@ -802,6 +846,28 @@ exports.BattleAbilities = {
 		rating: 2.5,
 		num: 138
 	},
+	"flariate": {
+		desc: "This Pokemon's Normal-type moves become Fire-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Fire-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Fire';
+				if (move.category !== 'Status') pokemon.addVolatile('flariate');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "flariate",
+		name: "Flariate",
+		rating: 4,
+		num: -17
+	},
 	"flashfire": {
 		desc: "This Pokemon is immune to Fire-type moves. The first time it is hit by a Fire-type move, its attacking stat is multiplied by 1.5 while using a Fire-type attack as long as it remains active and has this Ability. If this Pokemon is frozen, it cannot be defrosted by Fire-type attacks.",
 		shortDesc: "This Pokemon's Fire attacks do 1.5x damage if hit by one Fire move; Fire immunity.",
@@ -844,6 +910,28 @@ exports.BattleAbilities = {
 		name: "Flash Fire",
 		rating: 3,
 		num: 18
+	},
+	"floriate": {
+		desc: "This Pokemon's Normal-type moves become Grass-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Grass-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Grass';
+				if (move.category !== 'Status') pokemon.addVolatile('floriate');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "floriate",
+		name: "Floriate",
+		rating: 4,
+		num: -19
 	},
 	"flowergift": {
 		desc: "If this Pokemon is a Cherrim and Sunny Day is active, it changes to Sunshine Form and the Attack and Special Defense of it and its allies are multiplied by 1.5.",
@@ -1013,7 +1101,7 @@ exports.BattleAbilities = {
 		id: "frostdrink",
 		name: "Frost Drink",
 		rating: 3.5,
-		num: 194
+		num: -10
 	},
 	"furcoat": {
 		shortDesc: "This Pokemon's Defense is doubled.",
@@ -1056,7 +1144,7 @@ exports.BattleAbilities = {
 		id: "galvanize",
 		name: "Galvanize",
 		rating: 4,
-		num: 203
+		num: -11
 	},
 	"gluttony": {
 		shortDesc: "When this Pokemon has 1/2 or less of its maximum HP, it uses certain Berries early.",
@@ -1325,6 +1413,28 @@ exports.BattleAbilities = {
 		rating: 1.5,
 		num: 39
 	},
+	"insectify": {
+		desc: "This Pokemon's Normal-type moves become Bug-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Bug-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Bug';
+				if (move.category !== 'Status') pokemon.addVolatile('insectify');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "insectify",
+		name: "Insectify",
+		rating: 4,
+		num: -24
+	},
 	"insomnia": {
 		shortDesc: "This Pokemon cannot fall asleep. Gaining this Ability while asleep cures it.",
 		onUpdate: function (pokemon) {
@@ -1543,6 +1653,28 @@ exports.BattleAbilities = {
 		rating: 1.5,
 		num: 64
 	},
+	"liquify": {
+		desc: "This Pokemon's Normal-type moves become Water-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Water-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Water';
+				if (move.category !== 'Status') pokemon.addVolatile('liquify');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "liquify",
+		name: "Liquify",
+		rating: 4,
+		num: -18
+	},
 	"magicbounce": {
 		desc: "This Pokemon blocks certain status moves and instead uses the move against the original user.",
 		shortDesc: "This Pokemon blocks certain status moves and bounces them back to the user.",
@@ -1668,6 +1800,50 @@ exports.BattleAbilities = {
 		name: "Mega Launcher",
 		rating: 3.5,
 		num: 178
+	},
+	"mentaliate": {
+		desc: "This Pokemon's Normal-type moves become Psychic-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Psychic-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Psychic';
+				if (move.category !== 'Status') pokemon.addVolatile('mentaliate');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "mentaliate",
+		name: "Mentaliate",
+		rating: 4,
+		num: -23
+	},
+	"mineralize": {
+		desc: "This Pokemon's Normal-type moves become Rock-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Rock-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Rock';
+				if (move.category !== 'Status') pokemon.addVolatile('mineralize');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "mineralize",
+		name: "Mineralize",
+		rating: 4,
+		num: -25
 	},
 	"minus": {
 		desc: "If an active ally has this Ability or the Ability Plus, this Pokemon's Special Attack is multiplied by 1.5.",
@@ -1835,7 +2011,7 @@ exports.BattleAbilities = {
 		rating: 4,
 		num: 99
 	},
-		"normabsorb": {
+	"normabsorb": {
 		desc: "This Pokemon is immune to Normal-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Normal-type move.",
 		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Normal moves; Normal immunity.",
 		onTryHit: function (target, source, move) {
@@ -1849,7 +2025,7 @@ exports.BattleAbilities = {
 		id: "normabsorb",
 		name: "Normabsorb",
 		rating: 3.5,
-		num: 195
+		num: -12
 	},
 	"normalize": {
 		desc: "This Pokemon's moves are changed to be Normal type. This effect comes before other effects that change a move's type.",
@@ -2196,7 +2372,7 @@ exports.BattleAbilities = {
 		id: "psysorb",
 		name: "Psysorb",
 		rating: 3.5,
-		num: 193
+		num: -13
 	},
 	"purepower": {
 		shortDesc: "This Pokemon's Attack is doubled.",
@@ -2539,7 +2715,7 @@ exports.BattleAbilities = {
 		rating: 2.5,
 		num: 19
 	},
-		"silversipper": {
+	"silversipper": {
 		desc: "This Pokemon is immune to Steel-type moves and restores 1/4 of its maximum HP, rounded down, when hit by a Steel-type move.",
 		shortDesc: "This Pokemon heals 1/4 of its max HP when hit by Steel moves; Steel immunity.",
 		onTryHit: function (target, source, move) {
@@ -2553,7 +2729,7 @@ exports.BattleAbilities = {
 		id: "silversipper",
 		name: "Silver Sipper",
 		rating: 3.5,
-		num: 199
+		num: -14
 	},
 	"simple": {
 		shortDesc: "If this Pokemon's stat stages are raised or lowered, the effect is doubled instead.",
@@ -2695,7 +2871,7 @@ exports.BattleAbilities = {
 		rating: 2,
 		num: 43
 	},
-		"specialboost": {
+	"specialboost": {
 		desc: "This Pokemon's Special Attack is raised by 1 stage at the end of each full turn it has been on the field.",
 		shortDesc: "This Pokemon's SAtk is raised 1 stage at the end of each full turn on the field.",
 		onResidualOrder: 26,
@@ -2708,7 +2884,29 @@ exports.BattleAbilities = {
 		id: "specialboost",
 		name: "Special Boost",
 		rating: 4.5,
-		num: 197
+		num: -15
+	},
+	"specterize": {
+		desc: "This Pokemon's Normal-type moves become Ghost-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Ghost-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Ghost';
+				if (move.category !== 'Status') pokemon.addVolatile('specterize');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "specterize",
+		name: "Specterize",
+		rating: 4,
+		num: 185
 	},
 	"speedboost": {
 		desc: "This Pokemon's Speed is raised by 1 stage at the end of each full turn it has been on the field.",
@@ -3107,7 +3305,7 @@ exports.BattleAbilities = {
 		id: "toxicabsorb",
 		name: "Toxic Absorb",
 		rating: 3.5,
-		num: 192
+		num: -16
 	},
 	"toxicboost": {
 		desc: "While this Pokemon is poisoned, the power of its physical attacks is multiplied by 1.5.",
@@ -3122,6 +3320,28 @@ exports.BattleAbilities = {
 		name: "Toxic Boost",
 		rating: 3,
 		num: 137
+	},
+	"toxicify": {
+		desc: "This Pokemon's Normal-type moves become Poison-type moves and have their power multiplied by 1.3. This effect comes after other effects that change a move's type, but before Ion Deluge and Electrify's effects.",
+		shortDesc: "This Pokemon's Normal-type moves become Poison-type and have 1.3x power.",
+		onModifyMovePriority: -1,
+		onModifyMove: function (move, pokemon) {
+			if (move.type === 'Normal' && move.id !== 'naturalgift') {
+				move.type = 'Poison';
+				if (move.category !== 'Status') pokemon.addVolatile('toxicify');
+			}
+		},
+		effect: {
+			duration: 1,
+			onBasePowerPriority: 8,
+			onBasePower: function (basePower, pokemon, target, move) {
+				return this.chainModify([0x14CD, 0x1000]);
+			}
+		},
+		id: "toxicify",
+		name: "Toxicify",
+		rating: 4,
+		num: -21
 	},
 	"toughclaws": {
 		shortDesc: "This Pokemon's contact moves have their power multiplied by 1.3.",

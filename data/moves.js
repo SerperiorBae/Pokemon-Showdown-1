@@ -282,7 +282,7 @@ exports.BattleMovedex = {
 		flags: {protect: 1, reflectable: 1, mirror: 1, sound: 1, authentic: 1},
 		isSoundBased: true,
 		boosts: {
-			atk: -1
+			atk: -1,
 			spa: -1
 		},
 		secondary: false,

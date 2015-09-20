@@ -80,6 +80,279 @@ exports.BattleMovedex = {
 		target: "normal",
 		type: "Poison"
 	},
+	"aurorablitz": {
+		accuracy: 90,
+		basePower: 90,
+		category: "Physical",
+		desc: "Has a 20% chance to paralyze the target.",
+		shortDesc: "20% chance to paralyze the target.",
+		id: "aurorablitz",
+		isViable: true,
+		name: "Aurora Blitz",
+		pp: 15,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 20,
+			status: 'par'
+		},
+		target: "normal",
+		type: "Aurora"
+	},
+	"aurorablast": {
+		accuracy: 95,
+		basePower: 110,
+		category: "Special",
+		desc: "If the target lost HP, the user takes recoil damage equal to 33% the HP lost by the target, rounded half up, but not less than 1 HP.",
+		shortDesc: "Has 33% recoil.",
+		id: "aurorablast",
+		isViable: true,
+		name: "Aurora Blast",
+		pp: 10,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1, distance: 1},
+		isContact: true,
+		recoil: [33, 100],
+		secondary: false,
+		target: "any",
+		type: "Aurora"
+	},
+	"aurorastrike": {
+		accuracy: 100,
+		basePower: 70,
+		category: "Physical",
+		desc: "No additional effect.",
+		shortDesc: "Usually goes first.",
+		id: "aurorastrike",
+		isViable: true,
+		name: "Aurora Strike",
+		pp: 30,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		isContact: true,
+		secondary: false,
+		target: "normal",
+		type: "Aurora"
+	},
+	"aurorapulse": {
+		accuracy: 100,
+		basePower: 80,
+		category: "Special",
+		desc: "Has a 30% chance to confuse the target.",
+		shortDesc: "30% chance to confuse the target.",
+		id: "aurorapulse",
+		name: "Aurora Pulse",
+		pp: 20,
+		priority: 0,
+		flags: {protect: 1, pulse: 1, mirror: 1, distance: 1},
+		secondary: {
+			chance: 30,
+			volatileStatus: 'confusion'
+		},
+		target: "any",
+		type: "Aurora"
+	},
+	"aurasmash": {
+		accuracy: 100,
+		basePower: 80,
+		category: "Physical",
+		desc: "If this attack does not miss, the effects of Reflect and Light Screen end for the target's side of the field before damage is calculated.",
+		shortDesc: "Destroys screens, unless the target is immune.",
+		id: "aurasmash",
+		isViable: true,
+		name: "Aura Smash",
+		pp: 15,
+		priority: 0,
+		flags: {contact: 1, protect: 1, mirror: 1},
+		isContact: true,
+		onTryHit: function (pokemon) {
+			// will shatter screens through sub, before you hit
+			if (pokemon.runImmunity('Aurora')) {
+				pokemon.side.removeSideCondition('reflect');
+				pokemon.side.removeSideCondition('lightscreen');
+			}
+		},
+		secondary: false,
+		target: "normal",
+		type: "Aurora"
+	},
+	"aurabeam": {
+		accuracy: 100,
+		basePower: 85,
+		category: "Special",
+		desc: "Has a 10% chance to freeze the target.",
+		shortDesc: "10% chance to freeze the target.",
+		id: "aurabeam",
+		isViable: true,
+		name: "Aura Beam",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 10,
+			status: 'frz'
+		},
+		target: "normal",
+	type: "Aurora"
+	},
+	"aurorafire": {
+		accuracy: 100,
+		basePower: 40,
+		category: "Special",
+		desc: "No additional effect.",
+		shortDesc: "Usually goes first.",
+		id: "aurorafire",
+		isViable: true,
+		name: "Aurora Fire",
+		pp: 30,
+		priority: 1,
+		flags: {contact: 1, protect: 1, mirror: 1, punch: 1},
+		isContact: true,
+		secondary: false,
+		target: "normal",
+		type: "Aurora"
+	},
+	"aurorawave": {
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		desc: "Causes the target to become confused.",
+		shortDesc: "Confuses the target.",
+		id: "aurorawave",
+		isViable: true,
+		name: "Aurora Wave",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1},
+		volatileStatus: 'confusion',
+		secondary: false,
+		target: "normal",
+		type: "Aurora"
+	},
+	"auroraburn": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Raises the user's Defense and Special Defense by 1 stage.",
+		shortDesc: "Boosts the user's Defense and Sp. Def by 1.",
+		id: "auroraburn",
+		isViable: true,
+		name: "Aurora Burn",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		isSnatchable: true,
+		boosts: {
+			def: 1,
+			spd: 1
+		},
+		secondary: false,
+		target: "self",
+		type: "Aurora"
+	},
+	"aurorablaze": {
+		accuracy: 90,
+		basePower: 150,
+		category: "Physical",
+		desc: " ",
+		shortDesc: "User cannot move next turn.",
+		id: "aurorablaze",
+		name: "Aurora Blaze",
+		pp: 5,
+		priority: 0,
+		flags: {contact: 1, recharge: 1, protect: 1, mirror: 1},
+		isContact: true,
+		self: {
+			volatileStatus: 'mustrecharge'
+		},
+		secondary: false,
+		target: "normal",
+		type: "Aurora"
+	},
+	"aurorashade": {
+		accuracy: 100,
+		basePower: 0,
+		category: "Status",
+		desc: "Lowers the target's Attack and Special Attack by 1 stage.",
+		shortDesc: "Lowers the foe(s) Attack and SAtk by 1.",
+		id: "aurorashade",
+		name: "Aurora Shade",
+		pp: 40,
+		priority: 0,
+		flags: {protect: 1, reflectable: 1, mirror: 1, sound: 1, authentic: 1},
+		isSoundBased: true,
+		boosts: {
+			atk: -1
+			spa: -1
+		},
+		secondary: false,
+		target: "allAdjacentFoes",
+		type: "Aurora"
+	},
+	"aurorastream": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Raises the user's Speed by 2 stages.",
+		shortDesc: "Boosts the user's Speed by 2.",
+		id: "aurorastream",
+		isViable: true,
+		name: "Aurora Stream",
+		pp: 30,
+		priority: 1,
+		flags: {snatch: 1},
+		isSnatchable: true,
+		boosts: {
+			spe: 2
+		},
+		secondary: false,
+		target: "self",
+		type: "Aurora"
+	},
+	"auroraburst": {
+		num: 552,
+		accuracy: 100,
+		basePower: 90,
+		category: "Special",
+		desc: "Has a 50% chance to raise the user's Special Attack by 1 stage.",
+		shortDesc: "50% chance to boost the user's Sp. Atk by 1.",
+		id: "auroraburst",
+		isViable: true,
+		name: "Aurora Burst",
+		pp: 10,
+		priority: 0,
+		flags: {protect: 1, mirror: 1},
+		secondary: {
+			chance: 50,
+			self: {
+				boosts: {
+					spa: 1
+				}
+			}
+		},
+		target: "normal",
+		type: "Aurora"
+	},
+	"auroralight": {
+		accuracy: true,
+		basePower: 0,
+		category: "Status",
+		desc: "Raises the user's Special Attack by 2 stages.",
+		shortDesc: "Boosts the user's Sp. Atk by 2.",
+		id: "auroralight",
+		isViable: true,
+		name: "Aurora Light",
+		pp: 20,
+		priority: 0,
+		flags: {snatch: 1},
+		isSnatchable: true,
+		boosts: {
+			spa: 2
+		},
+		secondary: false,
+		target: "self",
+		type: "Aurora"
+	},
 	"acrobatics": {
 		num: 512,
 		accuracy: 100,

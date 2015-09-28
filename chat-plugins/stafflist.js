@@ -37,11 +37,11 @@ exports.commands = {
 				}
 			}
 			connection.popup(
-				'Staff List \n\n**Administrator**:\n'+ staff['admins'].join(', ') +
-				'\n**Leaders**:\n' + staff['leaders'].join(', ') +
-				'\n**Moderators**:\n' + staff['mods'].join(', ') +
-				'\n**Drivers**:\n' + staff['drivers'].join(', ') +
-				'\n**Voices**:\n' + staff['voices'].join(', ')
+				'Kakuja Staff List \n\n(~) **Administrator(s)**:\n'+ staff['admins'].join(', ') +
+				'\n(&) **Leader(s)**:\n' + staff['leaders'].join(', ') +
+				'\n(@) **Moderator(s)**:\n' + staff['mods'].join(', ') +
+				'\n(%) **Driver(s)**:\n' + staff['drivers'].join(', ') +
+				'\n(+) **Voice(s)**:\n' + staff['voices'].join(', ')
 			);
 		})
 	}

@@ -164,12 +164,10 @@ exports.customavatars = {
 	'thevixen': 'char.png',
 	'darknessumbreon': 'dark.jpg',
 	'mystifi': 'vVGPiMK.png',
+	'growlly': 'growlly.png',
 	'nekis13': '5UhFtHc-1.png',
-	'narcomania': 'serpy.gif',
 	'academyahri': 'ahri.png',
 	'asleepykitsune': 'markewo.gif',
-	'lflutterbotl': 'wj35qCh.gif',
-	'lfluttershyl': 'kevykins.png',
 };
 
 // Tournament announcements

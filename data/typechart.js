@@ -98,6 +98,7 @@ exports.BattleTypeChart = {
 	},
 	"Fairy": {
 		damageTaken: {
+			"Aurora": 1,
 			"Bug": 2,
 			"Dark": 2,
 			"Dragon": 3,
@@ -448,7 +449,7 @@ exports.BattleTypeChart = {
 			"Dark": 0,
 			"Dragon": 0,
 			"Electric": 0,
-			"Fairy": 2,
+			"Fairy": 3,
 			"Fighting": 0,
 			"Fire": 1,
 			"Flying": 0,

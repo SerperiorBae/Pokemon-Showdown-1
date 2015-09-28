@@ -164,6 +164,7 @@ exports.customavatars = {
 	'thevixen': 'char.png',
 	'darknessumbreon': 'dark.jpg',
 	'mystifi': 'vVGPiMK.png',
+	'hayleysworld': 'hayley.gif',
 	'growlly': 'growlly.png',
 	'nekis13': '5UhFtHc-1.png',
 	'academyahri': 'ahri.png',

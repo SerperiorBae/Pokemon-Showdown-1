@@ -9,7 +9,7 @@
 const Giveaway_Display = 'background-color: #ffc775 ; border: #ff560e solid 1px ; color: #ff560e; padding: 3px; text-align: center';
 const Giveaway_Title_Font = 'font-size: 20px ; text-decoration: underline';
 const Giveaway_Flavor_Font = 'font-size: 14px';
-const Giveaway_Small_Font = 'font-size: 12px';
+const Giveaway_Small_Font = 'font-size: 11px';
 const Giveaway_Button = 'width: 30% ; background-color: #ff560e ; border: none ; color: #ffc775 ; font-size: 14px';
 
 let banned = Object.create(null);
@@ -98,7 +98,7 @@ class QuestionGiveaway extends Giveaway {
 
 		this.send('<div style="' + Giveaway_Display + '"><font style="' + Giveaway_Title_Font + '">It\'s giveaway time!</font><br>' +
 			'<font style="' + Giveaway_Flavor_Font + '">Question Giveaway started by ' + Tools.escapeHTML(host.name) + '</font><br>' +
-			'<font style="' + Giveaway_Small_Font + '"<strong>' + Tools.escapeHTML(giver.name) + '</strong> will be giving away a <strong>' + Tools.escapeHTML(this.prize) + '!</strong><br/>' +
+			'<font style="' + Giveaway_Small_Font + '"><strong>' + Tools.escapeHTML(giver.name) + '</strong> will be giving away a <strong>' + Tools.escapeHTML(this.prize) + '!</strong><br/>' +
 			'The question will be displayed in one minute! <em>Use /ga to answer.</em></font></div>');
 
 		this.timer = setTimeout(() => this.start(), 1000 * 60);

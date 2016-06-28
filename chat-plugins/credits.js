@@ -369,7 +369,7 @@ exports.commands = {
 	},
 
 	creditshop: function (target, room, user) {
-		if (room.id !== 'marketplace' && room.id !== 'marketplacestaff') return this.errorReply("The Credit Shop can only be displayed in Marketplace only.");
+		if (room.id !== 'marketplace' && room.id !== 'marketplacestaff') return this.errorReply("The Credit Shop can only be displayed in Marketplace.");
 		if (!this.runBroadcast()) return;
 		this.sendReplyBox('<center><h4 style="font-weight: bold ; text-decoration: underline ;">' + shopTitle + '</h4><table style="' + Shop_Table + '"><tr><th style="' + Shop_TH + '">Item</th><th style="' + Shop_TH + '">Description</th><th style="' + Shop_TH + '">Price</th></tr>' +
 			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '" name="send" value="/claim roseticket">Rose Ticket</button></td><td style="' + Shop_TD + '">Can be exchanged for 5 bucks</td><td style="' + Shop_Price_TD + '">' + prices['roseticket'] + '</td></tr>' +

@@ -3,6 +3,12 @@
 const fs = require('fs');
 
 let shopTitle = 'Wisp Credit Shop';
+let shop-table = 'background-color: #ffc775 ; border: #c13a00 solid 1px ; color: #ff560e ; border-collapse: collapse ; padding: 5px ; width: 100%';
+let shop-th = 'background-color: #ff560e ; border: #c13a00 solid 1px ; color: #ffc775 ; padding: 3px';
+let shop-td = 'border: #c13a00 solid 1px ; padding: 3px';
+let shop-Ptd = 'border: #c13a00 solid 1px ; font-weight: bold ; padding: 3px ; text-align: center';
+let shop-button = 'width: 100% ; background-color: #ff560e ; border: #c13a00 solid 1px ; color: #ffc775 ; font-size: 14px ; font-weight: bold';
+
 
 let prices = {
 	"roseticket": 15,
@@ -365,25 +371,25 @@ exports.commands = {
 	creditshop: function (target, room, user) {
 		if (room.id !== 'marketplace' && room.id !== 'marketplacestaff') return this.errorReply("The Credit Shop can only be displayed in Marketplace only.");
 		if (!this.runBroadcast()) return;
-		this.sendReplyBox('<center><h4><b><u>' + shopTitle + '</u></b></h4><table border="1" cellspacing ="0" cellpadding="3"><tr><th>Item</th><th>Description</th><th>Price</th></tr>' +
-			'<tr><td><button name="send" value="/claim roseticket">Rose Ticket</button></td><td>Can be exchanged for 5 bucks</td><td>' + prices['roseticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim redticket">Red Ticket</button></td><td>Can be exchanged for one PSGO pack</td><td>' + prices['redticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim cyanticket">Cyan Ticket</button></td><td>Can be exchanged for 15 bucks</td><td>' + prices['cyanticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim blueticket">Blue Ticket</button></td><td>Can be exchanged for 2 PSGO packs</td><td>' + prices['blueticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim orangeticket">Orange Ticket</button></td><td>Can be exchanged for a recolored avatar and 10 bucks</td><td>' + prices['orangeticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim silverticket">Silver Ticket</button></td><td>Can be exchanged for 1 PSGO pack and 20 bucks</td><td>' + prices['silverticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim violeticket">Violet Ticket</button></td><td>Can be exchanged for a recolored avatar, 1 PSGO pack and 20 bucks</td><td>' + prices['violetticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim yellowticket">Yellow Ticket</button></td><td>Can be exchanged for 5 PSGO packs</td><td>' + prices['yellowticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim whiteticket">White Ticket</button></td><td>Can be exchanged for 50 bucks</td><td>' + prices['whiteticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim greenticket">Green Ticket</button></td><td>Can be exchanged for a recolored avatar, 30 bucks and 2 PSGO packs</td><td>' + prices['greenticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim crystalticket">Crystal Ticket</button></td><td>Can be exchanged for 3 cards from the <button name="send" value="/showcase marketplaceatm">Marketplace ATM showcase</button></td><td>' + prices['crystalticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim goldticket">Gold Ticket</button></td><td>Can be exchanged for 2 PSGO packs and 50 bucks</td><td>' + prices['goldticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim blackticket">Black Ticket</button></td><td>Can be exchanged for 100 bucks</td><td>' + prices['blackticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim rubyticket">Ruby ticket</button></td><td>Can be exchanged for 5 PSGO packs, 50 bucks and an avatar recolor</td><td>' + prices['rubyticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim sapphireticket">Sapphire Ticket</button></td><td>Can be exchanged for 7 PSGO packs and 100 bucks</td><td>' + prices['sapphireticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim magentaticket">Magenta Ticket</button></td><td>Can be exchanged for a Custom Feature in the Room Intro for 5 days! Example: http://prntscr.com/bdq3uh</td><td>' + prices['magentaticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim rainbowticket">Rainbow Ticket</button></td><td>Can be exchanged for 10 PSGO packs and 200 bucks</td><td>' + prices['rainbowticket'] + '</td></tr>' +
-			'<tr><td><button name="send" value="/claim emeraldticket">Emerald Ticket</button></td><td>Can be exchanged for 5 PSGO packs, 100 bucks, Marketplace Partner, Custom Title and Partner Badge</td><td>' + prices['emeraldticket'] + '</td></tr>' +
+		this.sendReplyBox('<center><h4 style="font-weight: bold ; text-decoration: underline ;">' + shopTitle + '</h4><table style="' + shop-table + '"><tr><th style="' + shop-th + '">Item</th><th style="' + shop-th + '">Description</th><th style="' + shop-th + '">Price</th></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim roseticket">Rose Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 5 bucks</td><td style="' + shop-Ptd + '">' + prices['roseticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim redticket">Red Ticket</button></td><td style="' + shop-td + '">Can be exchanged for one PSGO pack</td><td style="' + shop-Ptd + '">' + prices['redticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim cyanticket">Cyan Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 15 bucks</td><td style="' + shop-Ptd + '">' + prices['cyanticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim blueticket">Blue Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 2 PSGO packs</td><td style="' + shop-Ptd + '">' + prices['blueticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim orangeticket">Orange Ticket</button></td><td style="' + shop-td + '">Can be exchanged for a recolored avatar and 10 bucks</td><td style="' + shop-Ptd + '">' + prices['orangeticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim silverticket">Silver Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 1 PSGO pack and 20 bucks</td><td style="' + shop-Ptd + '">' + prices['silverticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim violeticket">Violet Ticket</button></td><td style="' + shop-td + '">Can be exchanged for a recolored avatar, 1 PSGO pack and 20 bucks</td><td style="' + shop-td + '">' + prices['violetticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim yellowticket">Yellow Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 5 PSGO packs</td><td style="' + shop-Ptd + '">' + prices['yellowticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim whiteticket">White Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 50 bucks</td><td style="' + shop-Ptd + '">' + prices['whiteticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim greenticket">Green Ticket</button></td><td style="' + shop-td + '">Can be exchanged for a recolored avatar, 30 bucks and 2 PSGO packs</td><td style="' + shop-Ptd + '">' + prices['greenticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim crystalticket">Crystal Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 3 cards from the <button style="' + shop-button + '" name="send" value="/showcase marketplaceatm">Marketplace ATM showcase</button></td><td style="' + shop-Ptd + '">' + prices['crystalticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim goldticket">Gold Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 2 PSGO packs and 50 bucks</td><td style="' + shop-Ptd + '">' + prices['goldticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim blackticket">Black Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 100 bucks</td><td style="' + shop-Ptd + '">' + prices['blackticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim rubyticket">Ruby ticket</button></td><td style="' + shop-td + '">Can be exchanged for 5 PSGO packs, 50 bucks and an avatar recolor</td><td style="' + shop-Ptd + '">' + prices['rubyticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim sapphireticket">Sapphire Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 7 PSGO packs and 100 bucks</td><td style="' + shop-Ptd + '">' + prices['sapphireticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim magentaticket">Magenta Ticket</button></td><td style="' + shop-td + '">Can be exchanged for a Custom Feature in the Room Intro for 5 days! Example: http://prntscr.com/bdq3uh</td><td style="' + shop-Ptd + '">' + prices['magentaticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim rainbowticket">Rainbow Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 10 PSGO packs and 200 bucks</td><td style="' + shop-Ptd + '">' + prices['rainbowticket'] + '</td></tr>' +
+			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/claim emeraldticket">Emerald Ticket</button></td><td style="' + shop-td + '">Can be exchanged for 5 PSGO packs, 100 bucks, Marketplace Partner, Custom Title and Partner Badge</td><td style="' + shop-Ptd + '">' + prices['emeraldticket'] + '</td></tr>' +
 			'</table><br />To buy an item from the shop, use /claim [item].<br />All sales final, no refunds will be provided. Any ticket including packs can not be redeemed for XY-Promo Packs.</center>'
 		);
 	},

@@ -10,11 +10,11 @@ const geoip = require('geoip-ultralight');
 geoip.startWatchingDataUpdate();
 
 let shopTitle = 'Wisp Shop';
-let shop-table = 'background-color: #ffc775 ; border: #c13a00 solid 1px ; color: #ff560e ; border-collapse: collapse ; padding: 5px ; width: 100%';
-let shop-th = 'background-color: #ff560e ; border: #c13a00 solid 1px ; color: #ffc775 ; padding: 3px';
-let shop-td = 'border: #c13a00 solid 1px ; padding: 3px';
-let shop-Ptd = 'border: #c13a00 solid 1px ; font-weight: bold ; padding: 3px ; text-align: center';
-let shop-button = 'width: 100% ; background-color: #ff560e ; border: #c13a00 solid 1px ; color: #ffc775 ; font-size: 14px ; font-weight: bold';
+const Shop_Table = 'background-color: #ffc775 ; border: #c13a00 solid 1px ; color: #ff560e ; border-collapse: collapse ; padding: 5px ; width: 100%';
+const Shop_TH = 'background-color: #ff560e ; border: #c13a00 solid 1px ; color: #ffc775 ; padding: 3px';
+const Shop_TD = 'border: #c13a00 solid 1px ; padding: 3px';
+const Shop_Price_TD = 'border: #c13a00 solid 1px ; font-weight: bold ; padding: 3px ; text-align: center';
+const Shop_Button = 'width: 100% ; background-color: #ff560e ; border: #c13a00 solid 1px ; color: #ffc775 ; font-size: 14px ; font-weight: bold';
 
 let serverIp = '158.69.196.64';
 
@@ -355,19 +355,19 @@ exports.commands = {
 
 	shop: function (target, room, user) {
 		if (!this.runBroadcast()) return;
-		this.sendReplyBox('<center><h4 style="font-weight: bold ; text-decoration: underline">' + shopTitle + '</h4><table style="' + shop-table +'><tr><th style="' + shop-td + '">Item</th><th style="' + shop-td + '">Description</th><th style="' + shop-td + '">Price</th></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy symbol">Custom Symbol</button></td><td style="' + shop-td + '">Buys a custom symbol to go in front of your name. (Temporary until restart)</td><td style="' + shop-ptd + '">' + prices['symbol'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy fix">Fix</button></td><td style="' + shop-td + '">Buys the ability to alter your current custom avatar or infobox (don\'t buy if you have neither)!</td><td style="' + shop-ptd + '">' + prices['fix'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy declare">Declare</button></td><td style="' + shop-td + '">You get the ability to have a message declared in the lobby. This can be used for league advertisement (not server)</td><td style="' + shop-ptd + '">' + prices['declare'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy poof">Poof</button></td><td style="' + shop-td + '">Buy a poof message to be added into the pool of possible poofs</td><td style="' + shop-ptd + '">' + prices['poof'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy title">Title</button></td><td style="' + shop-td + '">Buys a user title that displays beside your name in /profile</td><td style="' + shop-ptd + '">' + prices['title'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy avatar">Avatar</button></td><td style="' + shop-td + '">Buys a custom avatar to be applied to your name (You supply, must be .png or .gif format. Images larger than 80x80 may not show correctly.)</td><td style="' + shop-ptd + '">' + prices['avatar'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy infobox">Infobox</button></td><td style="' + shop-td + '">Buys an infobox that will be viewable with a command such as /tailz.</td><td style="' + shop-ptd + '">' + prices['infobox'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy emote">Emote</button></td><td style="' + shop-td + '">Buys an emoticon for you (and everyone else) to use in the chat.</td><td style="' + shop-ptd + '">' + prices['emote'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy roomshop">Room Shop</button></td><td style="' + shop-td + '">Buys a fully customizable shop for your room. The bucks earned from purchases go to the room founder or room bank.</td><td style="' + shop-ptd + '">' + prices['roomshop'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy room">Room</button></td><td style="' + shop-td + '">Buys a chatroom for you to own.</td><td style="' + shop-ptd + '">' + prices['room'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy icon">Icon</button></td><td style="' + shop-td + '">Buys an icon that displays beside your name on the userlist. Size must be 32x32.</td><td style="' + shop-ptd + '">' + prices['icon'] + '</td></tr>' +
-			'<tr><td style="' + shop-td + '"><button style="' + shop-button + '"name="send" value="/buy color">Color</button></td><td style="' + shop-td + '">Buys a custom color change for your name. Changes the color of your name on the userlist and in the chat.</td><td style="' + shop-ptd + '">' + prices['color'] + '</td></tr>' +
+		this.sendReplyBox('<center><h4 style="font-weight: bold ; text-decoration: underline">' + shopTitle + '</h4><table style="' + Shop_Table +'><tr><th style="' + Shop_TH + '">Item</th><th style="' + Shop_TH + '">Description</th><th style="' + Shop_TH + '">Price</th></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy symbol">Custom Symbol</button></td><td style="' + Shop_TD + '">Buys a custom symbol to go in front of your name. (Temporary until restart)</td><td style="' + Shop_Price_TD + '">' + prices['symbol'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy fix">Fix</button></td><td style="' + Shop_TD + '">Buys the ability to alter your current custom avatar or infobox (don\'t buy if you have neither)!</td><td style="' + Shop_Price_TD + '">' + prices['fix'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy declare">Declare</button></td><td style="' + Shop_TD + '">You get the ability to have a message declared in the lobby. This can be used for league advertisement (not server)</td><td style="' + Shop_Price_TD + '">' + prices['declare'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy poof">Poof</button></td><td style="' + Shop_TD + '">Buy a poof message to be added into the pool of possible poofs</td><td style="' + Shop_Price_TD + '">' + prices['poof'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy title">Title</button></td><td style="' + Shop_TD + '">Buys a user title that displays beside your name in /profile</td><td style="' + Shop_Price_TD + '">' + prices['title'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy avatar">Avatar</button></td><td style="' + Shop_TD + '">Buys a custom avatar to be applied to your name (You supply, must be .png or .gif format. Images larger than 80x80 may not show correctly.)</td><td style="' + Shop_Price_TD + '">' + prices['avatar'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy infobox">Infobox</button></td><td style="' + Shop_TD + '">Buys an infobox that will be viewable with a command such as /tailz.</td><td style="' + Shop_Price_TD + '">' + prices['infobox'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy emote">Emote</button></td><td style="' + Shop_TD + '">Buys an emoticon for you (and everyone else) to use in the chat.</td><td style="' + Shop_Price_TD + '">' + prices['emote'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy roomshop">Room Shop</button></td><td style="' + Shop_TD + '">Buys a fully customizable shop for your room. The bucks earned from purchases go to the room founder or room bank.</td><td style="' + Shop_Price_TD + '">' + prices['roomshop'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy room">Room</button></td><td style="' + Shop_TD + '">Buys a chatroom for you to own.</td><td style="' + Shop_Price_TD + '">' + prices['room'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy icon">Icon</button></td><td style="' + Shop_TD + '">Buys an icon that displays beside your name on the userlist. Size must be 32x32.</td><td style="' + Shop_Price_TD + '">' + prices['icon'] + '</td></tr>' +
+			'<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '"name="send" value="/buy color">Color</button></td><td style="' + Shop_TD + '">Buys a custom color change for your name. Changes the color of your name on the userlist and in the chat.</td><td style="' + Shop_Price_TD + '">' + prices['color'] + '</td></tr>' +
 			'</table><br />To buy an item from the shop, use /buy [item].<br />All sales final, no refunds will be provided.</center>'
 		);
 	},
@@ -390,11 +390,11 @@ exports.commands = {
 		default:
 			if (!this.runBroadcast()) return;
 			if (room.shopList.length < 1) return this.sendReplyBox('<center><b><u>This shop has no items!</u></b></center>');
-			let output = '<center><h4 style="color: #24678d ; font-weight: bold ; text-decoration: underline">' + Tools.escapeHTML(room.title) + '\'s Shop</h4><table style="' + shop-table + '"><tr><th style="' + shop-th + '">Item</th><th style="' + shop-th + '">Description</th><th style="' + shop-th + '">Price</th></tr>';
+			let output = '<center><h4 style="color: #24678d ; font-weight: bold ; text-decoration: underline">' + Tools.escapeHTML(room.title) + '\'s Shop</h4><table style="' + shop-table + '"><tr><th style="' + Shop_TH + '">Item</th><th style="' + Shop_TH + '">Description</th><th style="' + Shop_TH + '">Price</th></tr>';
 			for (let u in room.shopList) {
 				if (!room.shop[room.shopList[u]] || !room.shop[room.shopList[u]].name || !room.shop[room.shopList[u]].description || !room.shop[room.shopList[u]].price) continue;
-				output += '<tr><td style="' + shop-td + '"><button style="' + shop-button + '" name="send" value="/roomshop buy ' + Tools.escapeHTML(room.shopList[u]) + '" >' + Tools.escapeHTML(room.shop[room.shopList[u]].name) +
-				'</button></td><td style="' + shop-td + '">' + Tools.escapeHTML(room.shop[room.shopList[u]].description.toString()) + '</td><td style="' + shop-Ptd + '">' + room.shop[room.shopList[u]].price + '</td></tr>';
+				output += '<tr><td style="' + Shop_TD + '"><button style="' + Shop_Button + '" name="send" value="/roomshop buy ' + Tools.escapeHTML(room.shopList[u]) + '" >' + Tools.escapeHTML(room.shop[room.shopList[u]].name) +
+				'</button></td><td style="' + Shop_TD + '">' + Tools.escapeHTML(room.shop[room.shopList[u]].description.toString()) + '</td><td style="' + Shop_Price_TD + '">' + room.shop[room.shopList[u]].price + '</td></tr>';
 			}
 			output += '</center><br />';
 			this.sendReplyBox(output);

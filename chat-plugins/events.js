@@ -1,5 +1,5 @@
 'use strict';
-const http = require('http');
+
 const fs = require('fs');
 const serialize = require('node-serialize');
 const EventsOn = {};

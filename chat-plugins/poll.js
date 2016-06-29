@@ -346,7 +346,19 @@ exports.commands = {
 				"/poll results - Shows the results of the poll without voting. NOTE: you can't go back and vote after using this.",
 				"/poll display - Displays the poll",
 				"/poll end - Ends a poll and displays the results. Requires: % @ # & ~"],
-};
+},
+	pr: function (target, room, user, connection) {
+			if (!room.poll) return this.errorReply("There is no poll running in this room.");
+			if (!this.runBroadcast()) return;
+			room.update();
+
+			if (this.broadcasting) {
+				room.poll.display();
+			} else {
+				room.poll.displayTo(user, connection);
+			}
+		},
+		displayhelp: ["/poll display - Displays the poll"],
 
 process.nextTick(() => {
 	CommandParser.multiLinePattern.register('/poll (new|create|htmlcreate) ');

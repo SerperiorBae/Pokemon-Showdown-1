@@ -6,11 +6,11 @@
  **/
 'use strict';
 
-const Giveaway_Display = 'background-color: #ffc775 ; border: #ff560e solid 1px ; color: #ff560e; padding: 3px; text-align: center';
-const Giveaway_Title_Font = 'font-size: 20px ; text-decoration: underline';
-const Giveaway_Flavor_Font = 'font-size: 14px';
-const Giveaway_Small_Font = 'font-size: 11px';
-const Giveaway_Button = 'width: 30% ; background-color: #ff560e ; border: none ; color: #ffc775 ; font-size: 14px';
+const GIVEAWAY_DISPLAY = 'background-color: #ffc775 ; border: #ff560e solid 1px ; color: #ff560e; padding: 3px; text-align: center';
+const GIVEAWAY_TITLE_FONT = 'font-size: 20px ; text-decoration: underline';
+const GIVEAWAY_FLAVOR_FONT = 'font-size: 14px';
+const GIVEAWAY_SMALL_FONT = 'font-size: 11px';
+const GIVEAWAY_BUTTON = 'width: 30% ; background-color: #ff560e ; border: none ; color: #ffc775 ; font-size: 14px';
 
 let banned = Object.create(null);
 
@@ -36,12 +36,12 @@ class Giveaway {
 	}
 
 	send(content) {
-		this.room.add('|uhtml|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + Giveaway_Display + '">' + content + '</div>');
+		this.room.add('|uhtml|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + GIVEAWAY_DISPLAY + '">' + content + '</div>');
 		this.room.update();
 	}
 
 	changeUhtml(content) {
-		this.room.add('|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + Giveaway_Display + '">' + content + '</div>');
+		this.room.add('|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + GIVEAWAY_DISPLAY + '">' + content + '</div>');
 		this.room.update();
 	}
 
@@ -64,7 +64,7 @@ class Giveaway {
 		for (let ip in this.joined) {
 			if (user.latestIp === ip || this.joined[ip] in user.prevNames) {
 				this.excluded[ip] = this.joined[ip];
-				if (this.generateReminder) user.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + Giveaway_Display + '">' + this.generateReminder() + '</div>');
+				if (this.generateReminder) user.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + GIVEAWAY_DISPLAY + '">' + this.generateReminder() + '</div>');
 				delete this.joined[ip];
 			}
 		}
@@ -96,20 +96,20 @@ class QuestionGiveaway extends Giveaway {
 		this.answers = QuestionGiveaway.sanitizeAnswers(answers);
 		this.answered = {}; // userid: number of guesses
 
-		this.send('<div style="' + Giveaway_Display + '"><font style="' + Giveaway_Title_Font + '">It\'s giveaway time!</font><br>' +
-			'<font style="' + Giveaway_Flavor_Font + '">Question Giveaway started by ' + Tools.escapeHTML(host.name) + '</font><br>' +
-			'<font style="' + Giveaway_Small_Font + '"><strong>' + Tools.escapeHTML(giver.name) + '</strong> will be giving away a <strong>' + Tools.escapeHTML(this.prize) + '!</strong><br/>' +
+		this.send('<div style="' + GIVEAWAY_DISPLAY + '"><font style="' + GIVEAWAY_TITLE_FONT + '">It\'s giveaway time!</font><br>' +
+			'<font style="' + GIVEAWAY_FLAVOR_FONT + '">Question Giveaway started by ' + Tools.escapeHTML(host.name) + '</font><br>' +
+			'<font style="' + GIVEAWAY_SMALL_FONT + '"><strong>' + Tools.escapeHTML(giver.name) + '</strong> will be giving away a <strong>' + Tools.escapeHTML(this.prize) + '!</strong><br/>' +
 			'The question will be displayed in one minute! <em>Use /ga to answer.</em></font></div>');
 
 		this.timer = setTimeout(() => this.start(), 1000 * 60);
 	}
 
 	generateQuestion() {
-		return '<font style="' + Giveaway_Flavor_Font + '">Giveaway Question: <strong>' + this.question + '</strong></font><br><font style="' + Giveaway_Small_Font + '">use /ga to guess.</font>';
+		return '<font style="' + GIVEAWAY_FLAVOR_FONT + '">Giveaway Question: <strong>' + this.question + '</strong></font><br><font style="' + GIVEAWAY_SMALL_FONT + '">use /ga to guess.</font>';
 	}
 
 	start() {
-		this.changeUhtml('<font style="' + Giveaway_Flavor_Font + '">The giveaway has started! Scroll down to see the question.</font>');
+		this.changeUhtml('<font style="' + GIVEAWAY_FLAVOR_FONT + '">The giveaway has started! Scroll down to see the question.</font>');
 		this.phase = 'started';
 		this.send(this.generateQuestion());
 		this.timer = setTimeout(() => this.end(), 1000 * 60 * 5);
@@ -157,17 +157,17 @@ class QuestionGiveaway extends Giveaway {
 	end(force) {
 		if (force) {
 			this.clearTimer();
-			this.changeUhtml('<font style="' + Giveaway_Flavor_Font + '">The giveaway was forcibly ended.</font>');
+			this.changeUhtml('<font style="' + GIVEAWAY_FLAVOR_FONT + '">The giveaway was forcibly ended.</font>');
 			this.room.send("The giveaway was forcibly ended.");
 		} else {
 			if (!this.winner) {
-				this.changeUhtml('<font style="' + Giveaway_Flavor_Font + '">The giveaway was forcibly ended.</font>');
+				this.changeUhtml('<font style="' + GIVEAWAY_FLAVOR_FONT + '">The giveaway was forcibly ended.</font>');
 				this.room.send("The giveaway has been forcibly ended as no one has answered the question.");
 			} else {
 				this.phase = 'ended';
 				this.clearTimer();
-				this.send('<div style="' + Giveaway_Display + '"><font style="' + Giveaway_Title_Font + '"><strong>' + Tools.escapeHTML(this.winner.name) + '</strong> won ' + Tools.escapeHTML(this.giver.name) + '\'s giveaway for a <strong>' + Tools.escapeHTML(this.prize) + '</strong>! Congratulations!</font><br>' +
-					'<font style="' + Giveaway_Small_Font + '">Correct answer(s): ' + this.answers.join(', ') + '</font></div>');
+				this.send('<div style="' + GIVEAWAY_DISPLAY + '"><font style="' + GIVEAWAY_TITLE_FONT + '"><strong>' + Tools.escapeHTML(this.winner.name) + '</strong> won ' + Tools.escapeHTML(this.giver.name) + '\'s giveaway for a <strong>' + Tools.escapeHTML(this.prize) + '</strong>! Congratulations!</font><br>' +
+					'<font style="' + GIVEAWAY_SMALL_FONT + '">Correct answer(s): ' + this.answers.join(', ') + '</font></div>');
 				if (this.winner.connected) this.winner.popup('You have won the giveaway. PM **' + Tools.escapeHTML(this.giver.name) + '** to claim your prize!');
 				if (this.giver.connected) this.giver.popup(Tools.escapeHTML(this.winner.name) + " has won your question giveaway!");
 			}
@@ -201,11 +201,11 @@ class LotteryGiveaway extends Giveaway {
 	}
 
 	generateReminder(joined) {
-		return '<div style="' + Giveaway_Display + '"><font style="' + Giveaway_Title_Font + '">It\'s giveaway time!</font><br>' +
-			'<font style="' + Giveaway_Flavor_Font + '">Lottery Giveaway started by ' + Tools.escapeHTML(this.host.name) + '<br>' +
+		return '<div style="' + GIVEAWAY_DISPLAY + '"><font style="' + GIVEAWAY_TITLE_FONT + '">It\'s giveaway time!</font><br>' +
+			'<font style="' + GIVEAWAY_FLAVOR_FONT + '">Lottery Giveaway started by ' + Tools.escapeHTML(this.host.name) + '<br>' +
 			'<strong>' + Tools.escapeHTML(this.giver.name) + '</strong> will be giving away: <strong>' + Tools.escapeHTML(this.prize) + '!</strong><br>' +
-			'<font style="' + Giveaway_Small_Font + '">The lottery drawing will occur in 2 minutes, and with ' + this.maxwinners + ' winner' + (this.maxwinners > 1 ? 's' : '') + '!</font><br/>' +
-			(joined ? '<button name="send" value="/giveaway leavelottery" style="' + Giveaway_Button + '">Leave</button><br/>' : '<button name="send" value="/giveaway joinlottery" style="' + Giveaway_Button + '">Join</button>') + '</div>';
+			'<font style="' + GIVEAWAY_SMALL_FONT + '">The lottery drawing will occur in 2 minutes, and with ' + this.maxwinners + ' winner' + (this.maxwinners > 1 ? 's' : '') + '!</font><br/>' +
+			(joined ? '<button name="send" value="/giveaway leavelottery" style="' + GIVEAWAY_BUTTON + '">Leave</button><br/>' : '<button name="send" value="/giveaway joinlottery" style="' + GIVEAWAY_BUTTON + '">Join</button>') + '</div>';
 
 	}
 
@@ -216,10 +216,10 @@ class LotteryGiveaway extends Giveaway {
 		for (let i in this.room.users) {
 			let thisUser = this.room.users[i];
 			if (this.checkJoined(thisUser)) {
-				thisUser.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + Giveaway_Display + '">' + joined + '</div>');
+				thisUser.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + GIVEAWAY_DISPLAY + '">' + joined + '</div>');
 
 			} else {
-				thisUser.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + Giveaway_Display + '">' + notJoined + '</div>');
+				thisUser.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + GIVEAWAY_DISPLAY + '">' + notJoined + '</div>');
 			}
 		}
 	}
@@ -232,7 +232,7 @@ class LotteryGiveaway extends Giveaway {
 		if (this.checkExcluded(user)) return user.sendTo(this.room, "You are disallowed from entering the giveaway.");
 
 		this.joined[user.latestIp] = user.userid;
-		user.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + Giveaway_Display + '">' + this.generateReminder(true) + '</div>');
+		user.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + GIVEAWAY_DISPLAY + '">' + this.generateReminder(true) + '</div>');
 		user.sendTo(this.room, "You have successfully joined the lottery giveaway.");
 	}
 
@@ -244,13 +244,13 @@ class LotteryGiveaway extends Giveaway {
 				delete this.joined[ip];
 			}
 		}
-		user.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + Giveaway_Display + '">' + this.generateReminder(false) + '</div>');
+		user.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + GIVEAWAY_DISPLAY + '">' + this.generateReminder(false) + '</div>');
 		user.sendTo(this.room, "You have left the lottery giveaway.");
 	}
 
 	drawLottery() {
 		this.clearTimer();
-		this.changeUhtml('<font style="' + Giveaway_Flavor_Font + '">The giveaway has ended. Scroll down for results.</div>');
+		this.changeUhtml('<font style="' + GIVEAWAY_FLAVOR_FONT + '">The giveaway has ended. Scroll down for results.</div>');
 
 		let userlist = Object.values(this.joined);
 		if (userlist.length < this.maxwinners) {
@@ -270,12 +270,12 @@ class LotteryGiveaway extends Giveaway {
 	end(force) {
 		if (force) {
 			this.clearTimer();
-			this.changeUhtml('<font style="' + Giveaway_Flavor_Font + '">The giveaway was forcibly ended.</font>');
+			this.changeUhtml('<font style="' + GIVEAWAY_FLAVOR_FONT + '">The giveaway was forcibly ended.</font>');
 			this.room.send("The giveaway was forcibly ended.");
 		} else {
 			this.phase = 'ended';
-			this.send('<div style="' + Giveaway_Display + '"><font style="' + Giveaway_Title_Font + '">Lottery Draw</font><br><font style="' + Giveaway_Flavor_Font + '">' + Object.keys(this.joined).length + " users joined " + Tools.escapeHTML(this.giver.name) + "'s giveaway for: <strong>" + Tools.escapeHTML(this.prize) + "</strong><br/>" +
-				'<font style="' + Giveaway_Small_Font + '">Our lucky winner' + (this.winners.length > 1 ? "s" : "") + ": <strong>" + Tools.escapeHTML(this.winners.reduce((prev, cur, index, array) => prev + cur.name + (index === array.length - 1 ? "" : ', '), '')) + "!</strong> Congratulations!</font>");
+			this.send('<div style="' + GIVEAWAY_DISPLAY + '"><font style="' + GIVEAWAY_TITLE_FONT + '">Lottery Draw</font><br><font style="' + GIVEAWAY_FLAVOR_FONT + '">' + Object.keys(this.joined).length + " users joined " + Tools.escapeHTML(this.giver.name) + "'s giveaway for: <strong>" + Tools.escapeHTML(this.prize) + "</strong><br/>" +
+				'<font style="' + GIVEAWAY_SMALL_FONT + '">Our lucky winner' + (this.winners.length > 1 ? "s" : "") + ": <strong>" + Tools.escapeHTML(this.winners.reduce((prev, cur, index, array) => prev + cur.name + (index === array.length - 1 ? "" : ', '), '')) + "!</strong> Congratulations!</font>");
 			for (let i = 0; i < this.winners.length; i++) {
 				if (this.winners[i].connected) this.winners[i].popup("You have won the lottery giveaway! PM **" + this.giver.name + "** to claim your prize!");
 			}

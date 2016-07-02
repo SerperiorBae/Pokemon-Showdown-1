@@ -469,6 +469,7 @@ exports.commands = {
 		});
 	},
 
+	cardshop: 'packshop',
 	packshop: function (target, room, user) {
 		if (!this.runBroadcast()) return;
 		return this.sendReply('|raw|' + getShopDisplay(shop));

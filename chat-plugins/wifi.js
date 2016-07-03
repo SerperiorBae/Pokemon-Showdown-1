@@ -11,6 +11,7 @@ const GIVEAWAY_TITLE_FONT = 'font-size: 20px ; text-decoration: underline';
 const GIVEAWAY_FLAVOR_FONT = 'font-size: 14px';
 const GIVEAWAY_SMALL_FONT = 'font-size: 11px';
 const GIVEAWAY_BUTTON = 'width: 30% ; background-color: #ff560e ; border: none ; color: #ffc775 ; font-size: 14px';
+const GIVEAWAY_PM_NAME = '~Marketplace Giveaway [Do Not Reply]';
 
 let banned = Object.create(null);
 
@@ -301,6 +302,10 @@ let commands = {
 		if (!targetUser.autoconfirmed) return this.errorReply("User '" + targetUser.name + "' needs to be autoconfirmed to give something away.");
 
 		room.giveaway = new QuestionGiveaway(user, targetUser, room, params[1], params[2], params.slice(3).join(','));
+		for (let i in room.users) {
+			let message = '|pm|' + GIVEAWAY_PM_NAME + '|' + room.users[i].getIdentity() + '| ' + params[0] + ' is giving away a ' + toId(params[1]) + '! Join for your chance to win!');
+			room.users[i].send(message);
+		}
 		this.parse('!card ' + toId(params[1]));
 
 		this.privateModCommand("(" + user.name + " started a question giveaway for " + targetUser.name + ")");
@@ -356,6 +361,10 @@ let commands = {
 		}
 
 		room.giveaway = new LotteryGiveaway(user, targetUser, room, params[1], numWinners);
+		for (let i in room.users) {
+			let message = '|pm|' + GIVEAWAY_PM_NAME + '|' + room.users[i].getIdentity() + '| ' + params[0] + ' is giving away a ' + toId(params[1]) + '! Join for your chance to win!');
+			room.users[i].send(message);
+		}
 		this.parse('!card ' + toId(params[1]));
 
 		this.privateModCommand("(" + user.name + " started a lottery giveaway for " + targetUser.name + ")");

@@ -303,8 +303,8 @@ let commands = {
 
 		room.giveaway = new QuestionGiveaway(user, targetUser, room, params[1], params[2], params.slice(3).join(','));
 		for (let i in room.users) {
-			let message = '|pm|' + GIVEAWAY_PM_NAME + '|' + room.users[i].getIdentity() + '| ' + params[0] + ' is giving away a ' + toId(params[1]) + '! Join for your chance to win!');
-			room.users[i].send(message);
+			let message = '|pm|' + GIVEAWAY_PM_NAME + '|' + room.users[i].getIdentity() + '| ' + params[0] + ' is giving away a ' + toId(params[1]) + '! Join for your chance to win!';
+			room.users[i].send(message;
 		}
 		this.parse('!card ' + toId(params[1]));
 

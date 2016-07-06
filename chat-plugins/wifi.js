@@ -6,11 +6,11 @@
  **/
 'use strict';
 
-const GIVEAWAY_DISPLAY = 'background-color: #ffc775 ; border: #ff560e solid 1px ; color: #ff560e; padding: 3px; text-align: center';
+const GIVEAWAY_DISPLAY = 'background-color: white ; border: darkgray solid 1px ; color: gray; padding: 3px; text-align: center';
 const GIVEAWAY_TITLE_FONT = 'font-size: 20px ; text-decoration: underline';
 const GIVEAWAY_FLAVOR_FONT = 'font-size: 14px';
 const GIVEAWAY_SMALL_FONT = 'font-size: 11px';
-const GIVEAWAY_BUTTON = 'width: 30% ; background-color: #ff560e ; border: none ; color: #ffc775 ; font-size: 14px';
+const GIVEAWAY_BUTTON = 'width: 30% ; background-color: gray ; border: none ; color: white ; font-size: 14px; padding: 2px 0px; margin: 4px;';
 const GIVEAWAY_PM_NAME = '~Marketplace Giveaway [Do Not Reply]';
 
 let banned = Object.create(null);
@@ -205,7 +205,7 @@ class LotteryGiveaway extends Giveaway {
 		return '<div style="' + GIVEAWAY_DISPLAY + '"><font style="' + GIVEAWAY_TITLE_FONT + '">It\'s giveaway time!</font><br>' +
 			'<font style="' + GIVEAWAY_FLAVOR_FONT + '">Lottery Giveaway started by ' + Tools.escapeHTML(this.host.name) + '<br>' +
 			'<strong>' + Tools.escapeHTML(this.giver.name) + '</strong> will be giving away: <strong>' + Tools.escapeHTML(this.prize) + '!</strong><br>' +
-			'<font style="' + GIVEAWAY_SMALL_FONT + '">The lottery drawing will occur in 2 minutes, and with ' + this.maxwinners + ' winner' + (this.maxwinners > 1 ? 's' : '') + '!</font><br/>' +
+			'<font style="' + GIVEAWAY_SMALL_FONT + '">The lottery drawing will occur in 2 minutes, and with ' + this.maxwinners + ' winner' + (this.maxwinners > 1 ? 's' : '') + '!</font><br>' +
 			(joined ? '<button name="send" value="/giveaway leavelottery" style="' + GIVEAWAY_BUTTON + '">Leave</button><br/>' : '<button name="send" value="/giveaway joinlottery" style="' + GIVEAWAY_BUTTON + '">Join</button>') + '</div>';
 
 	}
@@ -304,7 +304,7 @@ let commands = {
 		room.giveaway = new QuestionGiveaway(user, targetUser, room, params[1], params[2], params.slice(3).join(','));
 		for (let i in room.users) {
 			let message = '|pm|' + GIVEAWAY_PM_NAME + '|' + room.users[i].getIdentity() + '| ' + params[0] + ' is giving away a ' + toId(params[1]) + '! Join for your chance to win!';
-			room.users[i].send(message;
+			room.users[i].send(message);
 		}
 		this.parse('!card ' + toId(params[1]));
 
@@ -362,7 +362,7 @@ let commands = {
 
 		room.giveaway = new LotteryGiveaway(user, targetUser, room, params[1], numWinners);
 		for (let i in room.users) {
-			let message = '|pm|' + GIVEAWAY_PM_NAME + '|' + room.users[i].getIdentity() + '| ' + params[0] + ' is giving away a ' + toId(params[1]) + '! Join for your chance to win!');
+			let message = '|pm|' + GIVEAWAY_PM_NAME + '|' + room.users[i].getIdentity() + '| ' + params[0] + ' is giving away a ' + toId(params[1]) + '! Join for your chance to win!';
 			room.users[i].send(message);
 		}
 		this.parse('!card ' + toId(params[1]));

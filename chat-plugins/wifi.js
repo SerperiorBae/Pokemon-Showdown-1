@@ -216,7 +216,6 @@ class LotteryGiveaway extends Giveaway {
 			let thisUser = this.room.users[i];
 			if (this.checkJoined(thisUser)) {
 				thisUser.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + GIVEAWAY_DISPLAY + '">' + joined + '</div>');
-
 			} else {
 				thisUser.sendTo(this.room, '|uhtmlchange|giveaway' + this.room.gaNumber + this.phase + '|<div style="' + GIVEAWAY_DISPLAY + '">' + notJoined + '</div>');
 			}

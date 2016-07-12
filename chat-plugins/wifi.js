@@ -207,7 +207,6 @@ class LotteryGiveaway extends Giveaway {
 			'<strong>' + Tools.escapeHTML(this.giver.name) + '</strong> will be giving away: <strong>' + Tools.escapeHTML(this.prize) + '!</strong><br>' +
 			'<font style="' + GIVEAWAY_SMALL_FONT + '">The lottery drawing will occur in 2 minutes, and with ' + this.maxwinners + ' winner' + (this.maxwinners > 1 ? 's' : '') + '!</font><br>' +
 			(joined ? '<button name="send" value="/giveaway leavelottery" style="' + GIVEAWAY_BUTTON + '">Leave</button><br/>' : '<button name="send" value="/giveaway joinlottery" style="' + GIVEAWAY_BUTTON + '">Join</button>') + '</div>';
-
 	}
 	display() {
 		let joined = this.generateReminder(true);

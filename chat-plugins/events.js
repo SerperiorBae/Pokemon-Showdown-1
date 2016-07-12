@@ -50,7 +50,6 @@ exports.commands = {
 			for (let event in eventList) {
 				if (eventList[event]["Name"] === params[0]) {
 					return this.sendReply("There is already an Event named " + params[0]);
-					break;
 				}
 			}
 			for (let id in Rooms.rooms) {
@@ -88,7 +87,7 @@ exports.commands = {
 			let eventList = JSON.parse(fs.readFileSync('config/events.json'));
 			if (Object.keys(EventsOn).length < 1);
 			if (!eventList) return this.sendReply("No events could be found")
-			let display = '<center><strong style="font-size: 20px; font-weight: bold;">Events Running</strong><br><table style="' + EVENT_TABLE_STYLE + '"><tr><th style="' + EVENT_OUTER_TH_STYLE + '">Event Name</th><th style="' + EVENT_INNER_TH_STYLE + '">Description</th><th style="' + EVENT_OUTER_TH_STYLE + '">Event Room</th>'
+			let display = '<center><strong style="font-size: 20px; font-weight: bold;">Events Running</strong><br><table style="' + EVENT_TABLE_STYLE + '"><tr><th style="' + EVENT_OUTER_TH_STYLE + '">Event Name</th><th style="' + EVENT_INNER_TH_STYLE + '">Description</th><th style="' + EVENT_OUTER_TH_STYLE + '">Event Room</th>';
 			for (let event in eventList) {
 				display += '<tr><td style="' + EVENT_TD_STYLE + '">' + eventList[event]["DisplayName"] + '</td><td style="' + EVENT_TD_STYLE + '">' + eventList[event]["Desc"] + '</td><td style="' + EVENT_TD_STYLE + '"><button style="' + EVENT_TABLE_BUTTON_STYLE + '" name="joinRoom" value="' + toId(eventList[event]["Room"]) + '">' + eventList[event]["Room"] + '</button></td></tr><tr>';
 			}

@@ -30,7 +30,7 @@ function saveUsers() {
 	fs.writeFileSync('config/zerotol.json', JSON.stringify(UserList));
 }
 exports.commands = {
-  zerotol: {
+	zerotol: {
 		create: function (target, room, user) {
 			let params = target.split("| ") || target.split("|");
 			if (!this.can('mute', null, room)) return this.errorReply('/0tol - Access denied.');
@@ -90,8 +90,8 @@ exports.commands = {
 			this.sendReply('|raw|' + display);
 		},
 	},
-	zerotolhelp: ['Event Command by Skyla (Full)',
-	'- /0tol create [name]| [description] - Creates and stores an entry in the Zero Tolerance Database.',
-	'- /0tol remove [name] - Removes user from Zero Tolerance Database.',
+	zerotolhelp: ['Event Command by Skyla (Full)', 
+	'- /0tol create [name]| [description] - Creates and stores an entry in the Zero Tolerance Database.', 
+	'- /0tol remove [name] - Removes user from Zero Tolerance Database.', 
 	'- /0tol display - Displays all Zero Tolerance Users.'],
 };

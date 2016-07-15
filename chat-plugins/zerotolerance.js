@@ -1,4 +1,4 @@
-/Zero Tolerance Plugin for Marketplace Staff by Skyla (Full)
+//Zero Tolerance Plugin for Marketplace Staff by Skyla (Full)
 'use strict';
 const fs = require('fs');
 const serialize = require('node-serialize');

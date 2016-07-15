@@ -90,8 +90,8 @@ exports.commands = {
 			this.sendReply('|raw|' + display);
 		},
 	},
-	zerotolhelp: ['Event Command by Skyla (Full)', 
-	'- /0tol create [name]| [description] - Creates and stores an entry in the Zero Tolerance Database.', 
-	'- /0tol remove [name] - Removes user from Zero Tolerance Database.', 
+	zerotolhelp: ['Event Command by Skyla (Full)',
+	'- /0tol create [name]| [description] - Creates and stores an entry in the Zero Tolerance Database.',
+	'- /0tol remove [name] - Removes user from Zero Tolerance Database.',
 	'- /0tol display - Displays all Zero Tolerance Users.'],
 };
